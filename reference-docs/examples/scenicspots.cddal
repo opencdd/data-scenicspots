@@ -2093,7 +2093,7 @@ instance UffiziGallery < MDC_C002 {
 # Country code blocks: two country digits + two sequence digits
 # (SPI00nn TW ... SPI09nn SG, SPI10nn DE, SPI11nn ES, SPI12nn TH,
 # SPI13nn VN, SPI14nn MY, SPI15nn AU, SPI16nn CA, SPI17nn IN,
-# SPI18nn PH, SPI19nn ID). Identifiers beginning with a digit are
+# POI18nn PH, POI19nn ID, POI20nn+ per config). Identifiers beginning
 # prefixed N. Existing codes are never renumbered; regenerate via
 # `rake browser:harvest_poi` in data-private.
 #
@@ -2762,6 +2762,7 @@ instance Daigoji < MDC_C002 {
   city: Kyoto
   latitude: 34.9515
   longitude: 135.821778
+  official_grade: WorldHeritage
 }
 
 instance Daikakuji < MDC_C002 {
@@ -3110,6 +3111,7 @@ instance Beopjusa < MDC_C002 {
   spot_type: Landmark
   latitude: 36.542361
   longitude: 127.83375
+  official_grade: WorldHeritage
 }
 
 instance Bongjeongsa < MDC_C002 {
@@ -3129,6 +3131,7 @@ instance Bongjeongsa < MDC_C002 {
   spot_type: Landmark
   latitude: 36.653279
   longitude: 128.661964
+  official_grade: WorldHeritage
 }
 
 instance Bongseonsa < MDC_C002 {
@@ -3193,6 +3196,7 @@ instance Buseoksa < MDC_C002 {
   spot_type: Landmark
   latitude: 36.998889
   longitude: 128.6875
+  official_grade: WorldHeritage
 }
 
 instance Changdeokgung < MDC_C002 {
@@ -3216,6 +3220,7 @@ instance Changdeokgung < MDC_C002 {
   city: Seoul
   latitude: 37.579444
   longitude: 126.992778
+  official_grade: WorldHeritage
 }
 
 instance Changgyeonggung < MDC_C002 {
@@ -3281,6 +3286,7 @@ instance Daeheungsa < MDC_C002 {
   spot_type: Landmark
   latitude: 34.476472
   longitude: 126.616861
+  official_grade: WorldHeritage
 }
 
 instance Daewonsa < MDC_C002 {
@@ -5089,6 +5095,7 @@ instance ChengdeMountainResort < MDC_C002 {
   spot_type: Palace
   latitude: 40.9875
   longitude: 117.9375
+  official_grade: WorldHeritage
 }
 
 instance ChinaAerospaceMuseum < MDC_C002 {
@@ -5279,6 +5286,7 @@ instance DamingPalace < MDC_C002 {
   spot_type: Palace
   latitude: 34.291389
   longitude: 108.959444
+  official_grade: WorldHeritage
 }
 
 instance DaqingRadioandTelevisionTower < MDC_C002 {
@@ -6422,6 +6430,7 @@ instance GarajonayNationalPark < MDC_C002 {
   latitude: 28.126111
   longitude: -17.237222
   area: 40
+  official_grade: WorldHeritage
 }
 
 instance GuadarramaNationalPark < MDC_C002 {
@@ -7380,6 +7389,7 @@ instance KinabaluPark < MDC_C002 {
   latitude: 6.15
   longitude: 116.65
   area: 754
+  official_grade: WorldHeritage
 }
 
 instance MahindaramaBuddhistTemple < MDC_C002 {
@@ -7873,6 +7883,7 @@ instance SydneyOperaHouse < MDC_C002 {
   city: Sydney
   latitude: -33.85681
   longitude: 151.21514
+  official_grade: WorldHeritage
 }
 
 instance SydneyTramwayMuseum < MDC_C002 {
@@ -9029,6 +9040,22 @@ instance BetungKerihunNationalPark < MDC_C002 {
   longitude: 113.353056
 }
 
+instance BlendukChurch < MDC_C002 {
+  code: SPI1930
+  preferred_name.en: "Blenduk Church"
+  preferred_name.zh-CN: "布蘭達克教堂"
+  preferred_name.fr: "église Blenduk"
+  preferred_name.es: "iglesia de Blenduk"
+  preferred_name.ar: "كنيسة بليندوك"
+  definition.en: "church in Central Java, Indonesia"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Landmark
+  latitude: -6.968133
+  longitude: 110.427494
+}
+
 instance BoganiNaniWartaboneNationalPark < MDC_C002 {
   code: SPI1911
   preferred_name.en: "Bogani Nani Wartabone National Park"
@@ -9118,6 +9145,7 @@ instance BukitBarisanSelatanNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -5.433333
   longitude: 104.333333
+  official_grade: WorldHeritage
 }
 
 instance BukitDuabelasNationalPark < MDC_C002 {
@@ -9177,6 +9205,19 @@ instance BunakenNationalPark < MDC_C002 {
   established_year: 1991
   latitude: 1.666667
   longitude: 124.65
+}
+
+instance CulturalpropertiesofIndonesia < MDC_C002 {
+  code: SPI1931
+  preferred_name.en: "Cultural properties of Indonesia"
+  preferred_name.zh-CN: "印度尼西亞文化資產"
+  preferred_name.ja: "インドネシアの文化遺産"
+  preferred_name.ar: "الممتلكات الثقافية في إندونيسيا"
+  definition.en: "overview of cultural properties according to Indonesian laws and regulations"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Landmark
 }
 
 instance FormulationofProclamationTextMuseum < MDC_C002 {
@@ -9241,6 +9282,24 @@ instance GeneralAbdulHarisNasutionMuseum < MDC_C002 {
   longitude: 106.832878
 }
 
+instance GreatMosqueofCentralJava < MDC_C002 {
+  code: SPI1932
+  preferred_name.en: "Great Mosque of Central Java"
+  preferred_name.zh-CN: "中爪哇省清真大寺"
+  preferred_name.fr: "Grande mosquée de Java"
+  preferred_name.it: "Grande moschea di Giava Centrale"
+  preferred_name.de: "Große Moschee von Zentraljava"
+  preferred_name.ar: "مسجد جاوة الوسطى الكبير"
+  preferred_name.el: "Μέγα Τζαμί της Κεντρικής Ιάβας"
+  definition.en: "mosque in Indonesia"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Landmark
+  latitude: -6.9839
+  longitude: 110.4458
+}
+
 instance GunungLeuserNationalPark < MDC_C002 {
   code: SPI1923
   preferred_name.en: "Gunung Leuser National Park"
@@ -9263,78 +9322,20 @@ instance GunungLeuserNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: 3.5
   longitude: 97.5
+  official_grade: WorldHeritage
 }
 
-instance IndonesiaMuseum < MDC_C002 {
-  code: SPI1925
-  preferred_name.en: "Indonesia Museum"
-  preferred_name.de: "Museum Indonesia"
-  preferred_name.es: "Museo de Indonesia"
-  preferred_name.nl: "Indonesia-museum"
-  definition.en: "ethnography and anthropology museum in Jakarta, Indonesia"
-  superclass: Museum
+instance HiroharaShrine < MDC_C002 {
+  code: SPI1933
+  preferred_name.en: "Hirohara Shrine"
+  preferred_name.ja: "紘原神社"
+  definition.en: "former Japanese Shinto Shrine in Indonesia"
+  superclass: Temple
   class_type: ITEM_CLASS
   country: Indonesia
-  spot_type: Museum
-  city: Jakarta
-  latitude: -6.301111
-  longitude: 106.891389
-}
-
-instance IndonesianHakkaMuseum < MDC_C002 {
-  code: SPI1926
-  preferred_name.en: "Indonesian Hakka Museum"
-  preferred_name.zh-CN: "印尼客家博物馆"
-  preferred_name.ko: "인도네시아 하카 박물관"
-  definition.en: "museum in East Jakarta, Jakarta, Indonesia"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Indonesia
-  spot_type: Museum
-  city: Jakarta
-  latitude: -6.305389
-  longitude: 106.904
-}
-
-instance JakartaHistoryMuseum < MDC_C002 {
-  code: SPI1927
-  preferred_name.en: "Jakarta History Museum"
-  preferred_name.zh-CN: "雅加达历史博物馆"
-  preferred_name.ja: "ジャカルタ歴史博物館"
-  preferred_name.fr: "musée d'Histoire de Jakarta"
-  preferred_name.de: "Museum Sejarah Jakarta"
-  preferred_name.th: "พิพิธภัณฑ์ประวัติศาสตร์จาการ์ตา"
-  preferred_name.ar: "متحف تاريخ جاكرتا"
-  preferred_name.nl: "Museum Sejarah Jakarta"
-  definition.en: "Museum in West Jakarta, Indonesia"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Indonesia
-  spot_type: Museum
-  city: Jakarta
-  latitude: -6.135
-  longitude: 106.813056
-}
-
-instance KarimunjawaNationalPark < MDC_C002 {
-  code: SPI1929
-  preferred_name.en: "Karimunjawa National Park"
-  preferred_name.zh-CN: "卡里摩爪哇國家公園"
-  preferred_name.fr: "parc national de Karimunjawa"
-  preferred_name.it: "parco nazionale di Karimunjawa"
-  preferred_name.de: "Nationalpark Karimunjawa"
-  preferred_name.es: "Parque nacional de Karimunjawa"
-  preferred_name.vi: "Vườn quốc gia Karimunjawa"
-  preferred_name.ar: "حديقة كريمونجاوا الوطنية"
-  preferred_name.nl: "Nationaal Park Karimunjawa"
-  definition.en: "national park"
-  superclass: NationalPark
-  class_type: ITEM_CLASS
-  country: Indonesia
-  spot_type: NationalPark
-  established_year: 2001
-  latitude: -5.816667
-  longitude: 110.4
+  spot_type: Temple
+  latitude: 3.580446
+  longitude: 98.670985
 }
 
 instance AcademyofSanCarlos < MDC_C002 {
@@ -9377,6 +9378,102 @@ instance AlfredoGuatiRojoNationalWatercolorMuseum < MDC_C002 {
   longitude: -99.177086
 }
 
+instance ArrecifesdeCozumelNationalPark < MDC_C002 {
+  code: SPI2049
+  preferred_name.en: "Arrecifes de Cozumel National Park"
+  preferred_name.zh-TW: "科蘇梅爾礁國家公園"
+  preferred_name.ja: "コスメルサンゴ礁国立公園"
+  preferred_name.fr: "parc national Arrecifes de Cozumel"
+  preferred_name.it: "parco nazionale di Arrecifes de Cozumel"
+  preferred_name.es: "Parque nacional Arrecifes de Cozumel"
+  preferred_name.ar: "منتزه أريسيفيس دي كوزوميل الوطنية"
+  preferred_name.nl: "Nationaal park Arrecifes de Cozumel"
+  preferred_name.pl: "Park Narodowy Arrecifes de Cozumel"
+  definition.en: "marine protected area in the Cozumel reef system off Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 20.293611
+  longitude: -87.024722
+}
+
+instance BarrancadelCupatitzioNationalPark < MDC_C002 {
+  code: SPI2050
+  preferred_name.en: "Barranca del Cupatitzio National Park"
+  preferred_name.zh-TW: "庫帕梯造峽谷國家公園"
+  preferred_name.fr: "parc national Barranca del Cupatitzio"
+  preferred_name.it: "parco nazionale di Barranca del Cupatitzio"
+  preferred_name.de: "Nationalpark Barranca del Cupatitzio"
+  preferred_name.es: "Parque nacional Barranca del Cupatitzio"
+  preferred_name.pl: "Park Narodowy Barranca del Cupatitzio"
+  preferred_name.hu: "Barranca del Cupatitzio Nemzeti Park"
+  definition.en: "national park in Michoacán, Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1938
+  latitude: 19.43
+  longitude: -102.1
+}
+
+instance BasaseachicFallsNationalPark < MDC_C002 {
+  code: SPI2051
+  preferred_name.en: "Basaseachic Falls National Park"
+  preferred_name.zh-TW: "巴薩賽奇瀑布國家公園"
+  preferred_name.fr: "parc national Cascada de Bassaseachic"
+  preferred_name.es: "Parque nacional Cascada de Basaseachi"
+  preferred_name.pl: "Park Narodowy Cascada de Bassaseachic"
+  definition.en: "national park in Chihuahua, Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 28.133056
+  longitude: -108.25
+}
+
+instance BosencheveNationalPark < MDC_C002 {
+  code: SPI2052
+  preferred_name.en: "Bosencheve National Park"
+  preferred_name.fr: "parc national Bosencheve"
+  preferred_name.es: "Parque Nacional Bosencheve"
+  preferred_name.pt: "Parque Nacional Bosencheve"
+  preferred_name.pl: "Park Narodowy Bosencheve"
+  definition.en: "national park of Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1940
+  latitude: 19.4155
+  longitude: -100.109
+}
+
+instance CaboPulmoNationalPark < MDC_C002 {
+  code: SPI2053
+  preferred_name.en: "Cabo Pulmo National Park"
+  preferred_name.zh-TW: "普爾莫角國家公園"
+  preferred_name.ja: "プルモ岬国立公園"
+  preferred_name.fr: "parc national Cabo Pulmo"
+  preferred_name.it: "parco nazionale di Cabo Pulmo"
+  preferred_name.de: "Nationalpark Cabo Pulmo"
+  preferred_name.es: "Parque nacional Cabo Pulmo"
+  preferred_name.pl: "Park Narodowy Cabo Pulmo"
+  preferred_name.cs: "Národní park Cabo Pulmo"
+  preferred_name.hu: "Cabo Pulmo Nemzeti Park"
+  definition.en: "National marine park in Baja California, Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1995
+  latitude: 23.433611
+  longitude: -109.424444
+  official_grade: WorldHeritage
+}
+
 instance CasadelosAzulejos < MDC_C002 {
   code: SPI2029
   preferred_name.en: "Casa de los Azulejos"
@@ -9391,6 +9488,55 @@ instance CasadelosAzulejos < MDC_C002 {
   city: MexicoCity
   latitude: 19.434219
   longitude: -99.140206
+}
+
+instance CerrodeGarnicaNationalPark < MDC_C002 {
+  code: SPI2054
+  preferred_name.en: "Cerro de Garnica National Park"
+  preferred_name.zh-TW: "加尼卡峰國家公園"
+  preferred_name.fr: "parc national Cerro de Garnica"
+  preferred_name.es: "Parque nacional Cerro de Garnica"
+  preferred_name.pl: "Park Narodowy Cerro de Garnica"
+  definition.en: "national park in Michoacán state of central Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 19.6688
+  longitude: -100.817
+  area: 19.36
+}
+
+instance CerrodelaEstrellaNationalPark < MDC_C002 {
+  code: SPI2055
+  preferred_name.en: "Cerro de la Estrella National Park"
+  preferred_name.fr: "parc national Cerro de la Estrella"
+  preferred_name.de: "Nationalpark Cerro de la Estrella"
+  preferred_name.es: "Parque nacional Cerro de la Estrella"
+  preferred_name.pl: "Park Narodowy Cerro de la Estrella"
+  preferred_name.hu: "Cerro de la Estrella Nemzeti Park"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 19.344189
+  longitude: -99.091186
+}
+
+instance CerrodelasCampanas < MDC_C002 {
+  code: SPI2056
+  preferred_name.en: "Cerro de las Campanas"
+  preferred_name.ja: "鐘の丘"
+  preferred_name.fr: "parc national Cerro de las Campanas"
+  preferred_name.pl: "Park Narodowy Cerro de las Campanas"
+  definition.en: "Hill and national park in Querétaro, Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 20.593333
+  longitude: -100.410361
 }
 
 instance Chapultepecaqueduct < MDC_C002 {
@@ -9408,6 +9554,100 @@ instance Chapultepecaqueduct < MDC_C002 {
   longitude: -99.168036
 }
 
+instance Constitution1857NationalPark < MDC_C002 {
+  code: SPI2057
+  preferred_name.en: "Constitution 1857 National Park"
+  preferred_name.fr: "parc national Constitución de 1857"
+  preferred_name.it: "parco nazionale di Constitución de 1857"
+  preferred_name.es: "Parque nacional Constitución de 1857"
+  preferred_name.pl: "Park Narodowy Constitución de 1857"
+  preferred_name.hu: "Constitución de 1857 Nemzeti Park"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 32.01157
+  longitude: -116.08154
+}
+
+instance CumbresdeMajalcaNationalPark < MDC_C002 {
+  code: SPI2058
+  preferred_name.en: "Cumbres de Majalca National Park"
+  preferred_name.zh-TW: "馬哈爾卡山國家公園"
+  preferred_name.fr: "parc national de Cumbres de Majalca"
+  preferred_name.it: "parco nazionale di Cumbres de Majalca"
+  preferred_name.de: "Nationalpark Cumbres de Majalca"
+  preferred_name.es: "Parque nacional Cumbres de Majalca"
+  preferred_name.pl: "Park Narodowy Cumbres de Majalca"
+  preferred_name.hu: "Cumbres de Majalca Nemzeti Park"
+  definition.en: "national park in the Mexican state of Chihuahua"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1939
+  latitude: 28.804167
+  longitude: -106.485
+}
+
+instance CumbresdeMonterreyNationalPark < MDC_C002 {
+  code: SPI2059
+  preferred_name.en: "Cumbres de Monterrey National Park"
+  preferred_name.zh-TW: "蒙特雷山國家公園"
+  preferred_name.ja: "クンブレス・デ・モンテレイ国立公園"
+  preferred_name.fr: "parc national Cumbres de Monterrey"
+  preferred_name.it: "parco nazionale di Cumbres de Monterrey"
+  preferred_name.de: "Nationalpark Cumbres de Monterrey"
+  preferred_name.es: "parque nacional Cumbres de Monterrey"
+  preferred_name.pl: "Park Narodowy Cumbres de Monterrey"
+  preferred_name.hu: "Cumbres de Monterrey Nemzeti Park"
+  definition.en: "national park in Nuevo Leon, Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1939
+  latitude: 25.44156
+  longitude: -100.30489
+}
+
+instance CumbresdelAjuscoNationalPark < MDC_C002 {
+  code: SPI2060
+  preferred_name.en: "Cumbres del Ajusco National Park"
+  preferred_name.zh-TW: "阿胡斯科山國家公園"
+  preferred_name.fr: "parc national Cumbres del Ajusco"
+  preferred_name.it: "parco nazionale di Cumbres del Ajusco"
+  preferred_name.es: "Parque nacional Cumbres del Ajusco"
+  preferred_name.pl: "Park Narodowy Cumbres del Ajusco"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 19.21512
+  longitude: -99.25639
+}
+
+instance DesiertodelosLeonesNationalPark < MDC_C002 {
+  code: SPI2061
+  preferred_name.en: "Desierto de los Leones National Park"
+  preferred_name.zh-TW: "洛斯萊昂斯沙漠國家公園"
+  preferred_name.fr: "parc national Desierto de los Leones"
+  preferred_name.it: "parco nazionale del Deserto de los Leones"
+  preferred_name.de: "Nationalpark Desierto de los Leones"
+  preferred_name.es: "Parque nacional Desierto de los Leones"
+  preferred_name.pl: "Park Narodowy Desierto de los Leones"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  established_year: 1917
+  latitude: 19.31264
+  longitude: -99.30628
+}
+
 instance ElCarmencomplex < MDC_C002 {
   code: SPI2031
   preferred_name.en: "El Carmen complex"
@@ -9422,289 +9662,54 @@ instance ElCarmencomplex < MDC_C002 {
   longitude: -99.1894
 }
 
-instance FranzMayerMuseum < MDC_C002 {
-  code: SPI2032
-  preferred_name.en: "Franz Mayer Museum"
-  preferred_name.ja: "フランツ・マイヤー美術館"
-  preferred_name.fr: "musée Franz-Mayer"
-  preferred_name.it: "Museo Franz Mayer"
-  preferred_name.de: "Museo Franz Mayer"
-  preferred_name.es: "Museo Franz Mayer"
-  preferred_name.pt: "Museu Franz Mayer"
-  preferred_name.ar: "متحف فرانز ماير"
-  preferred_name.tr: "Franz Mayer Müzesi"
-  definition.en: "art museum"
-  superclass: Landmark
+instance ElChicoNationalPark < MDC_C002 {
+  code: SPI2062
+  preferred_name.en: "El Chico National Park"
+  preferred_name.zh-TW: "埃爾奇科國家公園"
+  preferred_name.fr: "parc national El Chico"
+  preferred_name.es: "Parque nacional El Chico"
+  preferred_name.pl: "Park Narodowy El Chico"
+  definition.en: "national park in Hidalgo State, Mexico"
+  superclass: NationalPark
   class_type: ITEM_CLASS
   country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  established_year: 1986
-  latitude: 19.437114
-  longitude: -99.1432
+  spot_type: NationalPark
+  latitude: 20.207222
+  longitude: -98.731111
 }
 
-instance FridaKahloMuseum < MDC_C002 {
-  code: SPI2033
-  preferred_name.en: "Frida Kahlo Museum"
-  preferred_name.zh-TW: "芙烈達·卡蘿紀念館"
-  preferred_name.ja: "フリーダ・カーロ記念館"
-  preferred_name.fr: "musée Frida-Kahlo"
-  preferred_name.it: "Museo Frida Kahlo"
-  preferred_name.de: "Museum Frida Kahlo"
-  preferred_name.es: "Museo Frida Kahlo"
-  preferred_name.pt: "Museu Frida Kahlo"
-  preferred_name.ar: "متحف فريدا كاهلو"
-  preferred_name.tr: "Frida Kahlo Müzesi"
-  preferred_name.cs: "Muzeum Fridy Kahlo"
-  definition.en: "historic house museum and art museum dedicated to the life and work of Mexican artist Frida Kahlo"
-  superclass: Museum
+instance ElCimatarioNationalPark < MDC_C002 {
+  code: SPI2063
+  preferred_name.en: "El Cimatario National Park"
+  preferred_name.fr: "parc national El Cimatario"
+  preferred_name.it: "parco nazionale di El Cimatario"
+  preferred_name.es: "Parque nacional El Cimatario"
+  preferred_name.pl: "Park Narodowy El Cimatario"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
   class_type: ITEM_CLASS
   country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  established_year: 1957
-  latitude: 19.355143
-  longitude: -99.162525
+  spot_type: NationalPark
+  latitude: 20.531155
+  longitude: -100.35934
+  area: 24.48
 }
 
-instance FuentedeCibelesMexicoCity < MDC_C002 {
-  code: SPI2034
-  preferred_name.en: "Fuente de Cibeles (Mexico City)"
-  preferred_name.fr: "Fuente de Cibeles"
-  preferred_name.it: "Fuente de Cibeles"
-  preferred_name.es: "Fuente de Cibeles"
-  preferred_name.ar: "فوينتي دي سيبيليس (مكسيكو سيتي)"
-  preferred_name.nl: "Fuente de Cibeles"
-  definition.en: "Public fountain in Mexico City"
-  superclass: Landmark
+instance ElTepeyacNationalPark < MDC_C002 {
+  code: SPI2064
+  preferred_name.en: "El Tepeyac National Park"
+  preferred_name.zh-TW: "特佩亞克國家公園"
+  preferred_name.fr: "parc national El Tepeyac"
+  preferred_name.it: "parco nazionale di El Tepeyac"
+  preferred_name.es: "Parque nacional El Tepeyac"
+  preferred_name.pl: "Park Narodowy El Tepeyac"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
   class_type: ITEM_CLASS
   country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.42
-  longitude: -99.166389
-}
-
-instance GlorietadelosInsurgentes < MDC_C002 {
-  code: SPI2035
-  preferred_name.en: "Glorieta de los Insurgentes"
-  preferred_name.zh-TW: "起义者环岛"
-  definition.en: "Important roundabout in Mexico city"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.423639
-  longitude: -99.162977
-}
-
-instance HousesoftheMayorazgodeGuerrero < MDC_C002 {
-  code: SPI2036
-  preferred_name.en: "Houses of the Mayorazgo de Guerrero"
-  preferred_name.es: "Casas del Mayorazgo de Guerrero"
-  definition.en: "monument in Mexico"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  latitude: 19.433511
-  longitude: -99.129928
-}
-
-instance InteractiveMuseumofEconomics < MDC_C002 {
-  code: SPI2037
-  preferred_name.en: "Interactive Museum of Economics"
-  preferred_name.es: "Museo Interactivo de Economía"
-  preferred_name.pl: "Museo Interactivo de Economía"
-  definition.en: "Mexican museum dedicated to economics and finance"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  latitude: 19.435417
-  longitude: -99.138417
-}
-
-instance LeonTrotskyHouseMuseum < MDC_C002 {
-  code: SPI2038
-  preferred_name.en: "Leon Trotsky House Museum"
-  preferred_name.zh-TW: "莱昂·托洛茨基博物馆"
-  preferred_name.ja: "レフ・トロツキー博物館"
-  preferred_name.fr: "Musée maison de Léon Trotsky"
-  preferred_name.es: "Museo Casa de León Trotsky"
-  preferred_name.hu: "Lev Trockij-múzeumház"
-  definition.en: "house museum in Mexico City"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  established_year: 1990
-  latitude: 19.357838
-  longitude: -99.159587
-}
-
-instance LibraryoftheCongressofMexico < MDC_C002 {
-  code: SPI2039
-  preferred_name.en: "Library of the Congress of Mexico"
-  preferred_name.zh-TW: "墨西哥國會圖書館"
-  preferred_name.es: "Biblioteca General del H. Congreso de la Unión"
-  preferred_name.pt: "Biblioteca Geral do Congresso do México"
-  preferred_name.ar: "مكتبة كونغرس المكسيك"
-  preferred_name.pl: "Biblioteca del H. Congreso de la Unión"
-  definition.en: "building in Mexico City, Mexico"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.435525
-  longitude: -99.137922
-}
-
-instance MemoryandToleranceMuseum < MDC_C002 {
-  code: SPI2040
-  preferred_name.en: "Memory and Tolerance Museum"
-  preferred_name.zh-TW: "記憶與寬容博物館"
-  preferred_name.fr: "musée Mémoire et tolérance"
-  preferred_name.es: "Museo Memoria y Tolerancia"
-  preferred_name.pt: "Museu Memória e Tolerância"
-  preferred_name.nl: "Museo Memoria y Tolerancia"
-  definition.en: "Mexico City museum"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  latitude: 19.434165
-  longitude: -99.14463
-}
-
-instance MexicoCityadministrativebuildings < MDC_C002 {
-  code: SPI2041
-  preferred_name.en: "Mexico City administrative buildings"
-  preferred_name.zh-TW: "聯邦區大樓"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.43175
-  longitude: -99.133522
-}
-
-instance MoriscoKiosk < MDC_C002 {
-  code: SPI2042
-  preferred_name.en: "Morisco Kiosk"
-  preferred_name.ko: "키오스코 모리스코"
-  preferred_name.it: "Kiosco morisco"
-  preferred_name.es: "Kiosco Morisco"
-  preferred_name.ar: "الكشك الموريسكي"
-  preferred_name.tr: "Moro Köşkü"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.44967
-  longitude: -99.156853
-}
-
-instance MuseoNacionaldeArte < MDC_C002 {
-  code: SPI2043
-  preferred_name.en: "Museo Nacional de Arte"
-  preferred_name.zh-TW: "墨西哥国家美术馆"
-  preferred_name.ja: "メキシコ国立美術館"
-  preferred_name.ko: "멕시코 국립미술관"
-  preferred_name.pt: "Museu Nacional de Arte"
-  definition.en: "art museum in Mexico City, Mexico"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.436389
-  longitude: -99.139444
-}
-
-instance MuseoNacionaldeCulturasPopulares < MDC_C002 {
-  code: SPI2044
-  preferred_name.en: "Museo Nacional de Culturas Populares"
-  definition.en: "cultural museum in Mexico City"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  established_year: 1982
-  latitude: 19.349933
-  longitude: -99.160994
-}
-
-instance MuseoNacionaldeHistoria < MDC_C002 {
-  code: SPI2045
-  preferred_name.en: "Museo Nacional de Historia"
-  preferred_name.pt: "Museu Nacional de História"
-  definition.en: "historical museum in Mexico City"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  latitude: 19.4206
-  longitude: -99.181556
-}
-
-instance MuseoNacionaldeSanCarlos < MDC_C002 {
-  code: SPI2046
-  preferred_name.en: "Museo Nacional de San Carlos"
-  preferred_name.ja: "サン・カルロス国立博物館"
-  preferred_name.fr: "Musée national de San Carlos"
-  preferred_name.pt: "Museu Nacional de São Carlos"
-  definition.en: "National Museum of Mexico"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Museum
-  city: MexicoCity
-  latitude: 19.4382
-  longitude: -99.152
-}
-
-instance MuseoNacionaldelasCulturas < MDC_C002 {
-  code: SPI2047
-  preferred_name.en: "Museo Nacional de las Culturas"
-  preferred_name.ja: "国立文化博物館"
-  preferred_name.pt: "Museu Nacional das Culturas"
-  preferred_name.ar: "المتحف الوطني للثقافات"
-  definition.en: "national museum in Mexico City, Mexico"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.433269
-  longitude: -99.130464
-}
-
-instance MuseoUniversitariodelChopo < MDC_C002 {
-  code: SPI2048
-  preferred_name.en: "Museo Universitario del Chopo"
-  preferred_name.ja: "チョポ大学博物館"
-  preferred_name.ar: "متحف جامعة تشوبو"
-  preferred_name.tr: "Chopo Üniversite Müzesi"
-  definition.en: "art museum in Mexico"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Mexico
-  spot_type: Landmark
-  city: MexicoCity
-  latitude: 19.4419
-  longitude: -99.1567
+  spot_type: NationalPark
+  latitude: 19.503056
+  longitude: -99.106667
 }
 
 instance AbrolhosMarineNationalPark < MDC_C002 {
@@ -9779,6 +9784,7 @@ instance AnavilhanasNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -2.394722
   longitude: -60.920556
+  official_grade: WorldHeritage
 }
 
 instance AparadosdaSerraNationalPark < MDC_C002 {
@@ -9958,6 +9964,7 @@ instance ChapadadosVeadeirosNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -14.005694
   longitude: -47.684611
+  official_grade: WorldHeritage
 }
 
 instance DescobrimentoNationalPark < MDC_C002 {
@@ -9977,6 +9984,7 @@ instance DescobrimentoNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -17.069233
   longitude: -39.293317
+  official_grade: WorldHeritage
 }
 
 instance EmasNationalPark < MDC_C002 {
@@ -10002,6 +10010,7 @@ instance EmasNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -18.0
   longitude: -53.0
+  official_grade: WorldHeritage
 }
 
 instance FernandodeNoronhaMarineNationalPark < MDC_C002 {
@@ -10023,6 +10032,7 @@ instance FernandodeNoronhaMarineNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: -3.867
   longitude: -32.446
+  official_grade: WorldHeritage
 }
 
 instance FurnaFeiaNationalPark < MDC_C002 {
@@ -10165,6 +10175,7 @@ instance AbuMena < MDC_C002 {
   spot_type: ArchaeologicalSite
   latitude: 30.84105
   longitude: 29.66349
+  official_grade: WorldHeritage
 }
 
 instance AbuSimbel < MDC_C002 {
@@ -10189,6 +10200,7 @@ instance AbuSimbel < MDC_C002 {
   spot_type: ArchaeologicalSite
   latitude: 22.336944
   longitude: 31.625556
+  official_grade: WorldHeritage
 }
 
 instance AhmedShawkiMuseum < MDC_C002 {
@@ -11080,6 +11092,7 @@ instance AcropolisofAthens < MDC_C002 {
   city: Athens
   latitude: 37.971667
   longitude: 23.726111
+  official_grade: WorldHeritage
 }
 
 instance ArchofHadrianAthens < MDC_C002 {
@@ -12241,6 +12254,7 @@ instance NationalMuseumoftheAzulejo < MDC_C002 {
   code: SPI2614
   preferred_name.en: "National Museum of the Azulejo"
   preferred_name.ja: "国立アズレージョ博物館"
+  preferred_name.ko: "국립 아줄레주 박물관"
   preferred_name.fr: "musée national de l'azulejo"
   preferred_name.it: "Museo Nazionale dell'Azulejo"
   preferred_name.de: "Museu Nacional do Azulejo"
