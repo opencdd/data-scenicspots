@@ -96,13 +96,23 @@ def fetch_entities(qids, sleep):
         batch = qids[i:i + BATCH]
         d = api(WD_API, {"action": "wbgetentities", "format": "json",
                          "ids": "|".join(batch),
-                         "props": "labels|claims",
-                         "languages": "|".join(ALL_LANGS)})
+                         "props": "labels|aliases|claims",
+                         # "en" too: the aliases fetch filters by this
+                         # list, and English aliases are the synonyms
+                         "languages": "|".join(["en"] + ALL_LANGS)})
         for qid, ent in (d.get("entities") or {}).items():
-            item = {"labels": {}, "lat": None, "lon": None,
+            item = {"labels": {}, "aliases": [], "lat": None, "lon": None,
                     "vis": None, "vis_year": None, "whs": False}
             for lang, lab in (ent.get("labels") or {}).items():
                 item["labels"][lang] = lab.get("value")
+            en_aliases = []
+            for al in (ent.get("aliases") or {}).get("en") or []:
+                v = (al.get("value") or "").strip()
+                if 2 < len(v) <= 60 and not v.isupper() and v not in en_aliases:
+                    en_aliases.append(v)
+                if len(en_aliases) >= 5:
+                    break
+            item["aliases"] = en_aliases
             claims = ent.get("claims") or {}
             p625 = (claims.get("P625") or [{}])[0]
             v = (((p625.get("mainsnak") or {}).get("datavalue") or {})
@@ -176,6 +186,11 @@ def main():
             e["facts"]["lat"] = round(d["lat"], 6)
             e["facts"]["lon"] = round(d["lon"], 6)
             stats["coords_filled"] += 1
+        en_lower = title.replace("_", " ").strip().lower()
+        kept = [a for a in d.get("aliases", []) if a.lower() != en_lower][:3]
+        if kept:
+            e["aliases"] = kept
+            stats["alias_sets"] = stats.get("alias_sets", 0) + 1
         if d.get("whs"):
             e["facts"]["whs"] = True
             stats["world_heritage"] = stats.get("world_heritage", 0) + 1
@@ -189,9 +204,9 @@ def main():
               ensure_ascii=False, indent=1)
     json.dump(stats, open("harvest/out/wikidata_stats.json", "w"), indent=1)
     print("labels upgraded: %d, coords filled: %d, visitors with year: %d, "
-          "world heritage graded: %d"
+          "world heritage graded: %d, alias sets: %d"
           % (stats["label_upgrades"], stats["coords_filled"],
-             stats["visitors_with_year"], stats.get("world_heritage", 0)))
+             stats["visitors_with_year"], stats.get("world_heritage", 0), stats.get("alias_sets", 0)))
 
 
 if __name__ == "__main__":

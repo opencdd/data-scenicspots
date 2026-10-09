@@ -8,7 +8,7 @@
     "UnitedKingdom/UnitedStates were re-scoped 2026-10-08 to fix thin/broken categories."
   ],
   "sparql_endpoint": "https://dbpedia.org/sparql",
-  "default_limit_per_country": 26,
+  "default_limit_per_country": 30,
   "query_sleep_seconds": 2.6,
   "languages": [
     "zh",
@@ -98,7 +98,10 @@
         "Museums_in_England",
         "Country_houses_in_England",
         "Gardens_in_England",
-        "Cathedrals_in_England"
+        "Cathedrals_in_England",
+        "Museums_in_Scotland",
+        "Castles_in_England",
+        "Cathedrals_in_the_United_Kingdom"
       ]
     },
     "France": {
@@ -107,7 +110,9 @@
       "zh_tag": "zh-TW",
       "categories": [
         "Museums_in_Paris",
-        "Landmarks_in_Paris"
+        "Landmarks_in_Paris",
+        "Landmarks_in_France",
+        "Cathedrals_in_France"
       ]
     },
     "UnitedStates": {
@@ -224,7 +229,8 @@
         "Palaces_in_India",
         "Landmarks_in_India",
         "Museums_in_Delhi",
-        "Hindu_temples_in_India"
+        "Hindu_temples_in_India",
+        "Museums_in_Mumbai"
       ]
     },
     "Philippines": {
@@ -462,7 +468,8 @@
     "Museums_in_Lisbon": "Lisbon",
     "Museums_in_Warsaw": "Warsaw",
     "Museums_in_Prague": "Prague",
-    "Museums_in_Budapest": "Budapest"
+    "Museums_in_Budapest": "Budapest",
+    "Museums_in_Mumbai": "Mumbai"
   },
   "code_stem": "SPI"
 }

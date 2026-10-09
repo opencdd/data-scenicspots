@@ -300,6 +300,12 @@ def emit(cfg, harvest_data, fixture, today):
             if e.get("city"):
                 body.append("  city: " + e["city"])
             f = e.get("facts", {})
+            aliases = e.get("aliases") or []
+            if aliases:
+                # quoted strings: aliases carry spaces and non-ASCII
+                # that raw tuple identifiers cannot express
+                escd = ", ".join('en, "' + esc(a) + '"' for a in aliases)
+                body.append("  synonym: (" + escd + ")")
             if f.get("est") and to_year(f["est"]):
                 body.append("  established_year: " + str(to_year(f["est"])))
             elev = to_num(f.get("elev")) if f.get("elev") else None

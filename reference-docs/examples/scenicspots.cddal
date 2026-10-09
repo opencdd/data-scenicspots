@@ -505,6 +505,15 @@ instance Budapest < MDC_C002 {
   class_type: ITEM_CLASS
 }
 
+instance Mumbai < MDC_C002 {
+  code: SPA194
+  preferred_name.en: "Mumbai"
+  preferred_name.zh-TW: "孟買"
+  definition.en: "city of Mumbai"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
 
 # =============================================================================
 # Powertype 1 — ScenicSpotType
@@ -2082,7 +2091,7 @@ instance UffiziGallery < MDC_C002 {
 # Registered individuals - DBpedia-sourced, Wikipedia-verified registry
 # (bulk, generated)
 #
-# Candidates sourced from DBpedia (Wikipedia, CC BY-SA), retrieved 2026-10-09.
+# Candidates sourced from DBpedia (Wikipedia, CC BY-SA), retrieved 2026-10-10.
 # Every entry was then individually verified against the English
 # Wikipedia article before admission: page existence, country, spot
 # type, native labels via interlanguage titles, and facts (years,
@@ -2130,6 +2139,7 @@ instance BeitouHotSpringMuseum < MDC_C002 {
   country: Taiwan
   spot_type: HotSpring
   city: Taipei
+  synonym: (en, "Hokutō Public Bathhouse")
   latitude: 25.136667
   longitude: 121.507222
 }
@@ -2175,6 +2185,7 @@ instance ChunghwaPostalMuseum < MDC_C002 {
   country: Taiwan
   spot_type: Museum
   city: Taipei
+  synonym: (en, "Postal Museum", en, "Postal Museum (Taiwan)")
   latitude: 25.031667
   longitude: 121.514806
 }
@@ -2268,6 +2279,7 @@ instance GuanzilingHotSpring < MDC_C002 {
   class_type: ITEM_CLASS
   country: Taiwan
   spot_type: HotSpring
+  synonym: (en, "Kuan-á-niá Hot Spring", en, "Kanshirei Hot Spring")
   latitude: 23.333333
   longitude: 120.5
 }
@@ -2296,6 +2308,7 @@ instance HongGahMuseum < MDC_C002 {
   country: Taiwan
   spot_type: Museum
   city: Taipei
+  synonym: (en, "Feng-jia Museum")
   established_year: 1999
   latitude: 25.125278
   longitude: 121.499167
@@ -2438,6 +2451,7 @@ instance LinAnTaiHistoricalHouseandMuseum < MDC_C002 {
   country: Taiwan
   spot_type: Museum
   city: Taipei
+  synonym: (en, "Lîm-an-thài Kóo-tshù Bîn-sio̍k Bûn-bu̍t-kuán")
   latitude: 25.07175
   longitude: 121.530361
 }
@@ -2452,6 +2466,7 @@ instance MiniaturesMuseumofTaiwan < MDC_C002 {
   country: Taiwan
   spot_type: Museum
   city: Taipei
+  synonym: (en, "Miniature Museum of Taiwan")
   established_year: 1997
   latitude: 25.050278
   longitude: 121.536389
@@ -2467,8 +2482,70 @@ instance MuseumofAnthropologyTaiwan < MDC_C002 {
   country: Taiwan
   spot_type: Museum
   city: Taipei
+  synonym: (en, "NTU Museum of Anthropology")
   latitude: 25.017778
   longitude: 121.534722
+}
+
+instance MuseumofArchives < MDC_C002 {
+  code: SPI0033
+  preferred_name.en: "Museum of Archives"
+  preferred_name.zh-TW: "檔案展示室"
+  definition.en: "university museum in Taipei"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Museum
+  city: Taipei
+  latitude: 25.015556
+  longitude: 121.531111
+}
+
+instance MuseumofDrinkingWater < MDC_C002 {
+  code: SPI0034
+  preferred_name.en: "Museum of Drinking Water"
+  preferred_name.zh-TW: "臺北水道水源地"
+  preferred_name.ja: "台北水道水源地"
+  definition.en: "museum in Taipei"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Museum
+  city: Taipei
+  synonym: (en, "Taipei Water Park")
+  latitude: 25.013056
+  longitude: 121.53
+}
+
+instance MuseumofMedicalHumanities < MDC_C002 {
+  code: SPI0035
+  preferred_name.en: "Museum of Medical Humanities"
+  preferred_name.zh-TW: "國立臺灣大學醫學人文博物館"
+  preferred_name.ja: "国立台湾大学医学人文博物館"
+  definition.en: "university museum in Taipei"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Museum
+  city: Taipei
+  latitude: 25.0396
+  longitude: 121.5186
+}
+
+instance MuseumofZoology < MDC_C002 {
+  code: SPI0036
+  preferred_name.en: "Museum of Zoology"
+  preferred_name.zh-TW: "國立臺灣大學動物博物館"
+  preferred_name.ja: "国立台湾大学動物博物館"
+  definition.en: "university museum in Da'an, Taipei, Taiwan"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Museum
+  city: Taipei
+  synonym: (en, "Museum of Zoology, National Taiwan University")
+  latitude: 25.015278
+  longitude: 121.538611
 }
 
 instance AdMuseumTokyo < MDC_C002 {
@@ -2485,6 +2562,7 @@ instance AdMuseumTokyo < MDC_C002 {
   country: Japan
   spot_type: Museum
   city: Tokyo
+  synonym: (en, "The Ad Museum Tokyo", en, "Advertising Museum Tokyo")
   latitude: 35.664333
   longitude: 139.762222
 }
@@ -2500,6 +2578,7 @@ instance AdashinoNenbutsuji < MDC_C002 {
   country: Japan
   spot_type: Landmark
   city: Kyoto
+  synonym: (en, "Nenbutsu-ji")
   latitude: 35.026806
   longitude: 135.664522
 }
@@ -2580,6 +2659,7 @@ instance AtagoShrineKyoto < MDC_C002 {
   country: Japan
   spot_type: Landmark
   city: Kyoto
+  synonym: (en, "Atago Shrine", en, "Atago-jinja Shrine", en, "Atago Jinja")
   latitude: 35.06
   longitude: 135.634444
 }
@@ -2642,6 +2722,7 @@ instance BunkyoMuseum < MDC_C002 {
   country: Japan
   spot_type: Museum
   city: Tokyo
+  synonym: (en, "Bunkyo Furusato History Museum")
   latitude: 35.708021
   longitude: 139.756752
 }
@@ -2683,6 +2764,7 @@ instance ChichibuTamaKaiNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Japan
   spot_type: NationalPark
+  synonym: (en, "Chichibu-Tama-Kai National Park")
   latitude: 35.9
   longitude: 138.716667
 }
@@ -2738,6 +2820,7 @@ instance CurrencyMuseumoftheBankofJapan < MDC_C002 {
   country: Japan
   spot_type: Museum
   city: Tokyo
+  synonym: (en, "Bank of Japan Currency Museum")
   established_year: 1985
   latitude: 35.685369
   longitude: 139.771797
@@ -2760,6 +2843,7 @@ instance Daigoji < MDC_C002 {
   country: Japan
   spot_type: Landmark
   city: Kyoto
+  synonym: (en, "Daigo-ji Temple")
   latitude: 34.9515
   longitude: 135.821778
   official_grade: WorldHeritage
@@ -2837,6 +2921,7 @@ instance Daitokuji < MDC_C002 {
   country: Japan
   spot_type: Landmark
   city: Kyoto
+  synonym: (en, "Daitoku-ji Temple")
   latitude: 35.043889
   longitude: 135.746111
 }
@@ -2937,6 +3022,7 @@ instance FiveMountainSystem < MDC_C002 {
   country: Japan
   spot_type: Landmark
   city: Kyoto
+  synonym: (en, "Five Mountains and Ten Monasteries System")
 }
 
 instance FujiHakoneIzuNationalPark < MDC_C002 {
@@ -2966,6 +3052,90 @@ instance FujiHakoneIzuNationalPark < MDC_C002 {
   longitude: 139.0
 }
 
+instance FukagawaEdoMuseum < MDC_C002 {
+  code: SPI0105
+  preferred_name.en: "Fukagawa Edo Museum"
+  preferred_name.zh-TW: "深川 江戶資料館"
+  preferred_name.ja: "深川江戸資料館"
+  preferred_name.it: "Museo Fukagawa Edo"
+  preferred_name.de: "Fukagawa-Edo-Museum"
+  definition.en: "museum of local history in Tokyo, Japan"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Museum
+  city: Tokyo
+  latitude: 35.68103
+  longitude: 139.80057
+}
+
+instance GenkaiQuasiNationalPark < MDC_C002 {
+  code: SPI0106
+  preferred_name.en: "Genkai Quasi-National Park"
+  preferred_name.zh-TW: "玄海國定公園"
+  preferred_name.ja: "玄海国定公園"
+  preferred_name.ko: "겐카이 국정공원"
+  preferred_name.fr: "parc quasi national de Genkai"
+  preferred_name.de: "Genkai-Quasi-Nationalpark"
+  preferred_name.pt: "Parque Quase-Nacional Genkai"
+  preferred_name.pl: "Quasi-Park Narodowy Genkai"
+  definition.en: "Quasi-National Park around Genkai Sea in Fukuoka, Saga and Nagasaki, Japan"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: NationalPark
+  established_year: 1956
+  latitude: 33.603
+  longitude: 130.18
+}
+
+instance Ginkakuji < MDC_C002 {
+  code: SPI0107
+  preferred_name.en: "Ginkaku-ji"
+  preferred_name.zh-TW: "慈照寺"
+  preferred_name.ja: "慈照寺"
+  preferred_name.ko: "지쇼지"
+  preferred_name.th: "กิงกากูจิ"
+  preferred_name.vi: "Ginkakuji"
+  preferred_name.ar: "غينكاكو-جي"
+  preferred_name.el: "Γκινκάκου-τζι"
+  preferred_name.cs: "Ginkakudži"
+  preferred_name.hu: "Ginkakudzsi"
+  definition.en: "temple in Sakyo ward of Kyoto, Japan"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Landmark
+  city: Kyoto
+  synonym: (en, "Jisho-ji", en, "Jishōji", en, "Jishouji")
+  latitude: 35.026667
+  longitude: 135.798333
+  official_grade: WorldHeritage
+}
+
+instance HakusanNationalPark < MDC_C002 {
+  code: SPI0108
+  preferred_name.en: "Hakusan National Park"
+  preferred_name.zh-TW: "白山國立公園"
+  preferred_name.ja: "白山国立公園"
+  preferred_name.ko: "하쿠산 국립공원"
+  preferred_name.fr: "parc national de Hakusan"
+  preferred_name.it: "parco nazionale di Hakusan"
+  preferred_name.de: "Hakusan-Nationalpark"
+  preferred_name.es: "Parque nacional Hakusan"
+  preferred_name.vi: "Vườn quốc gia Hakusan"
+  preferred_name.tr: "Hakusan Millî Parkı"
+  preferred_name.pl: "Park Narodowy Hakusan"
+  definition.en: "national park of Japan"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: NationalPark
+  established_year: 1962
+  latitude: 36.155
+  longitude: 136.788056
+}
+
 instance N63Building < MDC_C002 {
   code: SPI2005
   preferred_name.en: "63 Building"
@@ -2982,6 +3152,7 @@ instance N63Building < MDC_C002 {
   class_type: ITEM_CLASS
   country: Korea
   spot_type: Landmark
+  synonym: (en, "Hanhwa 63 City")
   latitude: 37.519722
   longitude: 126.94
 }
@@ -3046,6 +3217,7 @@ instance BankofKoreaMoneyMuseum < MDC_C002 {
   country: Korea
   spot_type: Museum
   city: Seoul
+  synonym: (en, "Hanguk Eunhaeng Hwapye Bangmulgwan", en, "Han'guk ŭnhaeng Hwap'ye Pangmulgwan")
   established_year: 2001
   latitude: 37.562
   longitude: 126.980661
@@ -3160,6 +3332,7 @@ instance Borimsa < MDC_C002 {
   class_type: ITEM_CLASS
   country: Korea
   spot_type: Landmark
+  synonym: (en, "Borimsa Temple")
   latitude: 34.8078
   longitude: 126.897
 }
@@ -3218,6 +3391,7 @@ instance Changdeokgung < MDC_C002 {
   country: Korea
   spot_type: Palace
   city: Seoul
+  synonym: (en, "Changdeok Palace", en, "Changdeokgung Palace", en, "Ch'angdŏkkung")
   latitude: 37.579444
   longitude: 126.992778
   official_grade: WorldHeritage
@@ -3238,6 +3412,7 @@ instance Changgyeonggung < MDC_C002 {
   country: Korea
   spot_type: Palace
   city: Seoul
+  synonym: (en, "Chʻanggyŏnggung", en, "Chʻanggyŏng Palace")
   latitude: 37.57843
   longitude: 126.99598
 }
@@ -3267,6 +3442,7 @@ instance ChohongMuseumofFinance < MDC_C002 {
   country: Korea
   spot_type: Museum
   city: Seoul
+  synonym: (en, "Korea Museum of Finance", en, "Shinhan Museum", en, "Chohung Financial Museum")
   established_year: 1997
   latitude: 37.5686
   longitude: 126.9764
@@ -3284,6 +3460,7 @@ instance Daeheungsa < MDC_C002 {
   class_type: ITEM_CLASS
   country: Korea
   spot_type: Landmark
+  synonym: (en, "Daedunsa")
   latitude: 34.476472
   longitude: 126.616861
   official_grade: WorldHeritage
@@ -3321,6 +3498,7 @@ instance Deoksugung < MDC_C002 {
   country: Korea
   spot_type: Palace
   city: Seoul
+  synonym: (en, "Tŏksugung", en, "Tŏksu Palace", en, "Deoksugung Palace")
   latitude: 37.5661
   longitude: 126.975
 }
@@ -3400,6 +3578,70 @@ instance Eunhaesa < MDC_C002 {
   longitude: 128.789634
 }
 
+instance Eunsusa < MDC_C002 {
+  code: SPI0205
+  preferred_name.en: "Eunsusa"
+  preferred_name.zh-TW: "銀水寺"
+  preferred_name.ko: "은수사"
+  preferred_name.pl: "Ŭnsu sa"
+  definition.en: "South Korean Buddhist temple"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Landmark
+  latitude: 35.759503
+  longitude: 127.414176
+}
+
+instance FKITower < MDC_C002 {
+  code: SPI0206
+  preferred_name.en: "FKI Tower"
+  preferred_name.ja: "FKIタワー"
+  preferred_name.ko: "전경련회관"
+  preferred_name.ar: "برج ف ك ي"
+  definition.en: "high-rise office building in Yeouido, Seoul"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Landmark
+  synonym: (en, "Federation of Korean Industries Head Office Building", en, "FKI Head Office Building")
+  latitude: 37.522108
+  longitude: 126.919475
+}
+
+instance GahoeMuseum < MDC_C002 {
+  code: SPI0207
+  preferred_name.en: "Gahoe Museum"
+  preferred_name.ja: "嘉会民画博物館"
+  preferred_name.ko: "가회민화박물관"
+  preferred_name.vi: "Bảo tàng Gahoe"
+  definition.en: "History museum in Seoul, South Korea"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Museum
+  city: Seoul
+  established_year: 2002
+  latitude: 37.5822
+  longitude: 126.9856
+}
+
+instance Geonbongsa < MDC_C002 {
+  code: SPI0208
+  preferred_name.en: "Geonbongsa"
+  preferred_name.ja: "乾鳳寺"
+  preferred_name.ko: "건봉사"
+  preferred_name.pl: "Kŏnbong sa"
+  definition.en: "South Korean Buddhist temple"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Landmark
+  synonym: (en, "Kŏnbongsa")
+  latitude: 38.40332
+  longitude: 128.3781
+}
+
 instance AccademiaNazionalediSantaCeciliaMusicalInstrumentsMuseum < MDC_C002 {
   code: SPI3003
   preferred_name.en: "Accademia Nazionale di Santa Cecilia Musical Instruments Museum"
@@ -3444,6 +3686,7 @@ instance GardenofArchimedes < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Florence
+  synonym: (en, "Archimede's Garden")
   established_year: 2004
   latitude: 43.773333
   longitude: 11.196944
@@ -3481,6 +3724,7 @@ instance JewishMuseumofRome < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museo ebraico di Roma")
   latitude: 41.89202
   longitude: 12.47833
 }
@@ -3517,6 +3761,7 @@ instance LaSpecola < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Florence
+  synonym: (en, "La Specola Museum", en, "Museo zoologico La Specola")
   latitude: 43.764531
   longitude: 11.247342
 }
@@ -3535,6 +3780,7 @@ instance LateranMuseum < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museo Lateranense")
 }
 
 instance MuseoCivicodiZoologia < MDC_C002 {
@@ -3550,6 +3796,7 @@ instance MuseoCivicodiZoologia < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Civic Museum of Zoology of Rome")
   established_year: 1932
   latitude: 41.9193
   longitude: 12.4884
@@ -3571,6 +3818,7 @@ instance MuseoGalileo < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Florence
+  synonym: (en, "Museum of the history of science")
   latitude: 43.767778
   longitude: 11.255833
 }
@@ -3610,6 +3858,7 @@ instance MuseoNazionaleRomano < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "National Museum of Rome", en, "National Roman Museum")
   latitude: 41.901253
   longitude: 12.498294
 }
@@ -3639,6 +3888,7 @@ instance MuseodelCalcio < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Florence
+  synonym: (en, "Florence Association Football Museum", en, "Association Football Museum in Florence")
   latitude: 43.777936
   longitude: 11.3031
 }
@@ -3671,6 +3921,7 @@ instance MuseodelleanimedelPurgatorio < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museum of the Souls of Purgatory", en, "Museum of Holy Souls in Purgatory")
   latitude: 41.904189
   longitude: 12.472325
 }
@@ -3707,6 +3958,7 @@ instance MuseodiStoriaNaturalediFirenze < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Florence
+  synonym: (en, "Florence Museum of Natural History", en, "Museo di storia naturale (Florence)")
   established_year: 1775
   latitude: 43.77834
   longitude: 11.259857
@@ -3725,6 +3977,7 @@ instance Museonazionaledeglistrumentimusicali < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museo nazionale degli Strumenti musicali, Roma")
   latitude: 41.8889
   longitude: 12.5147
 }
@@ -3787,6 +4040,7 @@ instance MuseumoftheAraPacis < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museo dell'Ara Pacis")
   latitude: 41.90608
   longitude: 12.47544
 }
@@ -3805,8 +4059,50 @@ instance MuseumoftheLiberationofRome < MDC_C002 {
   country: Italy
   spot_type: Museum
   city: Rome
+  synonym: (en, "Museo storico della liberazione")
   latitude: 41.8886
   longitude: 12.5063
+}
+
+instance MuseumsofFlorence < MDC_C002 {
+  code: SPI0306
+  preferred_name.en: "Museums of Florence"
+  preferred_name.fr: "musées à Florence"
+  preferred_name.it: "musei di Firenze"
+  preferred_name.de: "Museen von Florenz"
+  preferred_name.es: "museos de Florencia"
+  preferred_name.nl: "musea van Florence"
+  preferred_name.cs: "Muzea ve Florencii"
+  definition.en: "museums"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Italy
+  spot_type: Museum
+  city: Florence
+}
+
+instance NationalMuseumofOrientalArt < MDC_C002 {
+  code: SPI0307
+  preferred_name.en: "National Museum of Oriental Art"
+  preferred_name.zh-TW: "羅馬國立東方藝術博物館"
+  preferred_name.ja: "イタリア国立東洋博物館"
+  preferred_name.ko: "국립 동양 예술 박물관"
+  preferred_name.fr: "musée national d'art oriental"
+  preferred_name.it: "Museo nazionale Giuseppe Tucci"
+  preferred_name.de: "Museo Nazionale d’Arte Orientale"
+  preferred_name.es: "Museo Nacional de Arte Oriental"
+  preferred_name.ar: "المتحف الوطني للفنون الشرقية"
+  preferred_name.tr: "Giuseppe Tucci Müzesi"
+  preferred_name.pl: "Museo Nazionale d'Arte Orientale"
+  definition.en: "national museum in Rome, Italy"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Italy
+  spot_type: Museum
+  city: Rome
+  synonym: (en, "Museo Nazionale d'Arte Orientale \"G. Tucci\"")
+  latitude: 41.832465
+  longitude: 12.471674
 }
 
 instance AlexanderGranthamfireboat < MDC_C002 {
@@ -3847,6 +4143,7 @@ instance BankofChinaTowerHongKong < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "BOC Tower")
   latitude: 22.279167
   longitude: 114.161389
 }
@@ -3862,6 +4159,7 @@ instance CityGalleryHongKong < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Museum
+  synonym: (en, "City Gallery")
   latitude: 22.282456
   longitude: 114.161961
 }
@@ -3877,6 +4175,7 @@ instance CordisHongKong < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "Cordis, Hong Kong at Langham Place", en, "Cordis, Hong Kong")
   latitude: 22.3181
   longitude: 114.168
 }
@@ -3893,6 +4192,7 @@ instance CourtofFinalAppealBuilding < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "The Court of Final Appeal Building", en, "Old Supreme Court Building", en, "Legislative Council Building")
   latitude: 22.280996
   longitude: 114.160116
 }
@@ -3907,6 +4207,7 @@ instance FormerCentralMagistracy < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "Central Magistracy")
   latitude: 22.281078
   longitude: 114.154519
 }
@@ -3959,6 +4260,7 @@ instance HSBCBuildingHongKong < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "HSBC Main Building", en, "Hongkong & Shanghai Bank")
   latitude: 22.28
   longitude: 114.159444
 }
@@ -4023,6 +4325,7 @@ instance HongKongCityHall < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "City Hall")
   latitude: 22.2825
   longitude: 114.161389
 }
@@ -4037,6 +4340,7 @@ instance HongKongColiseum < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Landmark
+  synonym: (en, "Hung Hom Coliseum")
   latitude: 22.301481
   longitude: 114.182008
 }
@@ -4158,21 +4462,100 @@ instance HongKongNewsExpo < MDC_C002 {
   class_type: ITEM_CLASS
   country: HongKong
   spot_type: Museum
+  synonym: (en, "former Bridges Street Market")
   established_year: 2018
 }
 
-instance ArchitectureofthemedievalcathedralsofEngland < MDC_C002 {
-  code: SPI0504
-  preferred_name.en: "Architecture of the medieval cathedrals of England"
-  preferred_name.ja: "イギリスの中世の聖堂建築"
-  preferred_name.es: "Arquitectura de las catedrales medievales de Inglaterra"
-  preferred_name.th: "สถาปัตยกรรมมหาวิหารสมัยกลางในอังกฤษ"
-  preferred_name.ar: "عمارة كاتدرائيات العصور الوسطى في إنجلترا"
-  definition.en: "architectural style of cathedrals in England during the middle ages, 1040 to 1540"
-  superclass: Cathedral
+instance HongKongObservatory < MDC_C002 {
+  code: SPI0405
+  preferred_name.en: "Hong Kong Observatory"
+  preferred_name.zh-HK: "香港天文台"
+  preferred_name.ja: "香港天文台"
+  preferred_name.ko: "홍콩 천문대"
+  preferred_name.fr: "observatoire de Hong Kong"
+  preferred_name.es: "Observatorio de Hong Kong"
+  preferred_name.vi: "Đài thiên văn Hồng Kông"
+  preferred_name.pt: "Observatório de Hong Kong"
+  preferred_name.ar: "مرصد هونغ كونغ"
+  definition.en: "meteorological department of the Hong Kong Government"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Landmark
+  synonym: (en, "The Royal Observatory, Hong Kong", en, "The Royal Observatory, Hongkong", en, "Hongkong Observatory")
+  latitude: 22.3025
+  longitude: 114.174167
+}
+
+instance HongKongPoliceMuseum < MDC_C002 {
+  code: SPI0406
+  preferred_name.en: "Hong Kong Police Museum"
+  preferred_name.zh-HK: "警隊博物館"
+  preferred_name.fr: "musée de la Police de Hong Kong"
+  preferred_name.es: "Museo de la Policía de Hong Kong"
+  definition.en: "museum in Hong Kong"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Museum
+  latitude: 22.26765
+  longitude: 114.169197
+}
+
+instance HongKongSpaceMuseum < MDC_C002 {
+  code: SPI0407
+  preferred_name.en: "Hong Kong Space Museum"
+  preferred_name.zh-HK: "香港太空館"
+  preferred_name.ja: "香港スペース・ミュージアム"
+  preferred_name.ko: "홍콩 스페이스 뮤지엄"
+  preferred_name.fr: "musée de l'espace de Hong Kong"
+  preferred_name.it: "Museo dello spazio di Hong Kong"
+  preferred_name.es: "Museo del Espacio de Hong Kong"
+  preferred_name.th: "พิพิธภัณฑ์อวกาศฮ่องกง"
+  preferred_name.ar: "متحف هونغ كونغ للفضاء"
+  preferred_name.nl: "Hongkong Ruimtemuseum"
+  definition.en: "aerospace museum in Kowloon, Hong Kong"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Landmark
+  established_year: 1980
+  latitude: 22.2944
+  longitude: 114.172
+}
+
+instance HopewellCentreHongKong < MDC_C002 {
+  code: SPI0408
+  preferred_name.en: "Hopewell Centre (Hong Kong)"
+  preferred_name.zh-HK: "合和中心"
+  preferred_name.ja: "ホープウェル・センター"
+  preferred_name.ko: "호프웰 센터"
+  preferred_name.fr: "Hopewell Centre"
+  preferred_name.it: "Hopewell Center"
+  preferred_name.de: "Hopewell Centre"
+  preferred_name.es: "Hopewell Centre"
+  preferred_name.nl: "Hopewell Centre"
+  preferred_name.pl: "Hopewell Centre"
+  definition.en: "building in Wan Chai, Hong Kong"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Landmark
+  latitude: 22.274514
+  longitude: 114.1716
+}
+
+instance Adulterinecastle < MDC_C002 {
+  code: SPI0510
+  preferred_name.en: "Adulterine castle"
+  preferred_name.ja: "違法城砦"
+  preferred_name.fr: "château adultérin"
+  preferred_name.es: "Castella adulterina"
+  definition.en: "Castle built in England without royal approval, particularly during the civil war of 1139 to 1154."
+  superclass: Palace
   class_type: ITEM_CLASS
   country: UnitedKingdom
-  spot_type: Cathedral
+  spot_type: Palace
 }
 
 instance Cottagegarden < MDC_C002 {
@@ -4216,6 +4599,7 @@ instance Englishcountryhouse < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedKingdom
   spot_type: Palace
+  synonym: (en, "country house in England", en, "Castles, palaces and houses in England")
 }
 
 instance EppingForest < MDC_C002 {
@@ -4237,6 +4621,19 @@ instance EppingForest < MDC_C002 {
   city: London
   latitude: 51.66
   longitude: 0.05
+}
+
+instance KilmartinMuseum < MDC_C002 {
+  code: SPI0511
+  preferred_name.en: "Kilmartin Museum"
+  preferred_name.ja: "キルマーティン・ハウス"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: UnitedKingdom
+  spot_type: Museum
+  synonym: (en, "Kilmartin House")
+  latitude: 56.1334
+  longitude: -5.4867
 }
 
 instance MeanwhileGardens < MDC_C002 {
@@ -4287,6 +4684,7 @@ instance TheLibraryatWillesdenGreen < MDC_C002 {
   country: UnitedKingdom
   spot_type: Museum
   city: London
+  synonym: (en, "Willesden Green Library Centre")
   latitude: 51.546667
   longitude: -0.228889
 }
@@ -4337,8 +4735,29 @@ instance BnFMuseum < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Cabinet des Medailles")
   latitude: 48.8678
   longitude: 2.3384
+}
+
+instance Carcassonne < MDC_C002 {
+  code: SPI0604
+  preferred_name.en: "Carcassonne"
+  preferred_name.zh-TW: "卡爾卡松"
+  preferred_name.ja: "カルカソンヌ"
+  preferred_name.ko: "카르카손"
+  preferred_name.es: "Carcasona"
+  preferred_name.th: "การ์กาซอน"
+  preferred_name.ar: "قرقسونة"
+  preferred_name.el: "Καρκασσόν"
+  definition.en: "French commune in Aude, Occitania"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Landmark
+  synonym: (en, "Carcassona")
+  latitude: 43.213333
+  longitude: 2.350833
 }
 
 instance FrenchsubmarineArgonauteS636 < MDC_C002 {
@@ -4355,6 +4774,7 @@ instance FrenchsubmarineArgonauteS636 < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "French submarine Argonaute")
   latitude: 48.894444
   longitude: 2.389444
 }
@@ -4386,6 +4806,7 @@ instance GalleryofMineralogyandGeology < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Galerie de Mineralogie et de Geologie")
   latitude: 48.841806
   longitude: 2.357778
 }
@@ -4445,6 +4866,7 @@ instance MaisondAugusteComte < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Musée Auguste Comte")
   latitude: 48.851028
   longitude: 2.339333
 }
@@ -4463,6 +4885,33 @@ instance MaisondeBalzac < MDC_C002 {
   city: Paris
   latitude: 48.855278
   longitude: 2.280833
+}
+
+instance MontSaintMichel < MDC_C002 {
+  code: SPI0605
+  preferred_name.en: "Mont-Saint-Michel"
+  preferred_name.zh-TW: "勒蒙-聖米歇爾"
+  preferred_name.ja: "ル・モン＝サン＝ミシェル"
+  preferred_name.ko: "몽생미셸섬"
+  preferred_name.fr: "Le Mont-Saint-Michel"
+  preferred_name.it: "Le Mont-Saint-Michel"
+  preferred_name.de: "Le Mont-Saint-Michel"
+  preferred_name.es: "Monte Saint-Michel"
+  preferred_name.th: "มง-แซ็ง-มีแชล"
+  preferred_name.pt: "Monte Saint-Michel"
+  preferred_name.ar: "جبل القديس ميخائيل"
+  preferred_name.tr: "Mont Saint-Michel"
+  preferred_name.el: "Μον-Σαιν-Μισέλ"
+  preferred_name.nl: "Le Mont-Saint-Michel"
+  definition.en: "French commune in the Manche department"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Landmark
+  synonym: (en, "Mont Saint-Michel", en, "Mont-Michel", en, "Mont-Libre")
+  latitude: 48.636
+  longitude: -1.511
+  area: 4
 }
 
 instance Mundolingua < MDC_C002 {
@@ -4496,6 +4945,7 @@ instance MuseumofEroticism < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Musée de l'érotisme")
   latitude: 48.883667
   longitude: 2.33375
 }
@@ -4518,6 +4968,7 @@ instance PalaisGalliera < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Musée Galliera", en, "Musée de la Mode de la Ville de Paris", en, "Musée Galliéra")
   latitude: 48.865556
   longitude: 2.296667
 }
@@ -4574,6 +5025,22 @@ instance Pavillondeleau < MDC_C002 {
   longitude: 2.273076
 }
 
+instance SaintBertranddeComminges < MDC_C002 {
+  code: SPI0606
+  preferred_name.en: "Saint-Bertrand-de-Comminges"
+  preferred_name.zh-TW: "科曼日地區聖貝特朗"
+  preferred_name.ja: "サン＝ベルトラン＝ド＝コマンジュ"
+  preferred_name.el: "Σαιν-Μπερτράν-ντε-Κομένζ"
+  definition.en: "commune in Haute-Garonne, France"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Landmark
+  synonym: (en, "Saint-Bertrand (devenue Saint-Bertrand-de-Comminges)")
+  latitude: 43.0283
+  longitude: 0.5716
+}
+
 instance Tenniseum < MDC_C002 {
   code: SPI0603
   preferred_name.en: "Tenniseum"
@@ -4584,6 +5051,7 @@ instance Tenniseum < MDC_C002 {
   country: France
   spot_type: Museum
   city: Paris
+  synonym: (en, "Musée du Tennis", en, "Musée de Roland-Garros", en, "Museum of the French Tennis Federation")
   latitude: 48.847222
   longitude: 2.250278
 }
@@ -4655,6 +5123,7 @@ instance Disneyland < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "The Happiest Place on Earth")
   latitude: 33.81
   longitude: -117.92
 }
@@ -4675,6 +5144,7 @@ instance ElCaminoRealCalifornia < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "The King's Highway")
 }
 
 instance HeavenlyMountainResort < MDC_C002 {
@@ -4690,6 +5160,7 @@ instance HeavenlyMountainResort < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Heavenly Valley", en, "Heavenly")
   latitude: 38.9353
   longitude: -119.94
 }
@@ -4713,6 +5184,7 @@ instance HollywoodSign < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Hollywoodland Sign", en, "The Hollywood Sign")
   latitude: 34.134061
   longitude: -118.321592
 }
@@ -4784,6 +5256,7 @@ instance LakeTahoe < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Tahoe", en, "Bigler Lake", en, "Bonpland Lake")
   latitude: 39.0
   longitude: -120.0
 }
@@ -4797,6 +5270,7 @@ instance MildredEMathiasBotanicalGarden < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Mathias Botanical Garden")
   latitude: 34.065788
   longitude: -118.441157
 }
@@ -4823,6 +5297,7 @@ instance Mojavephonebooth < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Cinder Peak Policy Station")
   latitude: 35.285827
   longitude: -115.68463
 }
@@ -4850,6 +5325,7 @@ instance NationalParkofAmericanSamoa < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: NationalPark
+  synonym: (en, "American Samoa National Park")
   latitude: -14.258333
   longitude: -170.683333
 }
@@ -4880,6 +5356,7 @@ instance ParamountPictures < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "Paramount Pictures Corporation", en, "Paramount Filmed Entertainment")
 }
 
 instance ParkerDam < MDC_C002 {
@@ -4909,6 +5386,7 @@ instance StateScenicHighwaySystemCalifornia < MDC_C002 {
   class_type: ITEM_CLASS
   country: UnitedStates
   spot_type: Landmark
+  synonym: (en, "California State Scenic Highway System")
 }
 
 instance StatueofLibertyMuseum < MDC_C002 {
@@ -4982,6 +5460,7 @@ instance BeijingLiaoandJinCityWallMuseum < MDC_C002 {
   country: China
   spot_type: Museum
   city: Beijing
+  synonym: (en, "Liao and Jin City Wall Museum")
   latitude: 39.861389
   longitude: 116.352639
 }
@@ -4996,6 +5475,7 @@ instance BeijingLuXunMuseum < MDC_C002 {
   country: China
   spot_type: Museum
   city: Beijing
+  synonym: (en, "Former Residence of Lu Xun")
   established_year: 1956
   latitude: 39.925808
   longitude: 116.358727
@@ -5028,6 +5508,7 @@ instance BianjingDrumTower < MDC_C002 {
   class_type: ITEM_CLASS
   country: China
   spot_type: Landmark
+  synonym: (en, "Bianjing Pavilion", en, "Bianjinglou")
   latitude: 39.0635
   longitude: 112.948
 }
@@ -5093,6 +5574,7 @@ instance ChengdeMountainResort < MDC_C002 {
   class_type: ITEM_CLASS
   country: China
   spot_type: Palace
+  synonym: (en, "Mountain Manor for Escaping the Summer Heat", en, "Bishushanzhuang", en, "Bi shu shan zhuang")
   latitude: 40.9875
   longitude: 117.9375
   official_grade: WorldHeritage
@@ -5108,6 +5590,7 @@ instance ChinaAerospaceMuseum < MDC_C002 {
   country: China
   spot_type: Museum
   city: Beijing
+  synonym: (en, "Chinese Space Museum", en, "China Space Museum")
   latitude: 39.799
   longitude: 116.4087
 }
@@ -5209,6 +5692,7 @@ instance ChinaRailwayMuseum < MDC_C002 {
   country: China
   spot_type: Museum
   city: Beijing
+  synonym: (en, "China Railway Museum (Dongjiao)")
   latitude: 39.9963
   longitude: 116.5103
 }
@@ -5263,6 +5747,7 @@ instance DabaotaiWesternHanDynastyMausoleum < MDC_C002 {
   country: China
   spot_type: Museum
   city: Beijing
+  synonym: (en, "Beijing Dabaotai Western Han Dynasty Mausoleum")
   established_year: 1983
   latitude: 39.805
   longitude: 116.290556
@@ -5284,6 +5769,7 @@ instance DamingPalace < MDC_C002 {
   class_type: ITEM_CLASS
   country: China
   spot_type: Palace
+  synonym: (en, "Daming Palace National Heritage Park", en, "Site of Daming Palace")
   latitude: 34.291389
   longitude: 108.959444
   official_grade: WorldHeritage
@@ -5313,6 +5799,7 @@ instance DatongPrincesPalace < MDC_C002 {
   class_type: ITEM_CLASS
   country: China
   spot_type: Palace
+  synonym: (en, "Residence of Prince Dai", en, "Prince Dai Residence")
   latitude: 40.095212
   longitude: 113.297465
 }
@@ -5330,6 +5817,59 @@ instance DigitalBeijingBuilding < MDC_C002 {
   city: Beijing
   latitude: 39.99396
   longitude: 116.38173
+}
+
+instance DragonTower < MDC_C002 {
+  code: SPI0805
+  preferred_name.en: "Dragon Tower"
+  preferred_name.zh-CN: "龙塔"
+  preferred_name.ja: "龍塔"
+  preferred_name.fr: "Tour du dragon"
+  preferred_name.it: "Long Ta"
+  preferred_name.de: "Drachenturm"
+  preferred_name.vi: "Tháp Hắc Long Giang"
+  preferred_name.nl: "Long Ta"
+  definition.en: "steel lattice television and observation tower in Heilongjiang, China"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: China
+  spot_type: Landmark
+  synonym: (en, "Long Ta", en, "Heilongjiang Tower")
+  latitude: 45.745986
+  longitude: 126.674444
+}
+
+instance DrumTowerofNanjing < MDC_C002 {
+  code: SPI0806
+  preferred_name.en: "Drum Tower of Nanjing"
+  preferred_name.zh-CN: "南京鼓楼"
+  preferred_name.fr: "tour du tambour de Nankin"
+  preferred_name.de: "Trommelturm"
+  definition.en: "drum tower in Nanjing, China"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: China
+  spot_type: Landmark
+  synonym: (en, "Nanjing Drum Tower")
+  latitude: 32.058664
+  longitude: 118.782014
+}
+
+instance DrumTowerofXian < MDC_C002 {
+  code: SPI0807
+  preferred_name.en: "Drum Tower of Xi'an"
+  preferred_name.zh-CN: "西安鼓楼"
+  preferred_name.ja: "西安鼓楼"
+  preferred_name.fr: "tour du tambour de Xi'an"
+  preferred_name.es: "Torre del Tambor de Xi'an"
+  preferred_name.pl: "Wieża Bębna w Xi'an"
+  definition.en: "historical tower in Xi'an, China"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: China
+  spot_type: Landmark
+  latitude: 34.261667
+  longitude: 108.938611
 }
 
 instance AhMeng < MDC_C002 {
@@ -5410,6 +5950,7 @@ instance CHIJMESHall < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Former Convent of the Holy Infant Jesus Chapel")
   latitude: 1.295139
   longitude: 103.851806
 }
@@ -5471,6 +6012,7 @@ instance CivilianWarMemorial < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "The Chopsticks", en, "Memorial to the Civilian Victims of the Japanese Occupation")
   latitude: 1.292939
   longitude: 103.854839
 }
@@ -5487,6 +6029,7 @@ instance ClarkeQuay < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Clark Quay")
   latitude: 1.290017
   longitude: 103.846089
 }
@@ -5517,6 +6060,7 @@ instance EmpressPlaceBuilding < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Former Empress Place Building")
   latitude: 1.287222
   longitude: 103.851667
 }
@@ -5532,6 +6076,7 @@ instance FortCanningHill < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Bukit Larangan", en, "Singapore Hill", en, "Government Hill")
   latitude: 1.294444
   longitude: 103.846944
 }
@@ -5594,6 +6139,7 @@ instance HongSanSee < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Hong San See (Temple)")
   latitude: 1.293194
   longitude: 103.840861
 }
@@ -5671,6 +6217,7 @@ instance LongYaMen < MDC_C002 {
   class_type: ITEM_CLASS
   country: Singapore
   spot_type: Landmark
+  synonym: (en, "Dragon's Teeth Gate")
   latitude: 1.262517
   longitude: 103.805189
 }
@@ -5689,6 +6236,63 @@ instance MacRitchieReservoir < MDC_C002 {
   spot_type: Landmark
   latitude: 1.343611
   longitude: 103.831111
+}
+
+instance MadameTussaudsSingapore < MDC_C002 {
+  code: SPI0909
+  preferred_name.en: "Madame Tussauds Singapore"
+  preferred_name.zh-CN: "新加坡杜莎夫人蜡像馆"
+  definition.en: "wax museum and tourist attraction"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Singapore
+  spot_type: Museum
+  latitude: 1.254
+  longitude: 103.8176
+}
+
+instance MaghainAbothSynagogue < MDC_C002 {
+  code: SPI0910
+  preferred_name.en: "Maghain Aboth Synagogue"
+  preferred_name.zh-CN: "马海阿贝犹太庙"
+  preferred_name.es: "Sinagoga Maghain Aboth"
+  preferred_name.pl: "Synagoga Maghain Aboth w Singapurze"
+  preferred_name.cs: "Synagoga Magen Avot"
+  definition.en: "synagogue in Rochor, Singapore"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Singapore
+  spot_type: Landmark
+  latitude: 1.29825
+  longitude: 103.8507
+}
+
+instance MarineParadeCommunityBuilding < MDC_C002 {
+  code: SPI0911
+  preferred_name.en: "Marine Parade Community Building"
+  preferred_name.zh-CN: "马林百列社区综合大厦"
+  definition.en: "Community building in Singapore"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Singapore
+  spot_type: Landmark
+  latitude: 1.305
+  longitude: 103.909722
+}
+
+instance MasjidAbdulGaffoor < MDC_C002 {
+  code: SPI0912
+  preferred_name.en: "Masjid Abdul Gaffoor"
+  preferred_name.zh-CN: "阿督卡夫回教堂"
+  preferred_name.ar: "مسجد عبد الغفور"
+  definition.en: "Mosque in Little India, Singapore"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Singapore
+  spot_type: Landmark
+  synonym: (en, "Abdul Gafoor Mosque", en, "Abdul Gafor Mosque", en, "Abdul Gaffor Mosque")
+  latitude: 1.304253
+  longitude: 103.853743
 }
 
 instance AlliedMuseum < MDC_C002 {
@@ -5721,6 +6325,7 @@ instance AnneFrankZentrum < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Berlin
+  synonym: (en, "Anne-Frank-Zentrum", en, "Anne Frank Zentrum e.V.")
   latitude: 52.5245
   longitude: 13.4017
 }
@@ -5785,6 +6390,7 @@ instance BavarianForestNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Germany
   spot_type: NationalPark
+  synonym: (en, "Nationalpark Bayerischer Wald")
   latitude: 48.966667
   longitude: 13.383333
 }
@@ -5809,6 +6415,7 @@ instance BavarianNationalMuseum < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Munich
+  synonym: (en, "Bayerisches Nationalmuseum")
   latitude: 48.143056
   longitude: 11.591111
 }
@@ -5846,6 +6453,7 @@ instance BavarianStateCollectionofZoology < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Munich
+  synonym: (en, "Zoologische Staatssammlung München", en, "SNSB-Zoologische Staatssammlung München", en, "Zoologischen Staatssammlung")
   latitude: 48.1646
   longitude: 11.482
 }
@@ -5871,6 +6479,7 @@ instance BavarianStatePaintingCollections < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Munich
+  synonym: (en, "BStGS", en, "Bayerische Staatsgemäldesammlungen", en, "Centralgemäldegaleriedirektion")
   latitude: 48.149583
   longitude: 11.571778
 }
@@ -5934,6 +6543,7 @@ instance BerchtesgadenNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Germany
   spot_type: NationalPark
+  synonym: (en, "Nationalpark Berchtesgaden")
   established_year: 1978
   latitude: 47.57
   longitude: 12.96
@@ -5979,6 +6589,7 @@ instance BerlinBotanicalGardenandBotanicalMuseum < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Berlin
+  synonym: (en, "Botanical Garden Berlin", en, "Botanical Museum Berlin", en, "Berlin-Dahlem Botanical Garden and Botanical Museum")
   latitude: 52.455
   longitude: 13.3036
 }
@@ -6041,6 +6652,7 @@ instance BlackForestNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Germany
   spot_type: NationalPark
+  synonym: (en, "Nationalpark Schwarzwald")
   established_year: 2014
   latitude: 48.561111
   longitude: 8.221389
@@ -6079,6 +6691,7 @@ instance CheckpointCharlieMuseum < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Berlin
+  synonym: (en, "Wall Museum – Museum Haus am Checkpoint Charlie")
   latitude: 52.507778
   longitude: 13.390556
 }
@@ -6132,6 +6745,7 @@ instance DeutscheKinemathek < MDC_C002 {
   country: Germany
   spot_type: Museum
   city: Berlin
+  synonym: (en, "German Cinematheque – Museum of Film and Television Berlin")
   latitude: 52.508583
   longitude: 13.387194
 }
@@ -6150,6 +6764,97 @@ instance DeutschesCurrywurstMuseum < MDC_C002 {
   city: Berlin
   latitude: 52.5088
   longitude: 13.3912
+}
+
+instance DeutschesMuseum < MDC_C002 {
+  code: SPI1057
+  preferred_name.en: "Deutsches Museum"
+  preferred_name.zh-CN: "德意志博物馆"
+  preferred_name.ja: "ドイツ博物館"
+  preferred_name.ko: "국립 독일 박물관"
+  preferred_name.th: "ด็อยท์เชิสมูเซอุม"
+  preferred_name.vi: "Viện bảo tàng Đức"
+  preferred_name.ar: "المتحف الألماني"
+  preferred_name.el: "Γερμανικό Μουσείο"
+  preferred_name.pl: "Muzeum Niemieckie"
+  preferred_name.cs: "Německé muzeum"
+  definition.en: "museum of science and technology in Munich, Germany"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Germany
+  spot_type: Museum
+  city: Munich
+  synonym: (en, "German Museum")
+  established_year: 1903
+  latitude: 48.13
+  longitude: 11.5833
+}
+
+instance Deutschlandmuseum < MDC_C002 {
+  code: SPI1058
+  preferred_name.en: "Deutschlandmuseum"
+  preferred_name.pl: "Deutschland Museum"
+  definition.en: "German museum"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Germany
+  spot_type: Museum
+  city: Berlin
+  established_year: 2023
+  latitude: 52.50887
+  longitude: 13.37844
+}
+
+instance EgyptianMuseumofBerlin < MDC_C002 {
+  code: SPI1059
+  preferred_name.en: "Egyptian Museum of Berlin"
+  preferred_name.zh-CN: "柏林埃及博物館"
+  preferred_name.ja: "エジプト博物館"
+  preferred_name.ko: "베를린 이집트 박물관"
+  preferred_name.fr: "musée égyptien de Berlin"
+  preferred_name.it: "Ägyptisches Museum und Papyrussammlung"
+  preferred_name.de: "Ägyptisches Museum und Papyrussammlung"
+  preferred_name.es: "Museo Egipcio de Berlín"
+  preferred_name.pt: "Museu Egípcio (Berlim)"
+  preferred_name.ar: "متحف برلين المصري"
+  preferred_name.tr: "Berlin Mısır Müzesi"
+  preferred_name.el: "Αιγυπτιακό Μουσείο του Βερολίνου"
+  preferred_name.nl: "Ägyptisches Museum Berlin"
+  preferred_name.pl: "Muzeum Egipskie w Berlinie"
+  preferred_name.cs: "Egyptské muzeum Berlín"
+  definition.en: "part of the Neues Museum, collection of Ancient Egyptian artifacts"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Germany
+  spot_type: Museum
+  city: Berlin
+  synonym: (en, "Ägyptisches Museum und Papyrussammlung")
+  latitude: 52.520239
+  longitude: 13.397741
+}
+
+instance EifelNationalPark < MDC_C002 {
+  code: SPI1060
+  preferred_name.en: "Eifel National Park"
+  preferred_name.zh-CN: "艾费尔国家公园"
+  preferred_name.ja: "アイフェル国立公園"
+  preferred_name.fr: "parc national de l'Eifel"
+  preferred_name.it: "Parco nazionale dell'Eifel"
+  preferred_name.de: "Nationalpark Eifel"
+  preferred_name.es: "Parque nacional Eifel"
+  preferred_name.th: "อุทยานแห่งชาติไอเฟิล"
+  preferred_name.vi: "Vườn quốc gia Eifel"
+  preferred_name.tr: "Eifel Millî Parkı"
+  preferred_name.nl: "Nationaal Park Eifel"
+  preferred_name.pl: "Park Narodowy Eifel"
+  definition.en: "national park in North Rhine-Westphalia, Germany"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Germany
+  spot_type: NationalPark
+  established_year: 2004
+  latitude: 50.616667
+  longitude: 6.433333
 }
 
 instance AnglicanCathedraloftheRedeemer < MDC_C002 {
@@ -6208,6 +6913,7 @@ instance BarcelonaRoyalShipyard < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Royal Shipyard", en, "Royal Shipyards of Barcelona")
   latitude: 41.375
   longitude: 2.1763
 }
@@ -6339,6 +7045,7 @@ instance CerralboMuseum < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Madrid
+  synonym: (en, "Museum Cerralbo", en, "Cerralbo", en, "Museo Cerralbo")
   latitude: 40.423684
   longitude: -3.714577
 }
@@ -6380,6 +7087,7 @@ instance FCBarcelonaMuseum < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Museu FC Barcelona President Núñez")
   established_year: 1984
   latitude: 41.38039
   longitude: 2.120636
@@ -6400,6 +7108,7 @@ instance ForumBuilding < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "CCIB's Forum Building", en, "Barcelona Forum 2004")
   latitude: 41.411111
   longitude: 2.220611
 }
@@ -6468,6 +7177,7 @@ instance HempMuseumGallery < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Hash Museum Gallery")
   established_year: 2012
   latitude: 41.2253
   longitude: 2.1049
@@ -6502,6 +7212,7 @@ instance JoanAntoniSamaranchOlympicandSportMuseum < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Olympic and Sports Museum Joan Antoni Samaranch")
   established_year: 2007
   latitude: 41.366331
   longitude: 2.157064
@@ -6523,6 +7234,7 @@ instance MaritimeMuseumofBarcelona < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Barcelona Maritime Museum", en, "Museu Marítim de Barcelona")
   latitude: 41.375556
   longitude: 2.175833
 }
@@ -6552,6 +7264,7 @@ instance MocoMuseum < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Barcelona
+  synonym: (en, "Modern Contemporary Museum Amsterdam")
   established_year: 2016
   latitude: 52.358714
   longitude: 4.881892
@@ -6589,8 +7302,52 @@ instance MuseoCasadelaMonedaMadrid < MDC_C002 {
   country: Spain
   spot_type: Museum
   city: Madrid
+  synonym: (en, "Museum of the Royal Mint")
   latitude: 40.422861
   longitude: -3.669044
+}
+
+instance MuseoGeominero < MDC_C002 {
+  code: SPI1126
+  preferred_name.en: "Museo Geominero"
+  preferred_name.zh-CN: "地质矿物博物馆"
+  preferred_name.fr: "musée Geominero"
+  definition.en: "science museum in Madrid, Spain"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Spain
+  spot_type: Museum
+  city: Madrid
+  latitude: 40.4427
+  longitude: -3.6996
+}
+
+instance MuseodelPrado < MDC_C002 {
+  code: SPI1127
+  preferred_name.en: "Museo del Prado"
+  preferred_name.zh-CN: "普拉多博物馆"
+  preferred_name.ja: "プラド美術館"
+  preferred_name.ko: "프라도 미술관"
+  preferred_name.fr: "musée du Prado"
+  preferred_name.th: "พิพิธภัณฑ์ปราโด"
+  preferred_name.vi: "Bảo tàng Prado"
+  preferred_name.pt: "Museu do Prado"
+  preferred_name.ar: "متحف ديل برادو"
+  preferred_name.tr: "Prado Müzesi"
+  preferred_name.el: "Μουσείο του Πράδο"
+  preferred_name.nl: "Museo Nacional del Prado"
+  preferred_name.pl: "Prado"
+  preferred_name.hu: "Prado"
+  definition.en: "Spanish national art museum in Madrid, Spain"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Spain
+  spot_type: Museum
+  city: Madrid
+  synonym: (en, "Prado Museum", en, "Prado National Museum")
+  established_year: 1819
+  latitude: 40.4139
+  longitude: -3.6922
 }
 
 instance AbhisekDusitThroneHall < MDC_C002 {
@@ -6874,6 +7631,7 @@ instance ChulalongkornUniversityMuseumofNaturalHistory < MDC_C002 {
   country: Thailand
   spot_type: Museum
   city: Bangkok
+  synonym: (en, "Natural History Museum (Bangkok)", en, "Chulalongkorn University Museum of Zoology")
   latitude: 13.7375
   longitude: 100.53
 }
@@ -6960,6 +7718,7 @@ instance DoiPhaHomPokNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Thailand
   spot_type: NationalPark
+  synonym: (en, "Doi Fa Hom Pok National Park")
   latitude: 19.987778
   longitude: 99.146389
   area: 524
@@ -7011,6 +7770,87 @@ instance DoiWiangPhaNationalPark < MDC_C002 {
   spot_type: NationalPark
   latitude: 19.6775
   longitude: 99.1983
+}
+
+instance ErawanNationalPark < MDC_C002 {
+  code: SPI1228
+  preferred_name.en: "Erawan National Park"
+  preferred_name.zh-CN: "伊拉旺國家公園"
+  preferred_name.ja: "エラワン国立公園"
+  preferred_name.ko: "에라완 국립공원"
+  preferred_name.fr: "parc national d'Erawan"
+  preferred_name.de: "Erawan-Nationalpark"
+  preferred_name.es: "Parque nacional de Erawan"
+  preferred_name.th: "อุทยานแห่งชาติเอราวัณ"
+  preferred_name.vi: "Vườn quốc gia Erawan"
+  preferred_name.pt: "Parque Nacional de Erawan"
+  preferred_name.nl: "Nationaal Park Erawan"
+  preferred_name.pl: "Park Narodowy Erawan"
+  preferred_name.hu: "Erawan Nemzeti Park"
+  definition.en: "national park of Thailand"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Thailand
+  spot_type: NationalPark
+  established_year: 1975
+  latitude: 14.383333
+  longitude: 99.116667
+}
+
+instance HatChaoMaiNationalPark < MDC_C002 {
+  code: SPI1229
+  preferred_name.en: "Hat Chao Mai National Park"
+  preferred_name.zh-CN: "昭邁海灘國家公園"
+  preferred_name.ja: "ハット・チャオ・マイ国立公園"
+  preferred_name.fr: "parc national de Hat Chao Mai"
+  preferred_name.de: "Nationalpark Hat Chao Mai"
+  preferred_name.es: "Parque nacional de Hat Chao Mai"
+  preferred_name.th: "อุทยานแห่งชาติหาดเจ้าไหม"
+  preferred_name.cs: "Hat Chao Mai"
+  definition.en: "marine protected area in Trang Province, Thailand"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Thailand
+  spot_type: NationalPark
+  established_year: 1981
+  latitude: 7.397
+  longitude: 99.33
+  area: 231
+}
+
+instance HatWanakonNationalPark < MDC_C002 {
+  code: SPI1230
+  preferred_name.en: "Hat Wanakon National Park"
+  preferred_name.fr: "parc national de Hat Vanakorn"
+  preferred_name.it: "parco nazionale di Hat Wanakon"
+  preferred_name.es: "Parque nacional de Hat Wanakon"
+  preferred_name.th: "อุทยานแห่งชาติหาดวนกร"
+  definition.en: "National park in Thailand"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Thailand
+  spot_type: NationalPark
+  latitude: 11.598611
+  longitude: 99.676111
+  area: 38
+}
+
+instance HuaiNamDangNationalPark < MDC_C002 {
+  code: SPI1231
+  preferred_name.en: "Huai Nam Dang National Park"
+  preferred_name.ja: "フワイ・ナムデーン国立公園"
+  preferred_name.fr: "parc national de Huai Nam Dang"
+  preferred_name.de: "Nationalpark Huai Nam Dang"
+  preferred_name.es: "Parque nacional de Huai Nam Dang"
+  preferred_name.th: "อุทยานแห่งชาติห้วยน้ำดัง"
+  preferred_name.nl: "Huai Nam Dang Nationaal Park"
+  definition.en: "national park of Thailand"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Thailand
+  spot_type: NationalPark
+  latitude: 19.626111
+  longitude: 99.021389
 }
 
 instance HanoiMuseum < MDC_C002 {
@@ -7148,6 +7988,7 @@ instance VietnamNationalMuseumofFineArts < MDC_C002 {
   country: Vietnam
   spot_type: Museum
   city: Hanoi
+  synonym: (en, "Vietnam National Fine Arts Museum")
   latitude: 21.0306
   longitude: 105.837
 }
@@ -7235,6 +8076,7 @@ instance ChinSweeCavesTemple < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: Landmark
+  synonym: (en, "Chin Swee Cave Temple", en, "Chin Swee Temple")
   latitude: 3.413204
   longitude: 101.788373
 }
@@ -7275,6 +8117,7 @@ instance DhammikaramaBurmeseTemple < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: Landmark
+  synonym: (en, "Dhammikarama Temple", en, "Nandy Moloh Temple")
   latitude: 5.430929
   longitude: 100.314263
 }
@@ -7294,6 +8137,7 @@ instance EndauRompinNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: NationalPark
+  synonym: (en, "Endau Rompin National Park")
   latitude: 2.438915
   longitude: 103.272858
   area: 870
@@ -7346,6 +8190,7 @@ instance KekLokSi < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: Landmark
+  synonym: (en, "Kek Lok Si Temple")
   latitude: 5.399525
   longitude: 100.273731
 }
@@ -7385,6 +8230,7 @@ instance KinabaluPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: NationalPark
+  synonym: (en, "Kinabalu National Park")
   established_year: 1964
   latitude: 6.15
   longitude: 116.65
@@ -7439,6 +8285,7 @@ instance NationalMuseumMalaysia < MDC_C002 {
   country: Malaysia
   spot_type: Museum
   city: KualaLumpur
+  synonym: (en, "Museum Negara", en, "Muzium Negara")
   established_year: 1963
   latitude: 3.13758
   longitude: 101.68739
@@ -7501,6 +8348,7 @@ instance Petrosains < MDC_C002 {
   country: Malaysia
   spot_type: Museum
   city: KualaLumpur
+  synonym: (en, "petrosains.com.my")
   established_year: 1999
   latitude: 3.15748
   longitude: 101.712197
@@ -7517,6 +8365,7 @@ instance PuTuoSiTemple < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: Landmark
+  synonym: (en, "Puh Toh Tze Temple")
   latitude: 5.992778
   longitude: 116.116667
 }
@@ -7532,6 +8381,7 @@ instance PusatSainsNegara < MDC_C002 {
   country: Malaysia
   spot_type: Museum
   city: KualaLumpur
+  synonym: (en, "National Science Centre")
   established_year: 1996
   latitude: 3.14887
   longitude: 101.64485
@@ -7576,6 +8426,7 @@ instance SabahParks < MDC_C002 {
   class_type: ITEM_CLASS
   country: Malaysia
   spot_type: NationalPark
+  synonym: (en, "Taman-Taman Sabah")
 }
 
 instance SamPohTongTemple < MDC_C002 {
@@ -7608,6 +8459,79 @@ instance SnakeTemple < MDC_C002 {
   longitude: 100.285197
 }
 
+instance TamanNegara < MDC_C002 {
+  code: SPI1427
+  preferred_name.en: "Taman Negara"
+  preferred_name.zh-CN: "大汉山国家公园"
+  preferred_name.ja: "タマンネガラ"
+  preferred_name.fr: "parc national de Taman Negara"
+  preferred_name.it: "Parco nazionale di Taman Negara"
+  preferred_name.es: "Parque nacional Taman Negara"
+  preferred_name.th: "ตามันเนอการา"
+  preferred_name.vi: "Vườn quốc gia Taman Negara"
+  preferred_name.pt: "Parque Nacional Taman Negara"
+  preferred_name.ar: "تامان نيجارا"
+  preferred_name.tr: "Taman Negara Millî Parkı"
+  preferred_name.nl: "Nationaal park Taman Negara"
+  preferred_name.cs: "Národní park Taman Negara"
+  definition.en: "national park in Malaysia"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Malaysia
+  spot_type: NationalPark
+  synonym: (en, "King George V National Park")
+  established_year: 1938
+  latitude: 4.7
+  longitude: 102.466667
+}
+
+instance TelekomMuseum < MDC_C002 {
+  code: SPI1428
+  preferred_name.en: "Telekom Museum"
+  preferred_name.zh-CN: "马来西亚电讯博物馆"
+  preferred_name.ja: "テレコムミュージアム"
+  definition.en: "telecommunications museum in Kuala Lumpur, Malaysia"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Malaysia
+  spot_type: Museum
+  city: KualaLumpur
+  synonym: (en, "Telekom Museum Nabi Muhamad", en, "Muzium Telekom")
+  latitude: 3.14893
+  longitude: 101.69914
+}
+
+instance TheanHouTemple < MDC_C002 {
+  code: SPI1429
+  preferred_name.en: "Thean Hou Temple"
+  preferred_name.zh-CN: "乐圣岭天后宫"
+  preferred_name.fr: "Temple Thean Hou"
+  preferred_name.th: "วัดเทียนโห่ว"
+  preferred_name.nl: "Thean Houtempel"
+  preferred_name.pl: "Świątynia Thean Hou w Kuala Lumpur"
+  definition.en: "Chinese temple in Kuala Lumpur"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Malaysia
+  spot_type: Landmark
+  latitude: 3.121667
+  longitude: 101.687778
+}
+
+instance TunMustaphaMarinePark < MDC_C002 {
+  code: SPI1430
+  preferred_name.en: "Tun Mustapha Marine Park"
+  preferred_name.zh-CN: "敦慕斯达化海洋公园"
+  definition.en: "marine park in Malaysia"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Malaysia
+  spot_type: NationalPark
+  synonym: (en, "Tun Mustapha Park")
+  latitude: 7.25
+  longitude: 117.166667
+}
+
 instance AnzacMemorial < MDC_C002 {
   code: SPI1501
   preferred_name.en: "Anzac Memorial"
@@ -7622,6 +8546,7 @@ instance AnzacMemorial < MDC_C002 {
   country: Australia
   spot_type: Museum
   city: Sydney
+  synonym: (en, "Hyde Park Memorial")
   latitude: -33.875556
   longitude: 151.210833
 }
@@ -7642,6 +8567,7 @@ instance AustralianMuseum < MDC_C002 {
   country: Australia
   spot_type: Museum
   city: Sydney
+  synonym: (en, "The Australian Museum", en, "Colonial Museum", en, "Sydney Museum")
   latitude: -33.8743
   longitude: 151.2134
 }
@@ -7662,6 +8588,7 @@ instance AustralianNationalMaritimeMuseum < MDC_C002 {
   country: Australia
   spot_type: Museum
   city: Sydney
+  synonym: (en, "MuSeaUm", en, "anmm.gov.au")
   latitude: -33.869167
   longitude: 151.198611
 }
@@ -7677,6 +8604,7 @@ instance BelfordNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Australia
   spot_type: NationalPark
+  synonym: (en, "Belford N.P.", en, "Belford")
   established_year: 2003
   latitude: -32.6484
   longitude: 151.3006
@@ -7710,6 +8638,7 @@ instance MrsMacquariesChair < MDC_C002 {
   country: Australia
   spot_type: Landmark
   city: Sydney
+  synonym: (en, "Mrs Maquarie's chair")
   latitude: -33.859467
   longitude: 151.222203
 }
@@ -7801,6 +8730,7 @@ instance SydneyCenotaph < MDC_C002 {
   country: Australia
   spot_type: Landmark
   city: Sydney
+  synonym: (en, "Martin Place Memorial", en, "The Cenotaph")
   latitude: -33.867511
   longitude: 151.207758
 }
@@ -7881,6 +8811,7 @@ instance SydneyOperaHouse < MDC_C002 {
   country: Australia
   spot_type: Landmark
   city: Sydney
+  synonym: (en, "Sydney Opera", en, "Opera House")
   latitude: -33.85681
   longitude: 151.21514
   official_grade: WorldHeritage
@@ -7966,6 +8897,7 @@ instance ArtGalleryofOntario < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "Art Gallery of Toronto")
   latitude: 43.653611
   longitude: -79.392778
 }
@@ -8114,6 +9046,7 @@ instance GardinerMuseum < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "George R. Gardiner Museum of Ceramic Art")
   established_year: 1984
   latitude: 43.668163
   longitude: -79.393151
@@ -8130,6 +9063,7 @@ instance HartHouseUniversityofToronto < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "U of T Hart House", en, "University of Toronto Hart House", en, "HartHouse")
   latitude: 43.663924
   longitude: -79.394485
 }
@@ -8192,6 +9126,7 @@ instance MuseumofContemporaryArtTorontoCanada < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "Museum of Contemporary Canadian Art")
   latitude: 43.65463
   longitude: -79.445121
 }
@@ -8214,6 +9149,7 @@ instance NationalparksofCanada < MDC_C002 {
   class_type: ITEM_CLASS
   country: Canada
   spot_type: NationalPark
+  synonym: (en, "parc national du Canada")
 }
 
 instance OntarioScienceCentre < MDC_C002 {
@@ -8227,6 +9163,7 @@ instance OntarioScienceCentre < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "ontariosciencecentre.ca", en, "Centennial Museum of Science and Technology", en, "Ontario Science Center")
   latitude: 43.638833
   longitude: -79.382722
 }
@@ -8270,8 +9207,96 @@ instance SpadinaHouse < MDC_C002 {
   country: Canada
   spot_type: Museum
   city: Toronto
+  synonym: (en, "Austin House", en, "Spadina")
   latitude: 43.679023
   longitude: -79.40815
+}
+
+instance TextileMuseumofCanada < MDC_C002 {
+  code: SPI1632
+  preferred_name.en: "Textile Museum of Canada"
+  definition.en: "textile museum in ON, Canada"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Canada
+  spot_type: Museum
+  city: Toronto
+  latitude: 43.6546
+  longitude: -79.3868
+}
+
+instance TheImageCentre < MDC_C002 {
+  code: SPI1633
+  preferred_name.en: "The Image Centre"
+  preferred_name.de: "Ryerson Image Centre"
+  preferred_name.cs: "Ryerson Image Centre"
+  definition.en: "photography, art museum and education centre in Ontario, Canada"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Canada
+  spot_type: Museum
+  city: Toronto
+  synonym: (en, "Ryerson Image Centre")
+  latitude: 43.658056
+  longitude: -79.378889
+}
+
+instance ThePowerPlant < MDC_C002 {
+  code: SPI1634
+  preferred_name.en: "The Power Plant"
+  definition.en: "art gallery in Toronto, Ontario, Canada"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Canada
+  spot_type: Museum
+  city: Toronto
+  synonym: (en, "The Power Plant Contemporary Art Gallery")
+  latitude: 43.638425
+  longitude: -79.382061
+}
+
+instance TheatreMuseumCanada < MDC_C002 {
+  code: SPI1635
+  preferred_name.en: "Theatre Museum Canada"
+  preferred_name.fr: "Canada’s Theatre Museum"
+  definition.en: "theatre museum in Toronto, Ontario Canada"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Canada
+  spot_type: Museum
+  city: Toronto
+  established_year: 1982
+  latitude: 43.65
+  longitude: -79.359
+}
+
+instance ChhatrapatiShivajiMaharajVastuSangrahalaya < MDC_C002 {
+  code: SPI1719
+  preferred_name.en: "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya"
+  preferred_name.th: "ฉัตรปตี ศิวาจี มหาราช วัสตุสังครหาลัย"
+  definition.en: "museum in Mumbai, India"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: India
+  spot_type: Museum
+  city: Mumbai
+  synonym: (en, "Prince of Wales Museum", en, "Chhatrapati Shivaji Maharaj Museum", en, "Prince of Wales Museum of Western India")
+  latitude: 18.926667
+  longitude: 72.832222
+}
+
+instance DrBhauDajiLadMuseum < MDC_C002 {
+  code: SPI1720
+  preferred_name.en: "Dr. Bhau Daji Lad Museum"
+  preferred_name.th: "ภาอู ดาจี ลาฑ สังครหาลัย"
+  definition.en: "museum in Mumbai, India"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: India
+  spot_type: Museum
+  city: Mumbai
+  latitude: 18.979472
+  longitude: 72.834806
 }
 
 instance EternalGandhiMultimediaMuseum < MDC_C002 {
@@ -8301,6 +9326,7 @@ instance GandhiSmriti < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "Birla House", en, "Birla Bhavan")
   latitude: 28.6019
   longitude: 77.2144
 }
@@ -8332,6 +9358,19 @@ instance KiranNadarMuseumofArt < MDC_C002 {
   longitude: 77.22008
 }
 
+instance ManiBhavan < MDC_C002 {
+  code: SPI1721
+  preferred_name.en: "Mani Bhavan"
+  definition.en: "museum in Mumbai, India"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: India
+  spot_type: Museum
+  city: Mumbai
+  latitude: 18.95993
+  longitude: 72.81137
+}
+
 instance NationalCharkhaMuseum < MDC_C002 {
   code: SPI1707
   preferred_name.en: "National Charkha Museum"
@@ -8342,6 +9381,7 @@ instance NationalCharkhaMuseum < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "Charkha Museum")
   established_year: 2017
   latitude: 28.631426
   longitude: 77.217402
@@ -8378,6 +9418,7 @@ instance NationalGandhiMuseum < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "Gandhi Memorial Museum")
   established_year: 1961
   latitude: 29.074444
   longitude: 77.416111
@@ -8394,6 +9435,7 @@ instance NationalHandicraftsandHandloomsMuseum < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "Crafts Museum, New Delhi", en, "National Crafts Museum, New Delhi")
   latitude: 28.613551
   longitude: 77.24232
 }
@@ -8416,9 +9458,39 @@ instance NationalMuseumofIndia < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "National Museum, New Delhi")
   established_year: 1949
   latitude: 28.611811
   longitude: 77.219262
+}
+
+instance NationalMuseumofIndianCinema < MDC_C002 {
+  code: SPI1722
+  preferred_name.en: "National Museum of Indian Cinema"
+  preferred_name.zh-CN: "印度国家电影博物馆"
+  definition.en: "Indian museum in Mumbai, dedicated to cinema"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: India
+  spot_type: Museum
+  city: Mumbai
+  latitude: 18.970324
+  longitude: 72.808767
+}
+
+instance NehruScienceCentre < MDC_C002 {
+  code: SPI1723
+  preferred_name.en: "Nehru Science Centre"
+  definition.en: "science museum"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: India
+  spot_type: Museum
+  city: Mumbai
+  synonym: (en, "Nehru Science Center")
+  established_year: 1985
+  latitude: 18.990633
+  longitude: 72.818669
 }
 
 instance NongmaichingHill < MDC_C002 {
@@ -8430,6 +9502,7 @@ instance NongmaichingHill < MDC_C002 {
   class_type: ITEM_CLASS
   country: India
   spot_type: Landmark
+  synonym: (en, "Nongmaijing Ching", en, "Nongmaiching Mountain", en, "Nongmaijing Mountain")
   latitude: 24.804
   longitude: 94.035
 }
@@ -8457,6 +9530,7 @@ instance SanskritiMuseums < MDC_C002 {
   country: India
   spot_type: Museum
   city: Delhi
+  synonym: (en, "Sanskriti Museum", en, "Museum of ‘Everyday Art’", en, "Museum of Indian Terracotta")
   established_year: 1990
   latitude: 28.538457
   longitude: 77.18464
@@ -8507,6 +9581,7 @@ instance AranetaColiseum < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "The Big Dome")
   latitude: 14.620556
   longitude: 121.053333
 }
@@ -8553,6 +9628,7 @@ instance BaguioCathedral < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "Cathedral of Baguio", en, "Our Lady of the Atonement Cathedral", en, "Cathedral of Our Lady of the Atonement")
   latitude: 16.412744
   longitude: 120.598435
 }
@@ -8599,6 +9675,7 @@ instance BangsamoroGovernmentCenter < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "Office of the Bangsamoro People", en, "BARMM Government Center", en, "Bangsamoro Regional Capitol")
   latitude: 7.197083
   longitude: 124.245139
 }
@@ -8630,6 +9707,7 @@ instance BetisChurch < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "Santiago Apostol Parish Church", en, "Saint James the Apostle Parish Church", en, "St. James the Apostle Parish Church")
   latitude: 14.97558
   longitude: 120.64289
 }
@@ -8793,6 +9871,7 @@ instance CebuMetropolitanCathedral < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "Cebu Cathedral")
   latitude: 10.295814
   longitude: 123.902869
 }
@@ -8835,6 +9914,7 @@ instance EDSAShrine < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+  synonym: (en, "Shrine of Mary, Queen of Peace, Our Lady of EDSA", en, "Archdiocesan Shrine of Mary, Queen of Peace", en, "Mary, Queen of Peace Shrine")
   latitude: 14.592222
   longitude: 121.058611
 }
@@ -8859,6 +9939,68 @@ instance ForestLakeMemorialParks < MDC_C002 {
   class_type: ITEM_CLASS
   country: Philippines
   spot_type: Landmark
+}
+
+instance FortPilar < MDC_C002 {
+  code: SPI1829
+  preferred_name.en: "Fort Pilar"
+  preferred_name.ja: "ピラール砦"
+  preferred_name.es: "Fuerte Pilar"
+  definition.en: "Spanish colonial era fortification in Zamboanga City, Philippines"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Philippines
+  spot_type: Landmark
+  synonym: (en, "Royal Fort of Our Lady of the Pillar of Saragossa", en, "Real Fuerte de Nuestra Señora del Pilar de Zaragoza")
+  latitude: 6.901111
+  longitude: 122.082222
+}
+
+instance FortSanPedro < MDC_C002 {
+  code: SPI1830
+  preferred_name.en: "Fort San Pedro"
+  preferred_name.zh-CN: "圣佩德罗堡"
+  preferred_name.ja: "サン・ペドロ要塞"
+  preferred_name.it: "Forte San Pedro"
+  preferred_name.de: "Fuerte de San Pedro"
+  preferred_name.es: "Fuerte de San Pedro"
+  definition.en: "Spanish-era military fortification in Cebu City, Philippines"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Philippines
+  spot_type: Landmark
+  synonym: (en, "Fort of San Pedro")
+  latitude: 10.292222
+  longitude: 123.905833
+}
+
+instance FortSantiago < MDC_C002 {
+  code: SPI1831
+  preferred_name.en: "Fort Santiago"
+  preferred_name.zh-CN: "圣地亚哥堡 (菲律宾)"
+  preferred_name.ja: "フォート・サンチャゴ"
+  preferred_name.de: "Fuerte de Santiago (Manila)"
+  preferred_name.es: "Fuerte de Santiago"
+  definition.en: "citadel built by Spanish conquistador for the city of Manila, Philippines"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Philippines
+  spot_type: Landmark
+  latitude: 14.595
+  longitude: 120.969444
+}
+
+instance FountainofJustice < MDC_C002 {
+  code: SPI1832
+  preferred_name.en: "Fountain of Justice"
+  preferred_name.es: "Fuente de la Justicia"
+  definition.en: "historic monument in Bacolod, Negros Occidental, Philippines"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Philippines
+  spot_type: Landmark
+  latitude: 10.6676
+  longitude: 122.9454
 }
 
 instance AketajaweLolobataNationalPark < MDC_C002 {
@@ -8926,6 +10068,7 @@ instance BaluranNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Indonesia
   spot_type: NationalPark
+  synonym: (en, "Taman Nasional Baluran")
   latitude: -7.833333
   longitude: 114.366667
 }
@@ -8942,6 +10085,7 @@ instance BankIndonesiaMuseum < MDC_C002 {
   country: Indonesia
   spot_type: Museum
   city: Jakarta
+  synonym: (en, "BI Museum", en, "Museum BI")
   established_year: 2009
   latitude: -6.137333
   longitude: 106.812816
@@ -9000,6 +10144,7 @@ instance BerbakNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Indonesia
   spot_type: NationalPark
+  synonym: (en, "Berbek National Park")
   latitude: -1.383333
   longitude: 104.333333
 }
@@ -9182,6 +10327,7 @@ instance BukitTigapuluhNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Indonesia
   spot_type: NationalPark
+  synonym: (en, "Bukit Besar Game Reserve")
   latitude: -1.0
   longitude: 102.5
 }
@@ -9231,6 +10377,7 @@ instance FormulationofProclamationTextMuseum < MDC_C002 {
   country: Indonesia
   spot_type: Museum
   city: Jakarta
+  synonym: (en, "Museum of the Declaration of Independence")
   latitude: -6.2004
   longitude: 106.8311
 }
@@ -9263,6 +10410,7 @@ instance GedungJoang45 < MDC_C002 {
   country: Indonesia
   spot_type: Museum
   city: Jakarta
+  synonym: (en, "Joang Museum 45")
   latitude: -6.18612
   longitude: 106.83653
 }
@@ -9278,6 +10426,7 @@ instance GeneralAbdulHarisNasutionMuseum < MDC_C002 {
   country: Indonesia
   spot_type: Museum
   city: Jakarta
+  synonym: (en, "Museum Jenderal Besar DR. A.H. Nasution")
   latitude: -6.193
   longitude: 106.832878
 }
@@ -9336,6 +10485,58 @@ instance HiroharaShrine < MDC_C002 {
   spot_type: Temple
   latitude: 3.580446
   longitude: 98.670985
+}
+
+instance IndonesiaMuseum < MDC_C002 {
+  code: SPI1934
+  preferred_name.en: "Indonesia Museum"
+  preferred_name.de: "Museum Indonesia"
+  preferred_name.es: "Museo de Indonesia"
+  preferred_name.nl: "Indonesia-museum"
+  definition.en: "ethnography and anthropology museum in Jakarta, Indonesia"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Museum
+  city: Jakarta
+  latitude: -6.301111
+  longitude: 106.891389
+}
+
+instance IndonesianHakkaMuseum < MDC_C002 {
+  code: SPI1935
+  preferred_name.en: "Indonesian Hakka Museum"
+  preferred_name.zh-CN: "印尼客家博物馆"
+  preferred_name.ko: "인도네시아 하카 박물관"
+  definition.en: "museum in East Jakarta, Jakarta, Indonesia"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Museum
+  city: Jakarta
+  latitude: -6.305389
+  longitude: 106.904
+}
+
+instance JakartaHistoryMuseum < MDC_C002 {
+  code: SPI1936
+  preferred_name.en: "Jakarta History Museum"
+  preferred_name.zh-CN: "雅加达历史博物馆"
+  preferred_name.ja: "ジャカルタ歴史博物館"
+  preferred_name.fr: "musée d'Histoire de Jakarta"
+  preferred_name.de: "Museum Sejarah Jakarta"
+  preferred_name.th: "พิพิธภัณฑ์ประวัติศาสตร์จาการ์ตา"
+  preferred_name.ar: "متحف تاريخ جاكرتا"
+  preferred_name.nl: "Museum Sejarah Jakarta"
+  definition.en: "Museum in West Jakarta, Indonesia"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Indonesia
+  spot_type: Museum
+  city: Jakarta
+  synonym: (en, "Fatahillah Museum")
+  latitude: -6.135
+  longitude: 106.813056
 }
 
 instance AcademyofSanCarlos < MDC_C002 {
@@ -9430,6 +10631,7 @@ instance BasaseachicFallsNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Mexico
   spot_type: NationalPark
+  synonym: (en, "Basaseachi National Park")
   latitude: 28.133056
   longitude: -108.25
 }
@@ -9586,6 +10788,7 @@ instance CumbresdeMajalcaNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Mexico
   spot_type: NationalPark
+  synonym: (en, "Parque Nacional Cumbres de Majalca")
   established_year: 1939
   latitude: 28.804167
   longitude: -106.485
@@ -9607,6 +10810,7 @@ instance CumbresdeMonterreyNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Mexico
   spot_type: NationalPark
+  synonym: (en, "Parque Nacional Cumbres Monterrey")
   established_year: 1939
   latitude: 25.44156
   longitude: -100.30489
@@ -9658,6 +10862,7 @@ instance ElCarmencomplex < MDC_C002 {
   country: Mexico
   spot_type: Museum
   city: MexicoCity
+  synonym: (en, "Museo de El Carmen")
   latitude: 19.345
   longitude: -99.1894
 }
@@ -9712,6 +10917,87 @@ instance ElTepeyacNationalPark < MDC_C002 {
   longitude: -99.106667
 }
 
+instance ElTepoztecoNationalPark < MDC_C002 {
+  code: SPI2065
+  preferred_name.en: "El Tepozteco National Park"
+  preferred_name.fr: "parc national El Tepozteco"
+  preferred_name.es: "Parque Nacional El Tepozteco"
+  preferred_name.pl: "Park Narodowy El Tepozteco"
+  definition.en: "national park in Mexico"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: NationalPark
+  latitude: 19.0009
+  longitude: -99.1012
+}
+
+instance FranzMayerMuseum < MDC_C002 {
+  code: SPI2066
+  preferred_name.en: "Franz Mayer Museum"
+  preferred_name.ja: "フランツ・マイヤー美術館"
+  preferred_name.fr: "musée Franz-Mayer"
+  preferred_name.it: "Museo Franz Mayer"
+  preferred_name.de: "Museo Franz Mayer"
+  preferred_name.es: "Museo Franz Mayer"
+  preferred_name.pt: "Museu Franz Mayer"
+  preferred_name.ar: "متحف فرانز ماير"
+  preferred_name.tr: "Franz Mayer Müzesi"
+  definition.en: "art museum"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: Landmark
+  city: MexicoCity
+  synonym: (en, "Museo Franz Mayer")
+  established_year: 1986
+  latitude: 19.437114
+  longitude: -99.1432
+}
+
+instance FridaKahloMuseum < MDC_C002 {
+  code: SPI2067
+  preferred_name.en: "Frida Kahlo Museum"
+  preferred_name.zh-TW: "芙烈達·卡蘿紀念館"
+  preferred_name.ja: "フリーダ・カーロ記念館"
+  preferred_name.fr: "musée Frida-Kahlo"
+  preferred_name.it: "Museo Frida Kahlo"
+  preferred_name.de: "Museum Frida Kahlo"
+  preferred_name.es: "Museo Frida Kahlo"
+  preferred_name.pt: "Museu Frida Kahlo"
+  preferred_name.ar: "متحف فريدا كاهلو"
+  preferred_name.tr: "Frida Kahlo Müzesi"
+  preferred_name.cs: "Muzeum Fridy Kahlo"
+  definition.en: "historic house museum and art museum dedicated to the life and work of Mexican artist Frida Kahlo"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: Museum
+  city: MexicoCity
+  synonym: (en, "Museo Frida Kahlo", en, "La casa azul")
+  established_year: 1957
+  latitude: 19.355143
+  longitude: -99.162525
+}
+
+instance FuentedeCibelesMexicoCity < MDC_C002 {
+  code: SPI2068
+  preferred_name.en: "Fuente de Cibeles (Mexico City)"
+  preferred_name.fr: "Fuente de Cibeles"
+  preferred_name.it: "Fuente de Cibeles"
+  preferred_name.es: "Fuente de Cibeles"
+  preferred_name.ar: "فوينتي دي سيبيليس (مكسيكو سيتي)"
+  preferred_name.nl: "Fuente de Cibeles"
+  definition.en: "Public fountain in Mexico City"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: Mexico
+  spot_type: Landmark
+  city: MexicoCity
+  latitude: 19.42
+  longitude: -99.166389
+}
+
 instance AbrolhosMarineNationalPark < MDC_C002 {
   code: SPI2101
   preferred_name.en: "Abrolhos Marine National Park"
@@ -9728,6 +11014,7 @@ instance AbrolhosMarineNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "PARNA Marinho dos Abrolhos")
   latitude: -17.971
   longitude: -38.7
 }
@@ -9745,6 +11032,7 @@ instance AcariNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "PARNA Acari")
   latitude: -6.305
   longitude: -59.293
 }
@@ -9782,6 +11070,7 @@ instance AnavilhanasNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "Anavilhanas")
   latitude: -2.394722
   longitude: -60.920556
   official_grade: WorldHeritage
@@ -9805,6 +11094,7 @@ instance AparadosdaSerraNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "PARNA Aparados da Serra")
   established_year: 1959
   latitude: -29.183333
   longitude: -50.083333
@@ -9919,6 +11209,7 @@ instance ChapadaDiamantinaNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "Parque Nacional da Chapada Diamantina", en, "PARNA Chapada Diamantina")
   latitude: -12.880278
   longitude: -41.372222
 }
@@ -9962,6 +11253,7 @@ instance ChapadadosVeadeirosNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "Chapada dos Veadeiros", en, "PARNA Chapada dos Veadeiros")
   latitude: -14.005694
   longitude: -47.684611
   official_grade: WorldHeritage
@@ -9982,6 +11274,7 @@ instance DescobrimentoNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "National park Descobrimento", en, "Parque Nacional do Descobrimento")
   latitude: -17.069233
   longitude: -39.293317
   official_grade: WorldHeritage
@@ -10083,6 +11376,7 @@ instance IlhaGrandeNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "PARNA Ilha Grande (PARNA)", en, "PARNA Rio Novo")
   established_year: 1997
   latitude: -23.4
   longitude: -53.816667
@@ -10119,6 +11413,7 @@ instance ItatiaiaNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Brazil
   spot_type: NationalPark
+  synonym: (en, "Itatiáia National Park")
   latitude: -22.375
   longitude: -44.612
 }
@@ -10141,6 +11436,81 @@ instance JamanximNationalPark < MDC_C002 {
   longitude: -55.703
 }
 
+instance JericoacoaraNationalPark < MDC_C002 {
+  code: SPI2123
+  preferred_name.en: "Jericoacoara National Park"
+  preferred_name.zh-TW: "熱里科阿科阿拉國家公園"
+  preferred_name.fr: "parc national de Jericoacoara"
+  preferred_name.it: "parco nazionale di Jericoacoara"
+  preferred_name.de: "Jericoacoara Nationalpark"
+  preferred_name.es: "Parque Nacional de Jericoacoara"
+  preferred_name.pt: "Parque Nacional de Jericoacoara"
+  preferred_name.ar: "منتزه جريكواكوارا الوطني"
+  preferred_name.nl: "Nationaal park Jericoacoara"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Brazil
+  spot_type: NationalPark
+  latitude: -2.783333
+  longitude: -40.5
+}
+
+instance JurubatibaSandbankNationalPark < MDC_C002 {
+  code: SPI2124
+  preferred_name.en: "Jurubatiba Sandbank National Park"
+  preferred_name.zh-TW: "茹魯巴蒂巴沙洲國家公園"
+  preferred_name.fr: "parc national de Restinga de Jurubatiba"
+  preferred_name.it: "parco nazionale Restinga de Jurubatiba"
+  preferred_name.de: "Nationalpark Restinga de Jurubatiba"
+  preferred_name.pt: "Parque Nacional Restinga de Jurubatiba"
+  preferred_name.nl: "Nationaal park Restinga de Jurubatiba"
+  definition.en: "national park in Rio de Janeiro, Brazil"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Brazil
+  spot_type: NationalPark
+  latitude: -22.201
+  longitude: -41.493
+}
+
+instance JuruenaNationalPark < MDC_C002 {
+  code: SPI2125
+  preferred_name.en: "Juruena National Park"
+  preferred_name.zh-TW: "茹魯埃納國家公園"
+  preferred_name.fr: "parc national de Juruena"
+  preferred_name.de: "Nationalpark Juruena"
+  preferred_name.es: "Parque nacional de Juruena"
+  preferred_name.pt: "Parque Nacional do Juruena"
+  preferred_name.nl: "Nationaal park Juruena"
+  definition.en: "national park in Brazil (declared 2006)"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Brazil
+  spot_type: NationalPark
+  synonym: (en, "PARNA Juruena")
+  established_year: 2006
+  latitude: -7.228
+  longitude: -58.918
+}
+
+instance LagoadoPeixeNationalPark < MDC_C002 {
+  code: SPI2126
+  preferred_name.en: "Lagoa do Peixe National Park"
+  preferred_name.zh-TW: "貝謝湖國家公園"
+  preferred_name.ja: "ラゴア・ド・ペイシェ国立公園"
+  preferred_name.fr: "parc national de la Lagoa do Peixe"
+  preferred_name.es: "Parque nacional de la Laguna del Pez"
+  preferred_name.pt: "Parque Nacional da Lagoa do Peixe"
+  preferred_name.nl: "Nationaal park Lagoa do Peixe"
+  definition.en: "Brazil national park"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Brazil
+  spot_type: NationalPark
+  latitude: -31.241
+  longitude: -50.959
+}
+
 instance N6thofOctoberPanorama < MDC_C002 {
   code: SPI2201
   preferred_name.en: "6th of October Panorama"
@@ -10157,52 +11527,6 @@ instance N6thofOctoberPanorama < MDC_C002 {
   longitude: 31.306667
 }
 
-instance AbuMena < MDC_C002 {
-  code: SPI2202
-  preferred_name.en: "Abu Mena"
-  preferred_name.zh-TW: "阿布米那"
-  preferred_name.ja: "アブ・メナ"
-  preferred_name.ko: "아부 메나"
-  preferred_name.fr: "Abou Mena"
-  preferred_name.ar: "أبو مينا"
-  preferred_name.el: "Αμπού Μένα"
-  preferred_name.nl: "Aboe Mena"
-  preferred_name.cs: "Abú Mena"
-  definition.en: "town, monastery complex and Christian pilgrimage center in Late Antique Egypt. WHS#90"
-  superclass: ArchaeologicalSite
-  class_type: ITEM_CLASS
-  country: Egypt
-  spot_type: ArchaeologicalSite
-  latitude: 30.84105
-  longitude: 29.66349
-  official_grade: WorldHeritage
-}
-
-instance AbuSimbel < MDC_C002 {
-  code: SPI2203
-  preferred_name.en: "Abu Simbel"
-  preferred_name.zh-TW: "阿布辛貝神殿"
-  preferred_name.ja: "アブ・シンベル神殿"
-  preferred_name.ko: "아부 심벨 신전"
-  preferred_name.fr: "temples d'Abou Simbel"
-  preferred_name.de: "Tempel von Abu Simbel"
-  preferred_name.th: "อะบูซิมเบล"
-  preferred_name.ar: "أبو سمبل"
-  preferred_name.tr: "Ebu Simbel"
-  preferred_name.el: "Αμπού Σιμπέλ"
-  preferred_name.nl: "Aboe Simbel tempel"
-  preferred_name.cs: "Abú Simbel"
-  preferred_name.hu: "Abu Szimbel-i templomok"
-  definition.en: "UNESCO World Heritage Site in southern Egypt"
-  superclass: ArchaeologicalSite
-  class_type: ITEM_CLASS
-  country: Egypt
-  spot_type: ArchaeologicalSite
-  latitude: 22.336944
-  longitude: 31.625556
-  official_grade: WorldHeritage
-}
-
 instance AhmedShawkiMuseum < MDC_C002 {
   code: SPI2204
   preferred_name.en: "Ahmed Shawki Museum"
@@ -10216,6 +11540,30 @@ instance AhmedShawkiMuseum < MDC_C002 {
   city: Cairo
   latitude: 30.021389
   longitude: 31.2175
+}
+
+instance Akhmim < MDC_C002 {
+  code: SPI2226
+  preferred_name.en: "Akhmim"
+  preferred_name.zh-TW: "艾赫米姆"
+  preferred_name.ja: "アフミーム"
+  preferred_name.fr: "Akhmîm"
+  preferred_name.de: "Achmim"
+  preferred_name.es: "Panópolis"
+  preferred_name.ar: "أخميم"
+  preferred_name.tr: "Ahmim"
+  preferred_name.el: "Αχμίμ"
+  preferred_name.nl: "Achmim"
+  preferred_name.pl: "Achmim"
+  preferred_name.hu: "Akhmím"
+  definition.en: "city in the Sohag Governorate of Upper Egypt"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: ArchaeologicalSite
+  synonym: (en, "Panopolis", en, "Chemmis", en, "Akhmīm")
+  latitude: 26.566667
+  longitude: 31.75
 }
 
 instance AlGawharaPalace < MDC_C002 {
@@ -10258,6 +11606,7 @@ instance Aswan < MDC_C002 {
   class_type: ITEM_CLASS
   country: Egypt
   spot_type: ArchaeologicalSite
+  synonym: (en, "Syene", en, "Assouan", en, "ʾAswān")
   latitude: 24.088889
   longitude: 32.899722
 }
@@ -10296,6 +11645,7 @@ instance BenEzraSynagogue < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "Synagogue of the Palestinians", en, "El-Geniza Synagogue", en, "Synagogue of the Levantines")
   latitude: 30.00581
   longitude: 31.23097
 }
@@ -10314,6 +11664,7 @@ instance BeshtakPalace < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "Qasr Bashtak", en, "Amir Bashtak Palace")
   latitude: 30.050556
   longitude: 31.261389
 }
@@ -10330,6 +11681,7 @@ instance CarriageMuseumEgypt < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "Royal Carriages Museum")
   latitude: 30.055914
   longitude: 31.231301
 }
@@ -10344,6 +11696,7 @@ instance ChildMuseumCairo < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "Children's Civilization and Creativity Center")
   latitude: 30.1005
   longitude: 31.3339
 }
@@ -10367,6 +11720,7 @@ instance CopticMuseum < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "The Coptic Museum", en, "Coptic Museum in Cairo")
   latitude: 30.00563
   longitude: 31.23055
 }
@@ -10385,6 +11739,7 @@ instance Edfu < MDC_C002 {
   class_type: ITEM_CLASS
   country: Egypt
   spot_type: ArchaeologicalSite
+  synonym: (en, "Idfu", en, "Behdet", en, "Idfū")
   latitude: 24.977778
   longitude: 32.873333
 }
@@ -10432,6 +11787,7 @@ instance EgyptianMuseum < MDC_C002 {
   country: Egypt
   spot_type: Museum
   city: Cairo
+  synonym: (en, "Museum of Egyptian Antiquities", en, "Cairo Museum", en, "Matḥaf al-Miṣrī")
   latitude: 30.047778
   longitude: 31.233333
 }
@@ -10453,24 +11809,6 @@ instance EgyptianNationalMilitaryMuseum < MDC_C002 {
   city: Cairo
   latitude: 30.029444
   longitude: 31.261389
-}
-
-instance Esna < MDC_C002 {
-  code: SPI2217
-  preferred_name.en: "Esna"
-  preferred_name.zh-TW: "伊斯納"
-  preferred_name.ja: "エスナ"
-  preferred_name.ko: "에스나"
-  preferred_name.ar: "إسنا"
-  preferred_name.el: "Έσνα"
-  preferred_name.hu: "Eszna"
-  definition.en: "city in Egypt"
-  superclass: ArchaeologicalSite
-  class_type: ITEM_CLASS
-  country: Egypt
-  spot_type: ArchaeologicalSite
-  latitude: 25.3
-  longitude: 32.55
 }
 
 instance FaroukCornerMuseum < MDC_C002 {
@@ -10523,35 +11861,6 @@ instance GayerAndersonMuseum < MDC_C002 {
   longitude: 31.2507
 }
 
-instance Gizapyramidcomplex < MDC_C002 {
-  code: SPI2221
-  preferred_name.en: "Giza pyramid complex"
-  preferred_name.zh-TW: "吉薩金字塔群"
-  preferred_name.ja: "三大ピラミッド"
-  preferred_name.ko: "기자의 피라미드"
-  preferred_name.fr: "pyramides de Gizeh"
-  preferred_name.it: "piramidi di Giza"
-  preferred_name.de: "Pyramiden von Gizeh"
-  preferred_name.es: "pirámides de Guiza"
-  preferred_name.th: "มหาสุสานกิซา"
-  preferred_name.vi: "Khu lăng mộ Giza"
-  preferred_name.pt: "pirâmides de Gizé"
-  preferred_name.ar: "مجمع أهرامات الجيزة"
-  preferred_name.tr: "Gize Piramitleri"
-  preferred_name.el: "Πυραμίδες της Γκίζας"
-  preferred_name.nl: "Piramiden van Gizeh"
-  preferred_name.pl: "Piramidy w Gizie"
-  preferred_name.cs: "Gízská nekropole"
-  preferred_name.hu: "gízai piramisok"
-  definition.en: "archaeological site on the Giza Plateau, Egypt"
-  superclass: ArchaeologicalSite
-  class_type: ITEM_CLASS
-  country: Egypt
-  spot_type: ArchaeologicalSite
-  latitude: 29.976111
-  longitude: 31.132778
-}
-
 instance Helwanwaxmuseum < MDC_C002 {
   code: SPI2222
   preferred_name.en: "Helwan wax museum"
@@ -10565,6 +11874,25 @@ instance Helwanwaxmuseum < MDC_C002 {
   city: Cairo
   latitude: 29.860278
   longitude: 31.325833
+}
+
+instance Letopolis < MDC_C002 {
+  code: SPI2227
+  preferred_name.en: "Letopolis"
+  preferred_name.zh-TW: "莱托波利斯"
+  preferred_name.fr: "Létopolis"
+  preferred_name.es: "Letópolis"
+  preferred_name.th: "แลตูสโปลิส"
+  preferred_name.ar: "ليتوبوليس"
+  preferred_name.el: "Λητούς πόλις η μεγάλη"
+  definition.en: "ancient city in Egypt"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: ArchaeologicalSite
+  synonym: (en, "Awsim", en, "Ausim", en, "Letòpolis")
+  latitude: 30.116667
+  longitude: 31.133333
 }
 
 instance LibraryofAlexandria < MDC_C002 {
@@ -10592,8 +11920,30 @@ instance LibraryofAlexandria < MDC_C002 {
   class_type: ITEM_CLASS
   country: Egypt
   spot_type: ArchaeologicalSite
+  synonym: (en, "Royal Library of Alexandria", en, "Ancient Library of Alexandria", en, "Alexandrian Library")
   latitude: 31.208889
   longitude: 29.909167
+}
+
+instance Luxor < MDC_C002 {
+  code: SPI2228
+  preferred_name.en: "Luxor"
+  preferred_name.zh-TW: "盧克索"
+  preferred_name.ja: "ルクソール"
+  preferred_name.ko: "룩소르"
+  preferred_name.fr: "Louxor"
+  preferred_name.th: "ลักซอร์"
+  preferred_name.ar: "الأقصر"
+  preferred_name.tr: "Uksur"
+  preferred_name.el: "Λούξορ"
+  preferred_name.pl: "Luksor"
+  definition.en: "city in southern Egypt"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: ArchaeologicalSite
+  latitude: 25.696667
+  longitude: 32.644444
 }
 
 instance ManialPalaceandMuseum < MDC_C002 {
@@ -10632,17 +11982,97 @@ instance MohamedMahmoudKhalilMuseum < MDC_C002 {
   longitude: 31.219722
 }
 
-instance BattleofSakaryaNationalHistoricPark < MDC_C002 {
-  code: SPI2301
-  preferred_name.en: "Battle of Sakarya National Historic Park"
-  preferred_name.tr: "Sakarya Meydan Muharebesi Tarihi Millî Parkı"
-  preferred_name.nl: "Nationaal park Sakarya Meydan Muharebesi"
-  definition.en: "protected area in Turkey"
-  superclass: NationalPark
+instance MohamedNagyMuseum < MDC_C002 {
+  code: SPI2229
+  preferred_name.en: "Mohamed Nagy Museum"
+  preferred_name.de: "Mohamed-Nagy-Museum"
+  preferred_name.ar: "متحف محمد ناجي"
+  definition.en: "art history museum in Giza, Egypt"
+  superclass: Museum
   class_type: ITEM_CLASS
-  country: Turkey
-  spot_type: NationalPark
-  established_year: 2015
+  country: Egypt
+  spot_type: Museum
+  city: Cairo
+  latitude: 29.976935
+  longitude: 31.132651
+}
+
+instance MostafaKamelMuseum < MDC_C002 {
+  code: SPI2230
+  preferred_name.en: "Mostafa Kamel Museum"
+  preferred_name.de: "Mathaf Mustafa Kamil"
+  preferred_name.ar: "متحف مصطفى كامل"
+  definition.en: "museum in Cairo, Egypt"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: Museum
+  city: Cairo
+  synonym: (en, "Museum of Mustafa Kamil", en, "Mathaf Mustafa Kamil")
+  established_year: 1956
+  latitude: 30.029569
+  longitude: 31.25735
+}
+
+instance MukhtarMuseum < MDC_C002 {
+  code: SPI2231
+  preferred_name.en: "Mukhtar Museum"
+  preferred_name.ja: "モフタール美術館"
+  preferred_name.fr: "musée Mokhtar"
+  preferred_name.de: "Mahmoud-Mukhtar-Museum"
+  preferred_name.ar: "متحف مختار"
+  preferred_name.tr: "Mahmud Muhtar Müzesi"
+  definition.en: "museum in Cairo, Egypt"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: Museum
+  city: Cairo
+  latitude: 30.0405
+  longitude: 31.2229
+}
+
+instance MuseumofModernEgyptianArt < MDC_C002 {
+  code: SPI2232
+  preferred_name.en: "Museum of Modern Egyptian Art"
+  preferred_name.ja: "ゲズィーラ近代美術センター"
+  preferred_name.fr: "Musée d'art moderne égyptien"
+  preferred_name.de: "Gezira Center for Modern Art"
+  preferred_name.ar: "مركز الجزيرة للفن الحديث"
+  definition.en: "art museum in Cairo, Egypt."
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: Museum
+  city: Cairo
+  synonym: (en, "Gezira Center for Modern Art")
+  established_year: 1927
+  latitude: 30.04278
+  longitude: 31.2231
+}
+
+instance NationalMuseumofEgyptianCivilization < MDC_C002 {
+  code: SPI2233
+  preferred_name.en: "National Museum of Egyptian Civilization"
+  preferred_name.zh-TW: "埃及文明國家博物館"
+  preferred_name.fr: "musée national de la civilisation égyptienne"
+  preferred_name.it: "Museo nazionale della Civiltà egiziana"
+  preferred_name.de: "Nationalmuseum der ägyptischen Zivilisation"
+  preferred_name.es: "Museo Nacional de la Civilización Egipcia"
+  preferred_name.ar: "المتحف القومي للحضارة المصرية"
+  preferred_name.tr: "Mısır Medeniyeti Ulusal Müzesi"
+  preferred_name.el: "Εθνικό Μουσείο Αιγυπτιακού Πολιτισμού"
+  preferred_name.nl: "Nationaal Museum van Egyptische Beschaving"
+  definition.en: "museum in Cairo, Egypt"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Egypt
+  spot_type: Museum
+  city: Cairo
+  synonym: (en, "National Museum of Egyptian Civilization in Cairo", en, "National Museum of Egyptian Civilization Cairo")
+  established_year: 2021
+  latitude: 30.0075
+  longitude: 31.248333
 }
 
 instance BeylerbeyiPalace < MDC_C002 {
@@ -10666,6 +12096,7 @@ instance BeylerbeyiPalace < MDC_C002 {
   country: Turkey
   spot_type: Museum
   city: Istanbul
+  synonym: (en, "Beylerbeyi Sarayi", en, "Beylerbeyi Sarayı")
   latitude: 41.0425
   longitude: 29.04
 }
@@ -10685,21 +12116,6 @@ instance GalatasarayMuseum < MDC_C002 {
   established_year: 1868
   latitude: 41.03376
   longitude: 28.97749
-}
-
-instance GallipoliPeninsulaHistoricalSite < MDC_C002 {
-  code: SPI2304
-  preferred_name.en: "Gallipoli Peninsula Historical Site"
-  preferred_name.zh-TW: "加里波利半岛历史遗址"
-  preferred_name.it: "sito storico di Gallipoli Peninsula"
-  preferred_name.tr: "Çanakkale Savaşları Gelibolu Tarihî Alanı"
-  definition.en: "historic site in Turkey"
-  superclass: NationalPark
-  class_type: ITEM_CLASS
-  country: Turkey
-  spot_type: NationalPark
-  latitude: 40.170321
-  longitude: 26.367667
 }
 
 instance GreatPalaceMosaicMuseum < MDC_C002 {
@@ -10722,40 +12138,6 @@ instance GreatPalaceMosaicMuseum < MDC_C002 {
   city: Istanbul
   latitude: 41.004444
   longitude: 28.976667
-}
-
-instance HakkariCiloSatMountainsNationalPark < MDC_C002 {
-  code: SPI2306
-  preferred_name.en: "Hakkari Cilo-Sat Mountains National Park"
-  preferred_name.ar: "حديقة جبال هكاري سيلو سات الوطنية"
-  preferred_name.tr: "Hakkâri Cilo ve Sat Dağları Millî Parkı"
-  preferred_name.nl: "Nationaal park Hakkâri Cilo ve Sat Dağları"
-  definition.en: "national park in Turkey"
-  superclass: NationalPark
-  class_type: ITEM_CLASS
-  country: Turkey
-  spot_type: NationalPark
-  established_year: 2020
-  latitude: 37.48573
-  longitude: 44.00415
-}
-
-instance HatilaValleyNationalPark < MDC_C002 {
-  code: SPI2307
-  preferred_name.en: "Hatila Valley National Park"
-  preferred_name.zh-TW: "哈蒂拉谷國家公園"
-  preferred_name.it: "parco nazionale di Hatila Valley"
-  preferred_name.es: "Parque nacional del Valle Hatila"
-  preferred_name.ar: "منتزه وادي هاتيلا الوطني"
-  preferred_name.tr: "Hatila Vadisi Millî Parkı"
-  preferred_name.nl: "Nationaal park Hatila Vadisi"
-  definition.en: "national park in Turkey"
-  superclass: NationalPark
-  class_type: ITEM_CLASS
-  country: Turkey
-  spot_type: NationalPark
-  latitude: 41.185833
-  longitude: 41.733889
 }
 
 instance IstanbulArchaeologyMuseums < MDC_C002 {
@@ -10856,6 +12238,7 @@ instance IstanbulNavalMuseum < MDC_C002 {
   country: Turkey
   spot_type: Museum
   city: Istanbul
+  synonym: (en, "Istanbul Deniz Müzesi – Istanbul", en, "İstanbul Deniz Müzesi")
   latitude: 41.041667
   longitude: 29.005556
 }
@@ -10891,6 +12274,7 @@ instance IstanbulRailwayMuseum < MDC_C002 {
   country: Turkey
   spot_type: Museum
   city: Istanbul
+  synonym: (en, "TCDD Sirkeci Railway Museum")
   established_year: 2005
   latitude: 41.0153
   longitude: 28.9771
@@ -10960,6 +12344,7 @@ instance JewishMuseumofTurkey < MDC_C002 {
   country: Turkey
   spot_type: Museum
   city: Istanbul
+  synonym: (en, "500. Yıl Vakfı Türk Musevileri Müzesi")
   established_year: 2001
   latitude: 41.026749
   longitude: 28.972734
@@ -10981,58 +12366,171 @@ instance KandilliEarthquakeMuseum < MDC_C002 {
   longitude: 29.05991
 }
 
-instance LakeAbantNationalPark < MDC_C002 {
-  code: SPI2320
-  preferred_name.en: "Lake Abant National Park"
-  preferred_name.ja: "アバント湖国立公園"
-  preferred_name.es: "Abant Gölü"
-  preferred_name.tr: "Abant Gölü Millî Parkı"
-  preferred_name.nl: "Nationaal park Abant Gölü"
-  definition.en: "lake in Turkey"
-  superclass: NationalPark
+instance MuseumoftheAncientOrient < MDC_C002 {
+  code: SPI2323
+  preferred_name.en: "Museum of the Ancient Orient"
+  preferred_name.fr: "Musée de l'Orient Ancient"
+  preferred_name.it: "Museo dell'Antico Oriente"
+  preferred_name.de: "Museum des Alten Orients"
+  preferred_name.es: "Museo del Antiguo Oriente"
+  preferred_name.pt: "Museu do Antigo Oriente"
+  preferred_name.tr: "Eski Şark Eserleri Müzesi"
+  preferred_name.nl: "Museum van het Oude Oriënt"
+  definition.en: "museum in Fatih District"
+  superclass: Museum
   class_type: ITEM_CLASS
   country: Turkey
-  spot_type: NationalPark
-  established_year: 2022
-  latitude: 40.6
-  longitude: 31.266667
+  spot_type: Museum
+  city: Istanbul
+  established_year: 1935
+  latitude: 41.011343
+  longitude: 28.980309
 }
 
-instance LakeGalaNationalPark < MDC_C002 {
-  code: SPI2321
-  preferred_name.en: "Lake Gala National Park"
-  preferred_name.zh-TW: "加拉湖國家公園"
-  preferred_name.it: "parco nazionale del Lago di Gala"
-  preferred_name.de: "Gala-Gölü-Nationalpark"
-  preferred_name.tr: "Gala Gölü Millî Parkı"
-  preferred_name.nl: "Nationaal park Gala Gölü"
-  definition.en: "national park in Edirne, Turkey"
-  superclass: NationalPark
+instance MuseumofthePrincesIslands < MDC_C002 {
+  code: SPI2324
+  preferred_name.en: "Museum of the Princes' Islands"
+  preferred_name.tr: "Adalar Müzesi"
+  superclass: Museum
   class_type: ITEM_CLASS
   country: Turkey
-  spot_type: NationalPark
-  established_year: 2005
-  latitude: 40.768611
-  longitude: 26.185556
+  spot_type: Museum
+  city: Istanbul
+  latitude: 40.856111
+  longitude: 29.124722
 }
 
-instance LakeKovadaNationalPark < MDC_C002 {
-  code: SPI2322
-  preferred_name.en: "Lake Kovada National Park"
-  preferred_name.zh-TW: "科瓦達湖國家公園"
-  preferred_name.it: "parco nazionale del Lago di Kovada"
-  preferred_name.de: "Kovada-Gölü-Nationalpark"
-  preferred_name.pt: "Parque Nacional do Lago Kovada"
-  preferred_name.tr: "Kovada Gölü Millî Parkı"
-  preferred_name.nl: "Nationaal park Kovada Gölü"
-  definition.en: "park in Turkey"
-  superclass: NationalPark
+instance PammakaristosChurch < MDC_C002 {
+  code: SPI2325
+  preferred_name.en: "Pammakaristos Church"
+  preferred_name.zh-TW: "帕瑪卡里斯托斯教堂"
+  preferred_name.ja: "生神女・パンマカリストス教会"
+  preferred_name.fr: "église Pammakaristos"
+  preferred_name.it: "chiesa della Theotokos Pammacaristos"
+  preferred_name.de: "Pammakaristos-Kirche"
+  preferred_name.es: "Pammakaristos"
+  preferred_name.pt: "Igreja de Pammakaristos"
+  preferred_name.ar: "جامع الفاتحية"
+  preferred_name.tr: "Fethiye Camii"
+  preferred_name.el: "Μονή Παμμακάριστου"
+  preferred_name.nl: "Pammakaristoskerk"
+  preferred_name.pl: "Teotokos Pammakaristos"
+  preferred_name.cs: "Kostel Pammakaristos"
+  definition.en: "former church, at present a mosque and museum in Istanbul"
+  superclass: Museum
   class_type: ITEM_CLASS
   country: Turkey
-  spot_type: NationalPark
-  established_year: 1970
-  latitude: 37.619386
-  longitude: 30.870761
+  spot_type: Museum
+  city: Istanbul
+  synonym: (en, "Fethiye Mosque", en, "Fethiye Camii")
+  latitude: 41.029167
+  longitude: 28.946389
+}
+
+instance Panorama1453HistoryMuseum < MDC_C002 {
+  code: SPI2326
+  preferred_name.en: "Panorama 1453 History Museum"
+  preferred_name.fr: "musée Panorama 1453"
+  preferred_name.es: "Museo de Historia Panorama 1453"
+  preferred_name.tr: "Panorama 1453 Tarih Müzesi"
+  definition.en: "istanbul museum"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  latitude: 41.01818
+  longitude: 28.92053
+}
+
+instance RezanHasMuseum < MDC_C002 {
+  code: SPI2327
+  preferred_name.en: "Rezan Has Museum"
+  preferred_name.ar: "متحف ريزان هاس"
+  preferred_name.tr: "Rezan Has Müzesi"
+  definition.en: "museum in Fatih District"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  established_year: 2007
+  latitude: 41.02401
+  longitude: 28.95969
+}
+
+instance SantralIstanbul < MDC_C002 {
+  code: SPI2328
+  preferred_name.en: "SantralIstanbul"
+  preferred_name.ja: "サントラル・イスタンブル"
+  preferred_name.es: "Santralİstanbul"
+  preferred_name.nl: "Santralİstanbul"
+  definition.en: "art and culture center"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  established_year: 2007
+  latitude: 41.0665
+  longitude: 28.9461
+}
+
+instance TGCPressMediaMuseum < MDC_C002 {
+  code: SPI2329
+  preferred_name.en: "TGC Press Media Museum"
+  preferred_name.tr: "Türkiye Gazeteciler Cemiyeti Basın Müzesi"
+  definition.en: "media museum, technology museum in Istanbul, Turkey"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  synonym: (en, "TCG Press Media Museum")
+  established_year: 1988
+  latitude: 41.00844
+  longitude: 28.97211
+}
+
+instance TheHealthMuseumIstanbul < MDC_C002 {
+  code: SPI2330
+  preferred_name.en: "The Health Museum (Istanbul)"
+  preferred_name.tr: "Sağlık Müzesi"
+  definition.en: "science museum in Istanbul, Turkey"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  established_year: 1918
+  latitude: 41.01746
+  longitude: 28.94053
+}
+
+instance TiledKiosk < MDC_C002 {
+  code: SPI2331
+  preferred_name.en: "Tiled Kiosk"
+  preferred_name.zh-TW: "伊斯蘭藝術博物館"
+  preferred_name.ja: "チニリ・キョシュク"
+  preferred_name.fr: "Kiosque carrelé"
+  preferred_name.it: "Chiosco Piastrellato"
+  preferred_name.de: "Çinili Köşk"
+  preferred_name.es: "Çinili Köşk"
+  preferred_name.pt: "Quiosque Esmaltado"
+  preferred_name.ar: "كشك البلاط"
+  preferred_name.tr: "Çinili Köşk"
+  preferred_name.el: "Τσινιλί Κιοσκ"
+  preferred_name.nl: "Tegelkiosk"
+  definition.en: "art museum in Gülhane, Fatih, Istanbul"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Turkey
+  spot_type: Museum
+  city: Istanbul
+  synonym: (en, "Çinili Köşk")
+  established_year: 1953
+  latitude: 41.011944
+  longitude: 28.981389
 }
 
 instance AcropolisMuseum < MDC_C002 {
@@ -11059,280 +12557,10 @@ instance AcropolisMuseum < MDC_C002 {
   country: Greece
   spot_type: Landmark
   city: Athens
+  synonym: (en, "New Acropolis Museum")
   established_year: 2009
   latitude: 37.969108
   longitude: 23.728299
-}
-
-instance AcropolisofAthens < MDC_C002 {
-  code: SPI2402
-  preferred_name.en: "Acropolis of Athens"
-  preferred_name.zh-TW: "雅典衛城"
-  preferred_name.ja: "アテナイのアクロポリス"
-  preferred_name.ko: "아크로폴리스"
-  preferred_name.fr: "Acropole d'Athènes"
-  preferred_name.it: "acropoli di Atene"
-  preferred_name.de: "Akropolis"
-  preferred_name.es: "Acrópolis de Atenas"
-  preferred_name.th: "อัครปุระเอเธนส์"
-  preferred_name.vi: "Acropolis"
-  preferred_name.pt: "Acrópole de Atenas"
-  preferred_name.ar: "أكروبوليس أثينا"
-  preferred_name.tr: "Atina Akropolisi"
-  preferred_name.el: "Ακρόπολη Αθηνών"
-  preferred_name.nl: "Akropolis van Athene"
-  preferred_name.pl: "Akropol ateński"
-  preferred_name.cs: "Akropolis"
-  preferred_name.hu: "Akropolisz (Athén)"
-  definition.en: "ancient citadel above the city of Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.971667
-  longitude: 23.726111
-  official_grade: WorldHeritage
-}
-
-instance ArchofHadrianAthens < MDC_C002 {
-  code: SPI2403
-  preferred_name.en: "Arch of Hadrian (Athens)"
-  preferred_name.zh-TW: "哈德良拱门"
-  preferred_name.ja: "ハドリアヌスの凱旋門"
-  preferred_name.ko: "하드리아누스의 개선문"
-  preferred_name.fr: "porte d'Hadrien"
-  preferred_name.it: "Arco di Adriano"
-  preferred_name.de: "Hadrianstor"
-  preferred_name.es: "Arco de Adriano"
-  preferred_name.pt: "Arco de Adriano"
-  preferred_name.ar: "قوس هادريان"
-  preferred_name.tr: "Hadrianus Kemeri"
-  preferred_name.el: "Πύλη του Αδριανού"
-  preferred_name.nl: "Poort van Hadrianus"
-  preferred_name.pl: "Łuk Hadriana w Atenach"
-  definition.en: "Roman arch in Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.97018
-  longitude: 23.73203
-}
-
-instance Areopagus < MDC_C002 {
-  code: SPI2404
-  preferred_name.en: "Areopagus"
-  preferred_name.zh-TW: "亞略巴古"
-  preferred_name.ja: "アレオパゴス"
-  preferred_name.ko: "아레오바고"
-  preferred_name.fr: "Aréopage"
-  preferred_name.it: "Areopago"
-  preferred_name.de: "Areopag"
-  preferred_name.es: "Areópago"
-  preferred_name.pt: "Areópago"
-  preferred_name.ar: "أريوباغوس"
-  preferred_name.tr: "Ares Tepesi"
-  preferred_name.el: "Άρειος Πάγος"
-  preferred_name.nl: "Areopaag"
-  preferred_name.pl: "Areopag"
-  preferred_name.cs: "Areopág"
-  preferred_name.hu: "Areioszpagosz"
-  definition.en: "rock outcropping in Athens, associated with ancient legislative and judicial bodies"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.972222
-  longitude: 23.723611
-}
-
-instance AthensCityMuseum < MDC_C002 {
-  code: SPI2405
-  preferred_name.en: "Athens City Museum"
-  preferred_name.zh-TW: "雅典市立博物館"
-  preferred_name.fr: "musée de la Ville d'Athènes"
-  preferred_name.de: "Athener Stadtmuseum"
-  preferred_name.es: "Museo de la ciudad de Atenas (Fundación Vourou-Eutaxia)"
-  preferred_name.el: "Μουσείο της πόλεως των Αθηνών (Ίδρυμα Βούρου-Ευταξία)"
-  definition.en: "museum in Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 37.978847
-  longitude: 23.731528
-}
-
-instance AthensUniversityMuseum < MDC_C002 {
-  code: SPI2406
-  preferred_name.en: "Athens University Museum"
-  preferred_name.el: "Μουσείο Ιστορίας Πανεπιστημίου Αθηνών"
-  definition.en: "university museum in Athens, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 37.973097
-  longitude: 23.726792
-}
-
-instance AthensWarMuseum < MDC_C002 {
-  code: SPI2407
-  preferred_name.en: "Athens War Museum"
-  preferred_name.zh-TW: "雅典戰爭博物館"
-  preferred_name.ja: "アテネ戦争博物館"
-  preferred_name.fr: "musée de la Guerre d’Athènes"
-  preferred_name.it: "Museo della guerra"
-  preferred_name.de: "Kriegsmuseum (Athen)"
-  preferred_name.es: "Museo de la Guerra de Atenas"
-  preferred_name.pt: "Museu da Guerra de Atenas"
-  preferred_name.ar: "متحف أثينا للحرب"
-  preferred_name.tr: "Atina Savaş Müzesi"
-  preferred_name.el: "Πολεμικό Μουσείο Αθηνών"
-  definition.en: "museum in Athens, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 1975
-  latitude: 37.975278
-  longitude: 23.745278
-}
-
-instance BenakiMuseum < MDC_C002 {
-  code: SPI2408
-  preferred_name.en: "Benaki Museum"
-  preferred_name.zh-TW: "贝纳基博物馆"
-  preferred_name.ja: "ベナキ博物館"
-  preferred_name.fr: "musée Benáki"
-  preferred_name.it: "Museo Benaki"
-  preferred_name.de: "Benaki-Museum"
-  preferred_name.es: "Museo Benaki"
-  preferred_name.pt: "Museu Benaki"
-  preferred_name.ar: "متحف بيناكي"
-  preferred_name.tr: "Benaki Müzesi"
-  preferred_name.el: "Μουσείο Μπενάκη"
-  preferred_name.pl: "Muzeum Benaki w Atenach"
-  definition.en: "museum in Kolonaki, Athens, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 1930
-  latitude: 37.975939
-  longitude: 23.740408
-}
-
-instance ByzantineandChristianMuseum < MDC_C002 {
-  code: SPI2409
-  preferred_name.en: "Byzantine and Christian Museum"
-  preferred_name.zh-TW: "拜占庭和基督教博物館"
-  preferred_name.ja: "ビザンティン・クリスチャン博物館"
-  preferred_name.fr: "musée byzantin et chrétien d'Athènes"
-  preferred_name.it: "Museo bizantino e cristiano di Atene"
-  preferred_name.de: "Byzantinisches und Christliches Museum"
-  preferred_name.es: "Museo Bizantino y Cristiano"
-  preferred_name.pt: "Museu Bizantino e Cristão"
-  preferred_name.ar: "المتحف البيزنطي والمسيحي"
-  preferred_name.tr: "Bizans ve Hristiyan Müzesi"
-  preferred_name.el: "Βυζαντινό και Χριστιανικό Μουσείο"
-  preferred_name.nl: "Byzantine & Christian Museum"
-  definition.en: "museum in Athens, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 37.974722
-  longitude: 23.744444
-}
-
-instance CaveSanctuariesoftheAcropolisofAthens < MDC_C002 {
-  code: SPI2410
-  preferred_name.en: "Cave Sanctuaries of the Acropolis of Athens"
-  preferred_name.fr: "Sanctuaires rupestres de l'Acropole"
-  preferred_name.it: "Grotte di Apollo, Zeus e Pan"
-  preferred_name.es: "Santuarios rupestres de la Acrópolis de Atenas"
-  preferred_name.el: "Σπήλαια Απόλλωνος, Διός και Πανός"
-  definition.en: "caves in the rock of the Acropolis of Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.971389
-  longitude: 23.72806
-}
-
-instance ChoragicMonumentofLysicrates < MDC_C002 {
-  code: SPI2411
-  preferred_name.en: "Choragic Monument of Lysicrates"
-  preferred_name.zh-TW: "雅典獎杯亭"
-  preferred_name.ja: "リスィクラトスのコラレス記念碑"
-  preferred_name.ko: "리시크라테스 기념비"
-  preferred_name.fr: "monument de Lysicrate"
-  preferred_name.it: "monumento coragico di Lisicrate"
-  preferred_name.de: "Lysikratesmonument"
-  preferred_name.es: "Linterna de Lisícrates"
-  preferred_name.ar: "نصب تشوراجيك ليسيكراتس"
-  preferred_name.tr: "Lisikrat Anıtı"
-  preferred_name.el: "Μνημείο Λυσικράτους"
-  preferred_name.nl: "Monument van Lysicrates"
-  preferred_name.pl: "Pomnik Lizykratesa"
-  preferred_name.hu: "Lüszikratész-emlékmű"
-  definition.en: "ancient Greek choragic monument in Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.970833
-  longitude: 23.73
-}
-
-instance ChoragicMonumentofNikias < MDC_C002 {
-  code: SPI2412
-  preferred_name.en: "Choragic Monument of Nikias"
-  preferred_name.zh-TW: "尼基亞斯克拉吉克紀念碑"
-  preferred_name.fr: "monument de Nicias"
-  preferred_name.it: "Monumento coregico di Nicia"
-  preferred_name.es: "Monumento corégico de Nicias"
-  preferred_name.el: "Χορηγικό Μνημείο του Νικία"
-  preferred_name.nl: "monument de Nicias"
-  definition.en: "choregic monument on Acropolis south slope"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.970278
-  longitude: 23.726944
-}
-
-instance ChoragicMonumentofThrasyllos < MDC_C002 {
-  code: SPI2413
-  preferred_name.en: "Choragic Monument of Thrasyllos"
-  preferred_name.fr: "monument de Thrasyllos"
-  preferred_name.it: "Monumento coregico di Trasillo"
-  preferred_name.de: "Choregisches Denkmal von Thrasyllos"
-  preferred_name.es: "Monumento de Trasilo"
-  preferred_name.el: "Χορηγικό Μνημείο του Θρασύλλου"
-  preferred_name.nl: "Monument van Thrasyllos"
-  definition.en: "ancient monument in Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.971111
-  longitude: 23.7275
 }
 
 instance Cranon < MDC_C002 {
@@ -11347,179 +12575,9 @@ instance Cranon < MDC_C002 {
   class_type: ITEM_CLASS
   country: Greece
   spot_type: ArchaeologicalSite
+  synonym: (en, "Krannon", en, "Crannon", en, "Mint of Crannon")
   latitude: 39.50051
   longitude: 22.30245
-}
-
-instance DesteFoundation < MDC_C002 {
-  code: SPI2415
-  preferred_name.en: "Deste Foundation"
-  preferred_name.de: "DESTE"
-  preferred_name.el: "Ίδρυμα Δέστε"
-  definition.en: "art museum"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 38.0399
-  longitude: 23.7601
-}
-
-instance DrossinisMuseum < MDC_C002 {
-  code: SPI2416
-  preferred_name.en: "Drossinis Museum"
-  preferred_name.el: "Μουσείο Δροσίνη"
-  definition.en: "museum in Kifisia, Attica, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 1997
-  latitude: 38.0712
-  longitude: 23.8119
-}
-
-instance EastPropylon < MDC_C002 {
-  code: SPI2417
-  preferred_name.en: "East Propylon"
-  preferred_name.es: "Propileos del este"
-  preferred_name.ar: "البروبيلايا الشرقية"
-  preferred_name.el: "Ανατολικό Πρόπυλο"
-  definition.en: "ancient gateway of the Roman Agora in Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.9742
-  longitude: 23.7267
-}
-
-instance EmfietzoglouGalleryMuseum < MDC_C002 {
-  code: SPI2418
-  preferred_name.en: "Emfietzoglou Gallery Museum"
-  preferred_name.zh-TW: "Emfietzoglou畫廊"
-  preferred_name.el: "Πινακοθήκη Συλλογής Εμφιετζόγλου"
-  definition.en: "art gallery in Marousi, Athens"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 38.058864
-  longitude: 23.824191
-}
-
-instance FrissirasMuseum < MDC_C002 {
-  code: SPI2419
-  preferred_name.en: "Frissiras Museum"
-  preferred_name.el: "Μουσείο Φρυσίρα"
-  definition.en: "contemporary art museum in Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  latitude: 37.972278
-  longitude: 23.732194
-}
-
-instance GateofAthenaArchegetis < MDC_C002 {
-  code: SPI2420
-  preferred_name.en: "Gate of Athena Archegetis"
-  preferred_name.ja: "アテナ・アルケゲテス門"
-  preferred_name.fr: "Porte d'Athéna Archegetis"
-  preferred_name.it: "Porta di Atena Archegetis"
-  preferred_name.es: "Puerta de Atenea Arquegetis"
-  preferred_name.ar: "بوابة أثينا أرتشيجيتيس"
-  preferred_name.tr: "Athena Archegetis Kapısı"
-  preferred_name.el: "Πύλη της Αρχηγέτιδος Αθηνάς"
-  preferred_name.nl: "Poort van Athena Archegetis"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.9746
-  longitude: 23.7255
-}
-
-instance GoulandrisMuseumofContemporaryArt < MDC_C002 {
-  code: SPI2421
-  preferred_name.en: "Goulandris Museum of Contemporary Art"
-  preferred_name.fr: "musée d'art contemporain Goulandrís"
-  preferred_name.de: "Museum der Basil & Elise Goulandris Foundation"
-  preferred_name.tr: "Goulandris Çağdaş Sanat Müzesi"
-  preferred_name.el: "Μουσείο Ιδρύματος Βασίλη και Ελίζας Γουλανδρή"
-  definition.en: "museum in Pangrati, Athens, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 2019
-  latitude: 37.9697
-  longitude: 23.7428
-}
-
-instance GoulandrisNaturalHistoryMuseum < MDC_C002 {
-  code: SPI2422
-  preferred_name.en: "Goulandris Natural History Museum"
-  preferred_name.fr: "musée d'histoire naturelle Goulandris"
-  preferred_name.de: "Nationalmuseum für Naturgeschichte Goulandris"
-  preferred_name.el: "Μουσείο Γουλανδρή Φυσικής Ιστορίας"
-  definition.en: "museum in Kifisia, Attica, Greece"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 1965
-  latitude: 38.074444
-  longitude: 23.815
-}
-
-instance GounaropoulosMuseum < MDC_C002 {
-  code: SPI2423
-  preferred_name.en: "Gounaropoulos Museum"
-  preferred_name.el: "Μουσείο Γουναρόπουλου"
-  superclass: Museum
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Museum
-  city: Athens
-  established_year: 1979
-  latitude: 37.975
-  longitude: 23.761528
-}
-
-instance HadriansLibrary < MDC_C002 {
-  code: SPI2424
-  preferred_name.en: "Hadrian's Library"
-  preferred_name.zh-TW: "哈德良圖書館"
-  preferred_name.ja: "ハドリアヌスの図書館"
-  preferred_name.ko: "하드리아누스의 도서관"
-  preferred_name.fr: "bibliothèque d'Hadrien"
-  preferred_name.it: "Biblioteca di Adriano"
-  preferred_name.de: "Hadriansbibliothek"
-  preferred_name.es: "Biblioteca de Adriano"
-  preferred_name.pt: "Biblioteca de Adriano"
-  preferred_name.ar: "مكتبة هادريان"
-  preferred_name.tr: "Hadrianus Kütüphanesi"
-  preferred_name.el: "Βιβλιοθήκη Αδριανού"
-  preferred_name.nl: "Bibliotheek van Hadrianus"
-  preferred_name.pl: "Biblioteka Hadriana"
-  preferred_name.cs: "Hadriánova knihovna"
-  definition.en: "Roman library in Athens"
-  superclass: Landmark
-  class_type: ITEM_CLASS
-  country: Greece
-  spot_type: Landmark
-  city: Athens
-  latitude: 37.975556
-  longitude: 23.726111
 }
 
 instance Halae < MDC_C002 {
@@ -11532,8 +12590,56 @@ instance Halae < MDC_C002 {
   class_type: ITEM_CLASS
   country: Greece
   spot_type: ArchaeologicalSite
+  synonym: (en, "Halai")
   latitude: 38.6583
   longitude: 23.1896
+}
+
+instance KoufonisiCrete < MDC_C002 {
+  code: SPI2426
+  preferred_name.en: "Koufonisi (Crete)"
+  preferred_name.zh-TW: "庫福尼西島"
+  preferred_name.fr: "Koufonísi"
+  preferred_name.it: "Koufonisi (Creta)"
+  preferred_name.de: "Koufonisi"
+  preferred_name.es: "Koufonisi"
+  preferred_name.ar: "جزيرة كوفونيسي"
+  preferred_name.tr: "Kufonisi (Girit)"
+  preferred_name.el: "Κουφονήσι Λασιθίου"
+  preferred_name.pl: "Kufonisi"
+  definition.en: "small Greek island near Crete"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Greece
+  spot_type: ArchaeologicalSite
+  latitude: 34.937
+  longitude: 26.139
+}
+
+instance NeosPanteleimonas < MDC_C002 {
+  code: SPI2427
+  preferred_name.en: "Neos Panteleimonas"
+  preferred_name.fr: "Néos Panteleímon"
+  preferred_name.el: "Νέος Παντελεήμων Πιερίας"
+  definition.en: "village in Pieria, Greece"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Greece
+  spot_type: ArchaeologicalSite
+  latitude: 40.003056
+  longitude: 22.594167
+}
+
+instance Toumba < MDC_C002 {
+  code: SPI2428
+  preferred_name.en: "Toumba"
+  preferred_name.el: "μαγούλα"
+  definition.en: "type of archaeological site"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Greece
+  spot_type: ArchaeologicalSite
+  synonym: (en, "Magoula")
 }
 
 instance AjaxExperience < MDC_C002 {
@@ -11573,6 +12679,7 @@ instance Amstelhof < MDC_C002 {
   country: Netherlands
   spot_type: Museum
   city: Amsterdam
+  synonym: (en, "Diaconie oudemannen en -vrouwenhuis")
   latitude: 52.365
   longitude: 4.9025
 }
@@ -11620,6 +12727,7 @@ instance AmsterdamMuseum < MDC_C002 {
   country: Netherlands
   spot_type: Museum
   city: Amsterdam
+  synonym: (en, "Amsterdam Historical Museum", en, "Burgerweeshuis Amsterdam")
   latitude: 52.370278
   longitude: 4.890833
 }
@@ -11662,6 +12770,7 @@ instance AnneFrankHouse < MDC_C002 {
   country: Netherlands
   spot_type: Museum
   city: Amsterdam
+  synonym: (en, "Anne Frank House in Amsterdam", en, "The Anne Frank House", en, "Anne Frank House Amsterdam")
   established_year: 1960
   latitude: 52.37525
   longitude: 4.88432
@@ -11778,6 +12887,7 @@ instance DeGrootePeelNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "De Groote Peel", en, "Groote Peel")
   latitude: 51.35
   longitude: 5.816667
   area: 13.4
@@ -11801,6 +12911,7 @@ instance DeHogeVeluweNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "De Hoge Veluwe", en, "Hoge Veluwe")
   latitude: 52.083333
   longitude: 5.8
   area: 55
@@ -11836,6 +12947,7 @@ instance DeLoonseenDrunenseDuinenNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "De Loonse en Drunense Duinen", en, "Loonse en Drunense Duinen National Park")
   latitude: 51.647778
   longitude: 5.114722
   area: 35
@@ -11855,6 +12967,7 @@ instance DeMaasduinenNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "De Maasduinen", en, "Maasduinen")
   established_year: 1996
   latitude: 51.583333
   longitude: 6.083333
@@ -11875,6 +12988,7 @@ instance DeMeinwegNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "De Meinweg", en, "Meinweg")
   established_year: 1995
   latitude: 51.16
   longitude: 6.12
@@ -11894,6 +13008,7 @@ instance DiamondMuseumAmsterdam < MDC_C002 {
   country: Netherlands
   spot_type: Museum
   city: Amsterdam
+  synonym: (en, "Stichting Diamant Museum Amsterdam")
   established_year: 2007
   latitude: 52.359444
   longitude: 4.8825
@@ -11914,6 +13029,7 @@ instance DrentsFrieseWoldNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "Drents-Friese Wold")
   established_year: 2000
   latitude: 52.906
   longitude: 6.296
@@ -11933,6 +13049,7 @@ instance DrentscheAaNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "Drentsche Aa")
   latitude: 53.05
   longitude: 6.65
 }
@@ -11952,6 +13069,7 @@ instance DuinenvanTexelNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "Duinen van Texel")
   latitude: 53.133333
   longitude: 4.8
 }
@@ -11986,9 +13104,53 @@ instance DwingelderveldNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Netherlands
   spot_type: NationalPark
+  synonym: (en, "Dwingelderveld")
   established_year: 1991
   latitude: 52.803
   longitude: 6.399
+}
+
+instance ElectricLadylandmuseum < MDC_C002 {
+  code: SPI2525
+  preferred_name.en: "Electric Ladyland (museum)"
+  preferred_name.nl: "Electric Ladyland"
+  definition.en: "museum in Amsterdam, Netherlands"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Netherlands
+  spot_type: Museum
+  city: Amsterdam
+  established_year: 1999
+  latitude: 52.375556
+  longitude: 4.880833
+}
+
+instance EmbassyoftheFreeMind < MDC_C002 {
+  code: SPI2526
+  preferred_name.en: "Embassy of the Free Mind"
+  definition.en: "museum in Amsterdam, the Netherlands"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Netherlands
+  spot_type: Museum
+  city: Amsterdam
+  latitude: 52.376458
+  longitude: 4.887375
+}
+
+instance EthnographicMuseumArtis < MDC_C002 {
+  code: SPI2527
+  preferred_name.en: "Ethnographic Museum Artis"
+  preferred_name.zh-TW: "阿蒂斯民族誌博物館"
+  preferred_name.nl: "Ethnographisch Museum Artis"
+  definition.en: "Dutch museum"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Netherlands
+  spot_type: Museum
+  city: Amsterdam
+  latitude: 52.365725
+  longitude: 4.918519
 }
 
 instance BerardoCollectionMuseum < MDC_C002 {
@@ -12035,6 +13197,7 @@ instance CalousteGulbenkianMuseum < MDC_C002 {
   country: Portugal
   spot_type: Museum
   city: Lisbon
+  synonym: (en, "The Gulbenkian Museum", en, "The Calouste Gulbenkian Museum")
   latitude: 38.736667
   longitude: -9.154167
 }
@@ -12052,6 +13215,7 @@ instance CarrisMuseum < MDC_C002 {
   country: Portugal
   spot_type: Museum
   city: Lisbon
+  synonym: (en, "Museu da Carris")
   latitude: 38.702
   longitude: -9.1806
 }
@@ -12148,6 +13312,7 @@ instance MacauScientificandCulturalCentreMuseum < MDC_C002 {
   country: Portugal
   spot_type: Museum
   city: Lisbon
+  synonym: (en, "CCCM Museum", en, "The Macau Museum", en, "The Macau Museum Lisbon")
   latitude: 38.700833
   longitude: -9.1825
 }
@@ -12164,6 +13329,7 @@ instance MuseuBenfica < MDC_C002 {
   country: Portugal
   spot_type: Museum
   city: Lisbon
+  synonym: (en, "Museu Cosme Damião", en, "Museu Benfica Cosme Damião", en, "Benfica museum")
   established_year: 2013
   latitude: 38.752594
   longitude: -9.18467
@@ -12270,6 +13436,7 @@ instance NationalMuseumoftheAzulejo < MDC_C002 {
   country: Portugal
   spot_type: Museum
   city: Lisbon
+  synonym: (en, "National Tile Museum")
   latitude: 38.724444
   longitude: -9.113889
 }
@@ -12404,6 +13571,7 @@ instance BieszczadyNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Poland
   spot_type: NationalPark
+  synonym: (en, "BdPN")
   latitude: 49.288
   longitude: 22.497
 }
@@ -12477,6 +13645,7 @@ instance CopernicusScienceCentre < MDC_C002 {
   country: Poland
   spot_type: Museum
   city: Warsaw
+  synonym: (en, "Kopernik", en, "Centrum Nauki Kopernik", en, "Centrum Nauki \"Kopernik\"")
   latitude: 52.241944
   longitude: 21.028333
 }
@@ -12499,6 +13668,7 @@ instance DrawaNationalPark < MDC_C002 {
   class_type: ITEM_CLASS
   country: Poland
   spot_type: NationalPark
+  synonym: (en, "Drawieński National Park")
   established_year: 1990
   latitude: 53.13
   longitude: 15.45
@@ -12523,6 +13693,7 @@ instance EastCarpathianBiosphereReserve < MDC_C002 {
   class_type: ITEM_CLASS
   country: Poland
   spot_type: NationalPark
+  synonym: (en, "East Beskid International Biosphere Reserve")
   latitude: 49.082222
   longitude: 22.567778
 }
@@ -12555,6 +13726,7 @@ instance FarasGalleryattheNationalMuseuminWarsaw < MDC_C002 {
   country: Poland
   spot_type: Museum
   city: Warsaw
+  synonym: (en, "Galeria Faras im. Profesora Kazimierza Michałowskiego", en, "The Professor Kazimierz Michałowski Faras Gallery", en, "Faras Gallery at the National Museum, Warsaw")
   latitude: 52.231667
   longitude: 21.024722
 }
@@ -12578,6 +13750,7 @@ instance FryderykChopinMuseum < MDC_C002 {
   country: Poland
   spot_type: Museum
   city: Warsaw
+  synonym: (en, "Muzeum Fryderyka Chopina")
   established_year: 1954
   latitude: 52.236389
   longitude: 21.023056
@@ -12685,6 +13858,7 @@ instance KnyszynForest < MDC_C002 {
   class_type: ITEM_CLASS
   country: Poland
   spot_type: NationalPark
+  synonym: (en, "Knyszyn Wilderness")
   latitude: 53.213889
   longitude: 23.436667
   area: 1050
@@ -12768,6 +13942,7 @@ instance MuseumandInstituteofZoologyofthePolishAcademyofSciences < MDC_C002 {
   country: Poland
   spot_type: Museum
   city: Warsaw
+  synonym: (en, "Muzeum i Instytut Zoologii PAN", en, "Museum and Institute of Zoology Warsaw")
   established_year: 1819
   latitude: 52.223611
   longitude: 21.009167
@@ -12810,9 +13985,84 @@ instance MuseumofIndependence < MDC_C002 {
   country: Poland
   spot_type: Museum
   city: Warsaw
+  synonym: (en, "Muzeum Niepodległości w Warszawie")
   established_year: 1990
   latitude: 52.245278
   longitude: 21.004167
+}
+
+instance MuseumofIndustryandAgriculture < MDC_C002 {
+  code: SPI2724
+  preferred_name.en: "Museum of Industry and Agriculture"
+  preferred_name.zh-TW: "工農業博物館"
+  preferred_name.ja: "農工博物館"
+  preferred_name.vi: "Bảo tàng Công nghiệp và Nông nghiệp"
+  preferred_name.pl: "Muzeum Przemysłu i Rolnictwa w Warszawie"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Poland
+  spot_type: Museum
+  city: Warsaw
+  latitude: 52.245833
+  longitude: 21.014167
+}
+
+instance MuseumofPolishHistory < MDC_C002 {
+  code: SPI2725
+  preferred_name.en: "Museum of Polish History"
+  preferred_name.zh-TW: "波蘭歷史博物館"
+  preferred_name.ko: "폴란드 역사 박물관"
+  preferred_name.it: "Museo di Storia della Polonia"
+  preferred_name.de: "Museum der Geschichte Polens"
+  preferred_name.vi: "Bảo tàng Lịch sử Ba Lan"
+  preferred_name.ar: "متحف التاريخ البولندي"
+  preferred_name.el: "Μουσείο Πολωνικής Ιστορίας (Βαρσοβία)"
+  preferred_name.nl: "Pools historisch museum"
+  preferred_name.pl: "Muzeum Historii Polski w Warszawie"
+  definition.en: "history museum in Warsaw, Poland"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Poland
+  spot_type: Museum
+  city: Warsaw
+  synonym: (en, "The Museum of Polish History", en, "Polish History Museum (Polish: Muzeum Historii Polski)")
+  latitude: 52.23
+  longitude: 20.979167
+}
+
+instance MuseumofPolishMilitaryTechnology < MDC_C002 {
+  code: SPI2726
+  preferred_name.en: "Museum of Polish Military Technology"
+  preferred_name.ja: "ポーランド軍事技術博物館"
+  preferred_name.de: "Muzeum Polskiej Techniki Wojskowej"
+  preferred_name.vi: "Bảo tàng Công nghệ Quân sự Ba Lan"
+  preferred_name.el: "Μουσείο Πολωνικής Στρατιωτικής Τεχνολογίας"
+  preferred_name.pl: "Muzeum Polskiej Techniki Wojskowej"
+  definition.en: "museum in Mokotów, Warsaw, Poland"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Poland
+  spot_type: Museum
+  city: Warsaw
+  latitude: 52.1825
+  longitude: 21.066389
+}
+
+instance MuseumofPraga < MDC_C002 {
+  code: SPI2727
+  preferred_name.en: "Museum of Praga"
+  preferred_name.ja: "プラガ博物館"
+  preferred_name.de: "Museum Warschau-Praga"
+  preferred_name.vi: "Bảo tàng Praga của Warsaw"
+  preferred_name.pl: "Muzeum Warszawskiej Pragi"
+  definition.en: "local museum in Warsaw, Poland"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Poland
+  spot_type: Museum
+  city: Warsaw
+  latitude: 52.253889
+  longitude: 21.041667
 }
 
 instance Bertramka < MDC_C002 {
@@ -12888,6 +14138,7 @@ instance CityofPragueMuseum < MDC_C002 {
   country: Czechia
   spot_type: Museum
   city: Prague
+  synonym: (en, "Prague City Museum", en, "Museum of Prague")
   latitude: 50.0901
   longitude: 14.4386
 }
@@ -12965,6 +14216,7 @@ instance KbelyAviationMuseum < MDC_C002 {
   country: Czechia
   spot_type: Museum
   city: Prague
+  synonym: (en, "Prague Aviation Museum")
   latitude: 50.1255
   longitude: 14.5352
 }
@@ -13054,6 +14306,7 @@ instance NationalMuseumPrague < MDC_C002 {
   country: Czechia
   spot_type: Museum
   city: Prague
+  synonym: (en, "Národní muzeum", en, "National museum of the Czech Republic", en, "National museum, Prague")
   established_year: 1818
   latitude: 50.078831
   longitude: 14.430797
@@ -13092,6 +14345,7 @@ instance NationalTechnicalMuseum < MDC_C002 {
   country: Czechia
   spot_type: Museum
   city: Prague
+  synonym: (en, "Narodni technicke muzeum")
   latitude: 50.097247
   longitude: 14.424728
 }
@@ -13324,6 +14578,7 @@ instance GeologicalMuseumofBudapest < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Magyar Állami Földtani Intézet")
   latitude: 47.505583
   longitude: 19.097436
 }
@@ -13407,6 +14662,7 @@ instance HouseofTerror < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Terror Háza Múzeum")
   established_year: 2002
   latitude: 47.5069
   longitude: 19.0651
@@ -13435,6 +14691,7 @@ instance HungarianNationalMuseum < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Magyar Nemzeti Múzeum")
   latitude: 47.491111
   longitude: 19.062778
 }
@@ -13502,6 +14759,7 @@ instance HungarianTechnicalandTransportationMuseum < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Közlekedési Múzeum")
   latitude: 47.514203
   longitude: 19.091664
 }
@@ -13526,6 +14784,7 @@ instance MuseumofEthnographyBudapest < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Néprajzi Múzeum")
   latitude: 47.5115
   longitude: 19.0814
 }
@@ -13561,6 +14820,7 @@ instance SMSLeitha < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Leitha")
   latitude: 47.508707
   longitude: 19.044776
 }
@@ -13579,6 +14839,7 @@ instance SemmelweisMuseumofMedicalHistory < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Semmelweis-Museum für Medizingeschichte", en, "Semmelweis-Museum", en, "Semmelweis Orvostörténeti Múzeum")
   latitude: 47.493352
   longitude: 19.043211
 }
@@ -13598,6 +14859,7 @@ instance UndergroundRailwayMuseumBudapest < MDC_C002 {
   country: Hungary
   spot_type: Museum
   city: Budapest
+  synonym: (en, "Millennium Underground Museum")
   latitude: 47.4975
   longitude: 19.055
 }
