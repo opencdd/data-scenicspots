@@ -1,0 +1,468 @@
+{
+  "comment": [
+    "DBpedia POI harvest configuration for the ScenicSpots bulk registry.",
+    "Category slugs are DBpedia mapping categories (dct:subject dbc:<slug>).",
+    "block: two country digits appended to SPI (00-09 legacy blocks, 10+ new).",
+    "zh_tag: region-coded BCP-47 tag for Chinese labels harvested from DBpedia.",
+    "Existing countries keep their round-1 category sets (harvest reproducibility);",
+    "UnitedKingdom/UnitedStates were re-scoped 2026-10-08 to fix thin/broken categories."
+  ],
+  "sparql_endpoint": "https://dbpedia.org/sparql",
+  "default_limit_per_country": 26,
+  "query_sleep_seconds": 2.6,
+  "languages": [
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "th",
+    "vi",
+    "pt",
+    "ar",
+    "tr",
+    "el",
+    "nl",
+    "pl",
+    "cs",
+    "hu"
+  ],
+  "countries": {
+    "Taiwan": {
+      "block": "00",
+      "class": "Taiwan",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "National_parks_of_Taiwan",
+        "Museums_in_Taipei",
+        "Temples_in_Taiwan",
+        "Night_markets_in_Taipei",
+        "Hot_springs_of_Taiwan",
+        "Landmarks_in_Taiwan"
+      ]
+    },
+    "Japan": {
+      "block": "01",
+      "class": "Japan",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "National_parks_of_Japan",
+        "Museums_in_Tokyo",
+        "Museums_in_Kyoto",
+        "Buddhist_temples_in_Kyoto",
+        "Shinto_shrines_in_Kyoto",
+        "Landmarks_in_Japan"
+      ]
+    },
+    "SouthKorea": {
+      "block": "02",
+      "class": "Korea",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Seoul",
+        "Buddhist_temples_in_South_Korea",
+        "Palaces_in_Seoul",
+        "Landmarks_in_South_Korea"
+      ]
+    },
+    "Italy": {
+      "block": "03",
+      "class": "Italy",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Florence",
+        "Landmarks_in_Rome",
+        "Museums_in_Rome"
+      ]
+    },
+    "HongKong": {
+      "block": "04",
+      "class": "HongKong",
+      "zh_tag": "zh-HK",
+      "categories": [
+        "Museums_in_Hong_Kong",
+        "Landmarks_in_Hong_Kong"
+      ]
+    },
+    "UnitedKingdom": {
+      "block": "05",
+      "class": "UnitedKingdom",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Buildings_and_structures_in_London",
+        "Museums_in_London",
+        "National_parks_of_the_United_Kingdom",
+        "Parks_and_open_spaces_in_London",
+        "Museums_in_England",
+        "Country_houses_in_England",
+        "Gardens_in_England",
+        "Cathedrals_in_England"
+      ]
+    },
+    "France": {
+      "block": "06",
+      "class": "France",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Paris",
+        "Landmarks_in_Paris"
+      ]
+    },
+    "UnitedStates": {
+      "block": "07",
+      "class": "UnitedStates",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "National_parks_of_the_United_States",
+        "Museums_in_New_York_City",
+        "Landmarks_in_California"
+      ]
+    },
+    "China": {
+      "block": "08",
+      "class": "China",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Tourist_attractions_in_China",
+        "Museums_in_Beijing",
+        "Palaces_in_China",
+        "Landmarks_in_Beijing",
+        "Towers_in_China"
+      ]
+    },
+    "Singapore": {
+      "block": "09",
+      "class": "Singapore",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Tourist_attractions_in_Singapore",
+        "Museums_in_Singapore",
+        "Landmarks_in_Singapore"
+      ]
+    },
+    "Germany": {
+      "block": "10",
+      "class": "Germany",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Museums_in_Berlin",
+        "Castles_in_Germany",
+        "National_parks_of_Germany",
+        "Museums_in_Munich"
+      ]
+    },
+    "Spain": {
+      "block": "11",
+      "class": "Spain",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Museums_in_Madrid",
+        "Museums_in_Barcelona",
+        "Cathedrals_in_Spain",
+        "National_parks_of_Spain"
+      ]
+    },
+    "Thailand": {
+      "block": "12",
+      "class": "Thailand",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Buddhist_temples_in_Thailand",
+        "Museums_in_Bangkok",
+        "National_parks_of_Thailand"
+      ]
+    },
+    "Vietnam": {
+      "block": "13",
+      "class": "Vietnam",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "National_parks_of_Vietnam",
+        "Museums_in_Hanoi",
+        "Buddhist_temples_in_Vietnam"
+      ]
+    },
+    "Malaysia": {
+      "block": "14",
+      "class": "Malaysia",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Mosques_in_Malaysia",
+        "Museums_in_Kuala_Lumpur",
+        "National_parks_of_Malaysia",
+        "Buddhist_temples_in_Malaysia"
+      ]
+    },
+    "Australia": {
+      "block": "15",
+      "class": "Australia",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "National_parks_of_Australia",
+        "Landmarks_in_Sydney",
+        "Museums_in_Sydney",
+        "Landmarks_in_Australia"
+      ]
+    },
+    "Canada": {
+      "block": "16",
+      "class": "Canada",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "National_parks_of_Canada",
+        "Museums_in_Toronto"
+      ]
+    },
+    "India": {
+      "block": "17",
+      "class": "India",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "National_parks_of_India",
+        "Palaces_in_India",
+        "Landmarks_in_India",
+        "Museums_in_Delhi",
+        "Hindu_temples_in_India"
+      ]
+    },
+    "Philippines": {
+      "block": "18",
+      "class": "Philippines",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "Museums_in_Manila",
+        "Landmarks_in_the_Philippines",
+        "National_parks_of_the_Philippines",
+        "Churches_in_the_Philippines"
+      ]
+    },
+    "Indonesia": {
+      "block": "19",
+      "class": "Indonesia",
+      "zh_tag": "zh-CN",
+      "categories": [
+        "National_parks_of_Indonesia",
+        "Museums_in_Jakarta",
+        "Landmarks_in_Indonesia",
+        "Temples_in_Indonesia"
+      ]
+    },
+    "Mexico": {
+      "block": "20",
+      "class": "Mexico",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Mexico_City",
+        "Landmarks_in_Mexico_City",
+        "National_parks_of_Mexico"
+      ]
+    },
+    "Brazil": {
+      "block": "21",
+      "class": "Brazil",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Brazil",
+        "Tourist_attractions_in_Brazil",
+        "National_parks_of_Brazil"
+      ]
+    },
+    "Egypt": {
+      "block": "22",
+      "class": "Egypt",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Cairo",
+        "Archaeological_sites_in_Egypt"
+      ]
+    },
+    "Turkey": {
+      "block": "23",
+      "class": "Turkey",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Istanbul",
+        "National_parks_of_Turkey"
+      ]
+    },
+    "Greece": {
+      "block": "24",
+      "class": "Greece",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Athens",
+        "Landmarks_in_Athens",
+        "Archaeological_sites_in_Greece"
+      ]
+    },
+    "Netherlands": {
+      "block": "25",
+      "class": "Netherlands",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Amsterdam",
+        "Windmills_in_the_Netherlands",
+        "National_parks_of_the_Netherlands"
+      ]
+    },
+    "Portugal": {
+      "block": "26",
+      "class": "Portugal",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Lisbon",
+        "National_parks_of_Portugal"
+      ]
+    },
+    "Poland": {
+      "block": "27",
+      "class": "Poland",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Warsaw",
+        "Landmarks_in_Poland",
+        "National_parks_of_Poland"
+      ]
+    },
+    "Czechia": {
+      "block": "28",
+      "class": "Czechia",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Prague",
+        "National_parks_of_the_Czech_Republic"
+      ]
+    },
+    "Hungary": {
+      "block": "29",
+      "class": "Hungary",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Budapest",
+        "National_parks_of_Hungary"
+      ]
+    }
+  },
+  "curated_skip": [
+    "Taroko_National_Park",
+    "Mengjia_Longshan_Temple",
+    "Longshan_Temple_(Taipei)",
+    "Beitou",
+    "Shilin_Night_Market",
+    "National_Palace_Museum",
+    "Kinkaku-ji",
+    "Mount_Fuji",
+    "Gyeongbokgung",
+    "Myeong-dong",
+    "Colosseum",
+    "Uffizi",
+    "Uffizi_Gallery",
+    "Victoria_Peak",
+    "Wong_Tai_Sin_Temple",
+    "Kiyomizu-dera",
+    "Fushimi_Inari-taisha",
+    "Bulguksa",
+    "Seongsan_Ilchulbong",
+    "Tower_of_London",
+    "British_Museum",
+    "Eiffel_Tower",
+    "Louvre",
+    "Arc_de_Triomphe",
+    "Statue_of_Liberty",
+    "Grand_Canyon",
+    "Metropolitan_Museum_of_Art",
+    "Forbidden_City",
+    "Great_Wall_of_China",
+    "Summer_Palace",
+    "Terracotta_Army",
+    "West_Lake",
+    "Mount_Tai",
+    "Gardens_by_the_Bay",
+    "Marina_Bay_Sands",
+    "Sentosa",
+    "Merlion",
+    "Dogo_Onsen",
+    "Itsukushima_Shrine",
+    "Todai-ji",
+    "Himeji_Castle",
+    "Jardin_des_Tuileries",
+    "Notre-Dame_de_Paris",
+    "Palace_of_Versailles",
+    "Mussee_d'Orsay",
+    "Musee_d'Orsay",
+    "Lincoln_Memorial",
+    "National_Air_and_Space_Museum",
+    "National_Gallery_of_Art",
+    "Smithsonian_Institution_Building",
+    "United_States_Capitol",
+    "White_House",
+    "Golden_Gate_Bridge",
+    "Alcatraz_Island",
+    "Fisherman's_Wharf,_San_Francisco",
+    "Palace_Museum",
+    "Temple_of_Heaven",
+    "Ming_Tombs",
+    "Hutong",
+    "Beihai_Park",
+    "Nanjing_Road",
+    "Longshan_Temple,_Taipei",
+    "Buckingham_Palace",
+    "Westminster_Abbey",
+    "St_James's_Park",
+    "London_Eye",
+    "Trafalgar_Square",
+    "National_Gallery_(London)",
+    "Natural_History_Museum",
+    "Tate_Modern",
+    "HMS_Belfast",
+    "Shakespeare's_Globe"
+  ],
+  "city_by_category": {
+    "Museums_in_Taipei": "Taipei",
+    "Night_markets_in_Taipei": "Taipei",
+    "Museums_in_Tokyo": "Tokyo",
+    "Museums_in_Kyoto": "Kyoto",
+    "Buddhist_temples_in_Kyoto": "Kyoto",
+    "Shinto_shrines_in_Kyoto": "Kyoto",
+    "Museums_in_Seoul": "Seoul",
+    "Palaces_in_Seoul": "Seoul",
+    "Museums_in_Florence": "Florence",
+    "Landmarks_in_Rome": "Rome",
+    "Museums_in_Rome": "Rome",
+    "Buildings_and_structures_in_London": "London",
+    "Museums_in_London": "London",
+    "Parks_and_open_spaces_in_London": "London",
+    "Museums_in_Paris": "Paris",
+    "Landmarks_in_Paris": "Paris",
+    "Museums_in_New_York_City": "NewYork",
+    "Museums_in_Beijing": "Beijing",
+    "Landmarks_in_Beijing": "Beijing",
+    "Museums_in_Berlin": "Berlin",
+    "Museums_in_Munich": "Munich",
+    "Museums_in_Madrid": "Madrid",
+    "Museums_in_Barcelona": "Barcelona",
+    "Museums_in_Bangkok": "Bangkok",
+    "Museums_in_Hanoi": "Hanoi",
+    "Museums_in_Kuala_Lumpur": "KualaLumpur",
+    "Landmarks_in_Sydney": "Sydney",
+    "Museums_in_Sydney": "Sydney",
+    "Museums_in_Toronto": "Toronto",
+    "Museums_in_Delhi": "Delhi",
+    "Museums_in_Manila": "Manila",
+    "Museums_in_Jakarta": "Jakarta",
+    "Museums_in_Mexico_City": "MexicoCity",
+    "Landmarks_in_Mexico_City": "MexicoCity",
+    "Museums_in_Cairo": "Cairo",
+    "Museums_in_Istanbul": "Istanbul",
+    "Museums_in_Athens": "Athens",
+    "Landmarks_in_Athens": "Athens",
+    "Museums_in_Amsterdam": "Amsterdam",
+    "Museums_in_Lisbon": "Lisbon",
+    "Museums_in_Warsaw": "Warsaw",
+    "Museums_in_Prague": "Prague",
+    "Museums_in_Budapest": "Budapest"
+  },
+  "code_stem": "SPI"
+}

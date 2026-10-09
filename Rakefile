@@ -84,3 +84,22 @@ task "browser:build" do
 end
 
 task default: "browser:build"
+
+HARVEST_BEGIN = "# ==== BEGIN DBPEDIA BULK REGISTRY (generated - do not hand-edit) ===="
+HARVEST_END = "# ==== END DBPEDIA BULK REGISTRY ===="
+
+desc "Harvest DBpedia POIs, verify each against Wikipedia, enrich from " \
+     "Wikidata, and splice into the fixture. Optional subset: " \
+     "rake browser:harvest_poi[Taiwan,Japan]"
+task "browser:harvest_poi", [:countries] do |_t, args|
+  cmd = %w[python3 harvest/dbpedia_poi.py --fixture] << FIXTURE
+  cmd += ["--countries", args[:countries]] if args[:countries]
+  sh *cmd
+  bulk = File.read("harvest/out/poi_bulk.cddal")
+  text = File.read(FIXTURE)
+  marked = /#{Regexp.escape(HARVEST_BEGIN)}.*?#{Regexp.escape(HARVEST_END)}\n/m
+  abort "no bulk registry section found in #{FIXTURE}" unless marked.match?(text)
+  File.write(FIXTURE, text.sub(marked) { bulk })
+  puts "Spliced bulk registry into #{FIXTURE}"
+  Rake::Task["browser:build"].invoke
+end

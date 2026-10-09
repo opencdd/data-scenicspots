@@ -12,10 +12,14 @@ Data repository for the **ScenicSpots 旅遊景點** demonstration dictionary of
 - `units.json` — compact IEC 62720 unit index used for the binding
   (same §6 terms).
 
-The curated learning dictionary (powertype showcase). Facts and
-multilingual names are sourced from Wikipedia (CC BY-SA) with
-attribution carried in the fixture header; the bulk registry lives
-in data-poi.
+THE real dataset: the verified global spot registry. Candidates are
+harvested from DBpedia, every entry is individually verified against
+its English Wikipedia article, then enriched from Wikidata (CC0).
+Sources and attribution in the fixture header (Wikipedia/DBpedia
+CC BY-SA; Wikidata CC0). `rake browser:harvest_poi` re-runs the
+pipeline; the quarterly workflow refreshes it via PR. No synthetic
+or curated-subset content: every individual is a real, verified
+place.
 
 The engine is [opencdd-ruby](https://github.com/opencdd/opencdd-ruby)
 — an implementation of working with OpenCDD data, used read-only here.
