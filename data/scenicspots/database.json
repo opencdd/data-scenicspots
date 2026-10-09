@@ -1,0 +1,5627 @@
+[
+  {
+    "irdi": "SPA001",
+    "code": "SPA001",
+    "preferred_name": "Scenic Spot",
+    "preferred_name_ml": {
+      "en": "Scenic Spot",
+      "zh-TW": "旅遊景點",
+      "ja": "観光名所",
+      "ko": "관광지",
+      "it": "Attrazione Turistica"
+    },
+    "definition": "a place of interest that tourists visit, typically for its inherent or exhibited natural or cultural value",
+    "definition_ml": {
+      "en": "a place of interest that tourists visit, typically for its inherent or exhibited natural or cultural value"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA001",
+      "MDC_P004.en": "Scenic Spot",
+      "MDC_P004.zh-TW": "旅遊景點",
+      "MDC_P004.ja": "観光名所",
+      "MDC_P004.ko": "관광지",
+      "MDC_P004.it": "Attrazione Turistica",
+      "MDC_P006.en": "a place of interest that tourists visit, typically for its inherent or exhibited natural or cultural value",
+      "MDC_P010": "UNIVERSE",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB001,SPB002,SPB218,SPB004,SPB005,SPB006,SPB216,SPB217,SPB007,SPB008,SPB009,SPB010,SPB219,SPB011}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB001",
+      "SPB002",
+      "SPB218",
+      "SPB004",
+      "SPB005",
+      "SPB006",
+      "SPB216",
+      "SPB217",
+      "SPB007",
+      "SPB008",
+      "SPB009",
+      "SPB010",
+      "SPB219",
+      "SPB011"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "UNIVERSE",
+    "superclass_type_property": "UNIVERSE",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA010",
+    "code": "SPA010",
+    "preferred_name": "Country",
+    "preferred_name_ml": {
+      "en": "Country",
+      "zh-TW": "國家"
+    },
+    "definition": "sovereign state in which a scenic spot is located",
+    "definition_ml": {
+      "en": "sovereign state in which a scenic spot is located"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA010",
+      "MDC_P004.en": "Country",
+      "MDC_P004.zh-TW": "國家",
+      "MDC_P006.en": "sovereign state in which a scenic spot is located",
+      "MDC_P010": "SPA001",
+      "MDC_P011": "CATEGORICAL_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "CATEGORICAL_CLASS",
+    "superclass": "SPA001",
+    "superclass_type_property": "SPA001",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA011",
+    "code": "SPA011",
+    "preferred_name": "Taiwan",
+    "preferred_name_ml": {
+      "en": "Taiwan",
+      "zh-TW": "臺灣"
+    },
+    "definition": "island state in East Asia",
+    "definition_ml": {
+      "en": "island state in East Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA011",
+      "MDC_P004.en": "Taiwan",
+      "MDC_P004.zh-TW": "臺灣",
+      "MDC_P006.en": "island state in East Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA012",
+    "code": "SPA012",
+    "preferred_name": "Japan",
+    "preferred_name_ml": {
+      "en": "Japan",
+      "ja": "日本"
+    },
+    "definition": "island nation in East Asia",
+    "definition_ml": {
+      "en": "island nation in East Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA012",
+      "MDC_P004.en": "Japan",
+      "MDC_P004.ja": "日本",
+      "MDC_P006.en": "island nation in East Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA013",
+    "code": "SPA013",
+    "preferred_name": "Korea",
+    "preferred_name_ml": {
+      "en": "Korea",
+      "ko": "대한민국"
+    },
+    "definition": "republic on the Korean Peninsula in East Asia",
+    "definition_ml": {
+      "en": "republic on the Korean Peninsula in East Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA013",
+      "MDC_P004.en": "Korea",
+      "MDC_P004.ko": "대한민국",
+      "MDC_P006.en": "republic on the Korean Peninsula in East Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA014",
+    "code": "SPA014",
+    "preferred_name": "Italy",
+    "preferred_name_ml": {
+      "en": "Italy",
+      "it": "Italia"
+    },
+    "definition": "republic in Southern Europe",
+    "definition_ml": {
+      "en": "republic in Southern Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA014",
+      "MDC_P004.en": "Italy",
+      "MDC_P004.it": "Italia",
+      "MDC_P006.en": "republic in Southern Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA015",
+    "code": "SPA015",
+    "preferred_name": "Hong Kong",
+    "preferred_name_ml": {
+      "en": "Hong Kong",
+      "zh-HK": "香港"
+    },
+    "definition": "special administrative region of China",
+    "definition_ml": {
+      "en": "special administrative region of China"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA015",
+      "MDC_P004.en": "Hong Kong",
+      "MDC_P004.zh-HK": "香港",
+      "MDC_P006.en": "special administrative region of China",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA016",
+    "code": "SPA016",
+    "preferred_name": "United Kingdom",
+    "preferred_name_ml": {
+      "en": "United Kingdom"
+    },
+    "definition": "country in Northwestern Europe",
+    "definition_ml": {
+      "en": "country in Northwestern Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA016",
+      "MDC_P004.en": "United Kingdom",
+      "MDC_P006.en": "country in Northwestern Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA017",
+    "code": "SPA017",
+    "preferred_name": "France",
+    "preferred_name_ml": {
+      "en": "France"
+    },
+    "definition": "republic in Western Europe",
+    "definition_ml": {
+      "en": "republic in Western Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA017",
+      "MDC_P004.en": "France",
+      "MDC_P006.en": "republic in Western Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA018",
+    "code": "SPA018",
+    "preferred_name": "United States",
+    "preferred_name_ml": {
+      "en": "United States"
+    },
+    "definition": "federal republic in North America",
+    "definition_ml": {
+      "en": "federal republic in North America"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA018",
+      "MDC_P004.en": "United States",
+      "MDC_P006.en": "federal republic in North America",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA019",
+    "code": "SPA019",
+    "preferred_name": "China",
+    "preferred_name_ml": {
+      "en": "China",
+      "zh-CN": "中國"
+    },
+    "definition": "country in East Asia",
+    "definition_ml": {
+      "en": "country in East Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA019",
+      "MDC_P004.en": "China",
+      "MDC_P004.zh-CN": "中國",
+      "MDC_P006.en": "country in East Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA020",
+    "code": "SPA020",
+    "preferred_name": "Singapore",
+    "preferred_name_ml": {
+      "en": "Singapore",
+      "zh-CN": "新加坡"
+    },
+    "definition": "island city-state in Southeast Asia",
+    "definition_ml": {
+      "en": "island city-state in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA020",
+      "MDC_P004.en": "Singapore",
+      "MDC_P004.zh-CN": "新加坡",
+      "MDC_P006.en": "island city-state in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA021",
+    "code": "SPA021",
+    "preferred_name": "Germany",
+    "preferred_name_ml": {
+      "en": "Germany",
+      "zh-TW": "德國",
+      "de": "Deutschland"
+    },
+    "definition": "country in Central Europe",
+    "definition_ml": {
+      "en": "country in Central Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA021",
+      "MDC_P004.en": "Germany",
+      "MDC_P004.zh-TW": "德國",
+      "MDC_P004.de": "Deutschland",
+      "MDC_P006.en": "country in Central Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA022",
+    "code": "SPA022",
+    "preferred_name": "Spain",
+    "preferred_name_ml": {
+      "en": "Spain",
+      "zh-TW": "西班牙",
+      "es": "España"
+    },
+    "definition": "country in Southwestern Europe",
+    "definition_ml": {
+      "en": "country in Southwestern Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA022",
+      "MDC_P004.en": "Spain",
+      "MDC_P004.zh-TW": "西班牙",
+      "MDC_P004.es": "España",
+      "MDC_P006.en": "country in Southwestern Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA023",
+    "code": "SPA023",
+    "preferred_name": "Thailand",
+    "preferred_name_ml": {
+      "en": "Thailand",
+      "zh-TW": "泰國"
+    },
+    "definition": "country in Southeast Asia",
+    "definition_ml": {
+      "en": "country in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA023",
+      "MDC_P004.en": "Thailand",
+      "MDC_P004.zh-TW": "泰國",
+      "MDC_P006.en": "country in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA024",
+    "code": "SPA024",
+    "preferred_name": "Vietnam",
+    "preferred_name_ml": {
+      "en": "Vietnam",
+      "zh-TW": "越南"
+    },
+    "definition": "country in Southeast Asia",
+    "definition_ml": {
+      "en": "country in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA024",
+      "MDC_P004.en": "Vietnam",
+      "MDC_P004.zh-TW": "越南",
+      "MDC_P006.en": "country in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA025",
+    "code": "SPA025",
+    "preferred_name": "Malaysia",
+    "preferred_name_ml": {
+      "en": "Malaysia",
+      "zh-TW": "馬來西亞"
+    },
+    "definition": "country in Southeast Asia",
+    "definition_ml": {
+      "en": "country in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA025",
+      "MDC_P004.en": "Malaysia",
+      "MDC_P004.zh-TW": "馬來西亞",
+      "MDC_P006.en": "country in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA026",
+    "code": "SPA026",
+    "preferred_name": "Australia",
+    "preferred_name_ml": {
+      "en": "Australia",
+      "zh-TW": "澳洲"
+    },
+    "definition": "country and continent in Oceania",
+    "definition_ml": {
+      "en": "country and continent in Oceania"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA026",
+      "MDC_P004.en": "Australia",
+      "MDC_P004.zh-TW": "澳洲",
+      "MDC_P006.en": "country and continent in Oceania",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA027",
+    "code": "SPA027",
+    "preferred_name": "Canada",
+    "preferred_name_ml": {
+      "en": "Canada",
+      "zh-TW": "加拿大"
+    },
+    "definition": "country in North America",
+    "definition_ml": {
+      "en": "country in North America"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA027",
+      "MDC_P004.en": "Canada",
+      "MDC_P004.zh-TW": "加拿大",
+      "MDC_P006.en": "country in North America",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA028",
+    "code": "SPA028",
+    "preferred_name": "India",
+    "preferred_name_ml": {
+      "en": "India",
+      "zh-TW": "印度"
+    },
+    "definition": "country in South Asia",
+    "definition_ml": {
+      "en": "country in South Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA028",
+      "MDC_P004.en": "India",
+      "MDC_P004.zh-TW": "印度",
+      "MDC_P006.en": "country in South Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA029",
+    "code": "SPA029",
+    "preferred_name": "Philippines",
+    "preferred_name_ml": {
+      "en": "Philippines",
+      "zh-TW": "菲律賓"
+    },
+    "definition": "archipelagic country in Southeast Asia",
+    "definition_ml": {
+      "en": "archipelagic country in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA029",
+      "MDC_P004.en": "Philippines",
+      "MDC_P004.zh-TW": "菲律賓",
+      "MDC_P006.en": "archipelagic country in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA030",
+    "code": "SPA030",
+    "preferred_name": "Indonesia",
+    "preferred_name_ml": {
+      "en": "Indonesia",
+      "zh-TW": "印尼"
+    },
+    "definition": "archipelagic country in Southeast Asia",
+    "definition_ml": {
+      "en": "archipelagic country in Southeast Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA030",
+      "MDC_P004.en": "Indonesia",
+      "MDC_P004.zh-TW": "印尼",
+      "MDC_P006.en": "archipelagic country in Southeast Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA031",
+    "code": "SPA031",
+    "preferred_name": "Mexico",
+    "preferred_name_ml": {
+      "en": "Mexico",
+      "zh-TW": "墨西哥"
+    },
+    "definition": "country in North America",
+    "definition_ml": {
+      "en": "country in North America"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA031",
+      "MDC_P004.en": "Mexico",
+      "MDC_P004.zh-TW": "墨西哥",
+      "MDC_P006.en": "country in North America",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA032",
+    "code": "SPA032",
+    "preferred_name": "Brazil",
+    "preferred_name_ml": {
+      "en": "Brazil",
+      "zh-TW": "巴西"
+    },
+    "definition": "country in South America",
+    "definition_ml": {
+      "en": "country in South America"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA032",
+      "MDC_P004.en": "Brazil",
+      "MDC_P004.zh-TW": "巴西",
+      "MDC_P006.en": "country in South America",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA033",
+    "code": "SPA033",
+    "preferred_name": "Egypt",
+    "preferred_name_ml": {
+      "en": "Egypt",
+      "zh-TW": "埃及"
+    },
+    "definition": "country in North Africa",
+    "definition_ml": {
+      "en": "country in North Africa"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA033",
+      "MDC_P004.en": "Egypt",
+      "MDC_P004.zh-TW": "埃及",
+      "MDC_P006.en": "country in North Africa",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA034",
+    "code": "SPA034",
+    "preferred_name": "Turkey",
+    "preferred_name_ml": {
+      "en": "Turkey",
+      "zh-TW": "土耳其"
+    },
+    "definition": "transcontinental country bridging Europe and Asia",
+    "definition_ml": {
+      "en": "transcontinental country bridging Europe and Asia"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA034",
+      "MDC_P004.en": "Turkey",
+      "MDC_P004.zh-TW": "土耳其",
+      "MDC_P006.en": "transcontinental country bridging Europe and Asia",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA035",
+    "code": "SPA035",
+    "preferred_name": "Greece",
+    "preferred_name_ml": {
+      "en": "Greece",
+      "zh-TW": "希臘"
+    },
+    "definition": "country in Southeast Europe",
+    "definition_ml": {
+      "en": "country in Southeast Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA035",
+      "MDC_P004.en": "Greece",
+      "MDC_P004.zh-TW": "希臘",
+      "MDC_P006.en": "country in Southeast Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA036",
+    "code": "SPA036",
+    "preferred_name": "Netherlands",
+    "preferred_name_ml": {
+      "en": "Netherlands",
+      "zh-TW": "荷蘭"
+    },
+    "definition": "country in Western Europe",
+    "definition_ml": {
+      "en": "country in Western Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA036",
+      "MDC_P004.en": "Netherlands",
+      "MDC_P004.zh-TW": "荷蘭",
+      "MDC_P006.en": "country in Western Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA037",
+    "code": "SPA037",
+    "preferred_name": "Portugal",
+    "preferred_name_ml": {
+      "en": "Portugal",
+      "zh-TW": "葡萄牙"
+    },
+    "definition": "country in Southwestern Europe",
+    "definition_ml": {
+      "en": "country in Southwestern Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA037",
+      "MDC_P004.en": "Portugal",
+      "MDC_P004.zh-TW": "葡萄牙",
+      "MDC_P006.en": "country in Southwestern Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA038",
+    "code": "SPA038",
+    "preferred_name": "Poland",
+    "preferred_name_ml": {
+      "en": "Poland",
+      "zh-TW": "波蘭"
+    },
+    "definition": "country in Central Europe",
+    "definition_ml": {
+      "en": "country in Central Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA038",
+      "MDC_P004.en": "Poland",
+      "MDC_P004.zh-TW": "波蘭",
+      "MDC_P006.en": "country in Central Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA039",
+    "code": "SPA039",
+    "preferred_name": "Czechia",
+    "preferred_name_ml": {
+      "en": "Czechia",
+      "zh-TW": "捷克"
+    },
+    "definition": "country in Central Europe",
+    "definition_ml": {
+      "en": "country in Central Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA039",
+      "MDC_P004.en": "Czechia",
+      "MDC_P004.zh-TW": "捷克",
+      "MDC_P006.en": "country in Central Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA040",
+    "code": "SPA040",
+    "preferred_name": "Hungary",
+    "preferred_name_ml": {
+      "en": "Hungary",
+      "zh-TW": "匈牙利"
+    },
+    "definition": "country in Central Europe",
+    "definition_ml": {
+      "en": "country in Central Europe"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA040",
+      "MDC_P004.en": "Hungary",
+      "MDC_P004.zh-TW": "匈牙利",
+      "MDC_P006.en": "country in Central Europe",
+      "MDC_P010": "SPA010",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA010",
+    "superclass_type_property": "SPA010",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA100",
+    "code": "SPA100",
+    "preferred_name": "Scenic Spot Type",
+    "preferred_name_ml": {
+      "en": "Scenic Spot Type",
+      "zh-TW": "景點類型"
+    },
+    "definition": "categorical class whose subclasses enumerate the kinds of scenic spots",
+    "definition_ml": {
+      "en": "categorical class whose subclasses enumerate the kinds of scenic spots"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA100",
+      "MDC_P004.en": "Scenic Spot Type",
+      "MDC_P004.zh-TW": "景點類型",
+      "MDC_P006.en": "categorical class whose subclasses enumerate the kinds of scenic spots",
+      "MDC_P010": "SPA001",
+      "MDC_P011": "CATEGORICAL_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "CATEGORICAL_CLASS",
+    "superclass": "SPA001",
+    "superclass_type_property": "SPA001",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA101",
+    "code": "SPA101",
+    "preferred_name": "National Park",
+    "preferred_name_ml": {
+      "en": "National Park",
+      "zh-TW": "國家公園",
+      "ja": "国立公園",
+      "ko": "국립공원"
+    },
+    "definition": "protected area designated for conservation and public enjoyment by national law",
+    "definition_ml": {
+      "en": "protected area designated for conservation and public enjoyment by national law"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA101",
+      "MDC_P004.en": "National Park",
+      "MDC_P004.zh-TW": "國家公園",
+      "MDC_P004.ja": "国立公園",
+      "MDC_P004.ko": "국립공원",
+      "MDC_P006.en": "protected area designated for conservation and public enjoyment by national law",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB101,SPB201,SPB202}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB101",
+      "SPB201",
+      "SPB202"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI002",
+    "code": "SPI002",
+    "preferred_name": "Taroko National Park",
+    "preferred_name_ml": {
+      "en": "Taroko National Park",
+      "zh-TW": "太魯閣國家公園"
+    },
+    "short_name": "TarokoNP",
+    "short_name_ml": {
+      "en": "TarokoNP"
+    },
+    "definition": "national park spanning Taichung, Nantou, and Hualien counties, named for the Taroko Gorge — one of only three river gorges in the world cut entirely through pure marble",
+    "definition_ml": {
+      "en": "national park spanning Taichung, Nantou, and Hualien counties, named for the Taroko Gorge — one of only three river gorges in the world cut entirely through pure marble"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI002",
+      "MDC_P004.en": "Taroko National Park",
+      "MDC_P004.zh-TW": "太魯閣國家公園",
+      "MDC_P005.en": "TarokoNP",
+      "MDC_P006.en": "national park spanning Taichung, Nantou, and Hualien counties, named for the Taroko Gorge — one of only three river gorges in the world cut entirely through pure marble",
+      "MDC_P010": "SPA101",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Taiwan",
+      "spot_type": "NationalPark",
+      "official_grade": "NationalGrade",
+      "elevation": "3742",
+      "area": "920",
+      "established_year": "1986",
+      "trail_count": "34",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "latitude": "24.166667",
+      "longitude": "121.333333"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA101",
+    "superclass_type_property": "SPA101",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI702",
+    "code": "SPI702",
+    "preferred_name": "Grand Canyon",
+    "preferred_name_ml": {
+      "en": "Grand Canyon"
+    },
+    "definition": "446 km long, up to 1,857 m deep canyon carved by the Colorado River in Arizona",
+    "definition_ml": {
+      "en": "446 km long, up to 1,857 m deep canyon carved by the Colorado River in Arizona"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI702",
+      "MDC_P004.en": "Grand Canyon",
+      "MDC_P006.en": "446 km long, up to 1,857 m deep canyon carved by the Colorado River in Arizona",
+      "MDC_P010": "SPA101",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "UnitedStates",
+      "spot_type": "NationalPark",
+      "official_grade": "WorldHeritage",
+      "established_year": "1919",
+      "inscription_year": "1979",
+      "listing_criteria": "Natural",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "latitude": "36.3",
+      "longitude": "-112.75"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA101",
+    "superclass_type_property": "SPA101",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA102",
+    "code": "SPA102",
+    "preferred_name": "Temple",
+    "preferred_name_ml": {
+      "en": "Temple",
+      "zh-TW": "寺廟",
+      "ja": "寺",
+      "ko": "사원"
+    },
+    "definition": "building dedicated to religious worship",
+    "definition_ml": {
+      "en": "building dedicated to religious worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA102",
+      "MDC_P004.en": "Temple",
+      "MDC_P004.zh-TW": "寺廟",
+      "MDC_P004.ja": "寺",
+      "MDC_P004.ko": "사원",
+      "MDC_P006.en": "building dedicated to religious worship",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB102,SPB103,SPB203}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB102",
+      "SPB103",
+      "SPB203"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA150",
+    "code": "SPA150",
+    "preferred_name": "Buddhist Temple",
+    "preferred_name_ml": {
+      "en": "Buddhist Temple",
+      "zh-TW": "佛寺",
+      "ja": "仏寺"
+    },
+    "definition": "temple of the Buddhist tradition",
+    "definition_ml": {
+      "en": "temple of the Buddhist tradition"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA150",
+      "MDC_P004.en": "Buddhist Temple",
+      "MDC_P004.zh-TW": "佛寺",
+      "MDC_P004.ja": "仏寺",
+      "MDC_P006.en": "temple of the Buddhist tradition",
+      "MDC_P010": "SPA102",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P016": "{SPA121}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [
+      "SPA121"
+    ],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA102",
+    "superclass_type_property": "SPA102",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI101",
+    "code": "SPI101",
+    "preferred_name": "Kinkaku-ji",
+    "preferred_name_ml": {
+      "en": "Kinkaku-ji",
+      "ja": "金閣寺"
+    },
+    "short_name": "Kinkakuji",
+    "short_name_ml": {
+      "en": "Kinkakuji"
+    },
+    "definition": "Zen Buddhist temple in Kyoto, officially Rokuon-ji, whose Golden Pavilion is coated in gold leaf; the current pavilion was rebuilt in 1955 after an arson attack",
+    "definition_ml": {
+      "en": "Zen Buddhist temple in Kyoto, officially Rokuon-ji, whose Golden Pavilion is coated in gold leaf; the current pavilion was rebuilt in 1955 after an arson attack"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI101",
+      "MDC_P004.en": "Kinkaku-ji",
+      "MDC_P004.ja": "金閣寺",
+      "MDC_P005.en": "Kinkakuji",
+      "MDC_P006.en": "Zen Buddhist temple in Kyoto, officially Rokuon-ji, whose Golden Pavilion is coated in gold leaf; the current pavilion was rebuilt in 1955 after an arson attack",
+      "MDC_P010": "SPA150",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Japan",
+      "spot_type": "Temple",
+      "tradition": "Buddhist",
+      "official_grade": "WorldHeritage",
+      "established_year": "1397",
+      "founding_dynasty": "Muromachi period",
+      "inscription_year": "1994",
+      "listing_criteria": "Cultural",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Kyoto",
+      "latitude": "35.0395",
+      "longitude": "135.7285"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA150",
+    "superclass_type_property": "SPA150",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI104",
+    "code": "SPI104",
+    "preferred_name": "Kiyomizu-dera",
+    "preferred_name_ml": {
+      "en": "Kiyomizu-dera",
+      "ja": "清水寺"
+    },
+    "definition": "Buddhist temple in eastern Kyoto founded in 778, part of the Historic Monuments of Ancient Kyoto",
+    "definition_ml": {
+      "en": "Buddhist temple in eastern Kyoto founded in 778, part of the Historic Monuments of Ancient Kyoto"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI104",
+      "MDC_P004.en": "Kiyomizu-dera",
+      "MDC_P004.ja": "清水寺",
+      "MDC_P006.en": "Buddhist temple in eastern Kyoto founded in 778, part of the Historic Monuments of Ancient Kyoto",
+      "MDC_P010": "SPA150",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Japan",
+      "spot_type": "Temple",
+      "tradition": "Buddhist",
+      "official_grade": "WorldHeritage",
+      "established_year": "778",
+      "founding_dynasty": "Heian period",
+      "inscription_year": "1994",
+      "listing_criteria": "Cultural",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Kyoto",
+      "latitude": "34.995",
+      "longitude": "135.785"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA150",
+    "superclass_type_property": "SPA150",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI203",
+    "code": "SPI203",
+    "preferred_name": "Bulguksa",
+    "preferred_name_ml": {
+      "en": "Bulguksa",
+      "ko": "불국사"
+    },
+    "definition": "Buddhist temple on the slopes of Tohamsan near Gyeongju, completed in 774 by the Silla court",
+    "definition_ml": {
+      "en": "Buddhist temple on the slopes of Tohamsan near Gyeongju, completed in 774 by the Silla court"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI203",
+      "MDC_P004.en": "Bulguksa",
+      "MDC_P004.ko": "불국사",
+      "MDC_P006.en": "Buddhist temple on the slopes of Tohamsan near Gyeongju, completed in 774 by the Silla court",
+      "MDC_P010": "SPA150",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Korea",
+      "spot_type": "Temple",
+      "tradition": "Buddhist",
+      "official_grade": "WorldHeritage",
+      "established_year": "774",
+      "founding_dynasty": "Silla",
+      "inscription_year": "1995",
+      "listing_criteria": "Cultural",
+      "treasure_count": "7",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "latitude": "35.79",
+      "longitude": "129.332222"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA150",
+    "superclass_type_property": "SPA150",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA151",
+    "code": "SPA151",
+    "preferred_name": "Taoist Temple",
+    "preferred_name_ml": {
+      "en": "Taoist Temple",
+      "zh-TW": "道觀"
+    },
+    "definition": "temple of the Taoist tradition",
+    "definition_ml": {
+      "en": "temple of the Taoist tradition"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA151",
+      "MDC_P004.en": "Taoist Temple",
+      "MDC_P004.zh-TW": "道觀",
+      "MDC_P006.en": "temple of the Taoist tradition",
+      "MDC_P010": "SPA102",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P016": "{SPA122}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [
+      "SPA122"
+    ],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA102",
+    "superclass_type_property": "SPA102",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA152",
+    "code": "SPA152",
+    "preferred_name": "Folk Temple",
+    "preferred_name_ml": {
+      "en": "Folk Temple",
+      "zh-TW": "民間信仰廟宇"
+    },
+    "definition": "temple of the folk-religion tradition",
+    "definition_ml": {
+      "en": "temple of the folk-religion tradition"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA152",
+      "MDC_P004.en": "Folk Temple",
+      "MDC_P004.zh-TW": "民間信仰廟宇",
+      "MDC_P006.en": "temple of the folk-religion tradition",
+      "MDC_P010": "SPA102",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P016": "{SPA123}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [
+      "SPA123"
+    ],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA102",
+    "superclass_type_property": "SPA102",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI001",
+    "code": "SPI001",
+    "preferred_name": "Longshan Temple",
+    "preferred_name_ml": {
+      "en": "Longshan Temple",
+      "zh-TW": "艋舺龍山寺"
+    },
+    "short_name": "LongshanTemple",
+    "short_name_ml": {
+      "en": "LongshanTemple"
+    },
+    "definition": "Taiwanese folk temple in Wanhua District, Taipei, built in 1738 by settlers from Fujian during Qing rule in honour of Guanyin, with halls to folk deities such as Mazu and Guan Yu",
+    "definition_ml": {
+      "en": "Taiwanese folk temple in Wanhua District, Taipei, built in 1738 by settlers from Fujian during Qing rule in honour of Guanyin, with halls to folk deities such as Mazu and Guan Yu"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI001",
+      "MDC_P004.en": "Longshan Temple",
+      "MDC_P004.zh-TW": "艋舺龍山寺",
+      "MDC_P005.en": "LongshanTemple",
+      "MDC_P006.en": "Taiwanese folk temple in Wanhua District, Taipei, built in 1738 by settlers from Fujian during Qing rule in honour of Guanyin, with halls to folk deities such as Mazu and Guan Yu",
+      "MDC_P010": "SPA152",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Taiwan",
+      "spot_type": "Temple",
+      "tradition": "FolkShrine",
+      "official_grade": "NationalGrade",
+      "established_year": "1738",
+      "founding_dynasty": "Qing dynasty",
+      "deity": "Guanyin (觀音)",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "city": "Taipei",
+      "latitude": "25.037222",
+      "longitude": "121.499444"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA152",
+    "superclass_type_property": "SPA152",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI402",
+    "code": "SPI402",
+    "preferred_name": "Wong Tai Sin Temple",
+    "preferred_name_ml": {
+      "en": "Wong Tai Sin Temple",
+      "zh-HK": "黃大仙祠"
+    },
+    "definition": "folk temple in Kowloon, Hong Kong, built in 1921 and renowned for fortune-telling",
+    "definition_ml": {
+      "en": "folk temple in Kowloon, Hong Kong, built in 1921 and renowned for fortune-telling"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI402",
+      "MDC_P004.en": "Wong Tai Sin Temple",
+      "MDC_P004.zh-HK": "黃大仙祠",
+      "MDC_P006.en": "folk temple in Kowloon, Hong Kong, built in 1921 and renowned for fortune-telling",
+      "MDC_P010": "SPA152",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "HongKong",
+      "spot_type": "Temple",
+      "tradition": "FolkShrine",
+      "established_year": "1921",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "city": "HongKong",
+      "latitude": "22.342572",
+      "longitude": "114.193649"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA152",
+    "superclass_type_property": "SPA152",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI105",
+    "code": "SPI105",
+    "preferred_name": "Fushimi Inari-taisha",
+    "preferred_name_ml": {
+      "en": "Fushimi Inari-taisha",
+      "ja": "伏見稲荷大社"
+    },
+    "definition": "head Shinto shrine of Inari in Kyoto, founded in 711 by the Hata clan, famed for its thousands of torii gates",
+    "definition_ml": {
+      "en": "head Shinto shrine of Inari in Kyoto, founded in 711 by the Hata clan, famed for its thousands of torii gates"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI105",
+      "MDC_P004.en": "Fushimi Inari-taisha",
+      "MDC_P004.ja": "伏見稲荷大社",
+      "MDC_P006.en": "head Shinto shrine of Inari in Kyoto, founded in 711 by the Hata clan, famed for its thousands of torii gates",
+      "MDC_P010": "SPA102",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Japan",
+      "spot_type": "Temple",
+      "tradition": "Shinto",
+      "established_year": "711",
+      "elevation": "233",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "city": "Kyoto",
+      "latitude": "34.967222",
+      "longitude": "135.772778"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA102",
+    "superclass_type_property": "SPA102",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA103",
+    "code": "SPA103",
+    "preferred_name": "Palace",
+    "preferred_name_ml": {
+      "en": "Palace",
+      "zh-TW": "宮殿",
+      "ko": "궁궐"
+    },
+    "definition": "grand residence of a sovereign or aristocratic family",
+    "definition_ml": {
+      "en": "grand residence of a sovereign or aristocratic family"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA103",
+      "MDC_P004.en": "Palace",
+      "MDC_P004.zh-TW": "宮殿",
+      "MDC_P004.ko": "궁궐",
+      "MDC_P006.en": "grand residence of a sovereign or aristocratic family",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB104,SPB204,SPB205}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB104",
+      "SPB204",
+      "SPB205"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI201",
+    "code": "SPI201",
+    "preferred_name": "Gyeongbokgung",
+    "preferred_name_ml": {
+      "en": "Gyeongbokgung",
+      "ko": "경복궁"
+    },
+    "short_name": "Gyeongbokgung",
+    "short_name_ml": {
+      "en": "Gyeongbokgung"
+    },
+    "definition": "first royal palace of the Joseon dynasty in Seoul, established in 1395 and long the most visited palace in the city",
+    "definition_ml": {
+      "en": "first royal palace of the Joseon dynasty in Seoul, established in 1395 and long the most visited palace in the city"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI201",
+      "MDC_P004.en": "Gyeongbokgung",
+      "MDC_P004.ko": "경복궁",
+      "MDC_P005.en": "Gyeongbokgung",
+      "MDC_P006.en": "first royal palace of the Joseon dynasty in Seoul, established in 1395 and long the most visited palace in the city",
+      "MDC_P010": "SPA103",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Korea",
+      "spot_type": "Palace",
+      "official_grade": "NationalGrade",
+      "established_year": "1395",
+      "royal_dynasty": "Joseon dynasty",
+      "room_count": "755",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Seoul",
+      "latitude": "37.579884",
+      "longitude": "126.9768"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA103",
+    "superclass_type_property": "SPA103",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI501",
+    "code": "SPI501",
+    "preferred_name": "Tower of London",
+    "preferred_name_ml": {
+      "en": "Tower of London"
+    },
+    "definition": "historic castle on the north bank of the Thames, founded toward the end of 1066 as part of the Norman Conquest",
+    "definition_ml": {
+      "en": "historic castle on the north bank of the Thames, founded toward the end of 1066 as part of the Norman Conquest"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI501",
+      "MDC_P004.en": "Tower of London",
+      "MDC_P006.en": "historic castle on the north bank of the Thames, founded toward the end of 1066 as part of the Norman Conquest",
+      "MDC_P010": "SPA103",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "UnitedKingdom",
+      "spot_type": "Palace",
+      "royal_dynasty": "Norman",
+      "official_grade": "WorldHeritage",
+      "established_year": "1066",
+      "inscription_year": "1988",
+      "listing_criteria": "Cultural",
+      "annual_visitors": "2817852",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "London",
+      "latitude": "51.508056",
+      "longitude": "-0.076111"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA103",
+    "superclass_type_property": "SPA103",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA104",
+    "code": "SPA104",
+    "preferred_name": "Museum",
+    "preferred_name_ml": {
+      "en": "Museum",
+      "zh-TW": "博物館",
+      "ja": "博物館",
+      "ko": "박물관",
+      "it": "Museo"
+    },
+    "definition": "institution that cares for and displays a collection of artifacts",
+    "definition_ml": {
+      "en": "institution that cares for and displays a collection of artifacts"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA104",
+      "MDC_P004.en": "Museum",
+      "MDC_P004.zh-TW": "博物館",
+      "MDC_P004.ja": "博物館",
+      "MDC_P004.ko": "박물관",
+      "MDC_P004.it": "Museo",
+      "MDC_P006.en": "institution that cares for and displays a collection of artifacts",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB105,SPB206,SPB207}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB105",
+      "SPB206",
+      "SPB207"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI005",
+    "code": "SPI005",
+    "preferred_name": "National Palace Museum",
+    "preferred_name_ml": {
+      "en": "National Palace Museum",
+      "zh-TW": "國立故宮博物院"
+    },
+    "short_name": "NPM",
+    "short_name_ml": {
+      "en": "NPM"
+    },
+    "definition": "national museum founded in Beijing in 1925 and re-established in Shilin, Taipei, in 1965, holding nearly 700,000 Chinese imperial artifacts spanning 8,000 years",
+    "definition_ml": {
+      "en": "national museum founded in Beijing in 1925 and re-established in Shilin, Taipei, in 1965, holding nearly 700,000 Chinese imperial artifacts spanning 8,000 years"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI005",
+      "MDC_P004.en": "National Palace Museum",
+      "MDC_P004.zh-TW": "國立故宮博物院",
+      "MDC_P005.en": "NPM",
+      "MDC_P006.en": "national museum founded in Beijing in 1925 and re-established in Shilin, Taipei, in 1965, holding nearly 700,000 Chinese imperial artifacts spanning 8,000 years",
+      "MDC_P010": "SPA104",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Taiwan",
+      "spot_type": "Museum",
+      "official_grade": "NationalGrade",
+      "collection_size": "700000",
+      "established_year": "1925",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Taipei",
+      "latitude": "25.1022",
+      "longitude": "121.5486"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA104",
+    "superclass_type_property": "SPA104",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI302",
+    "code": "SPI302",
+    "preferred_name": "Uffizi Gallery",
+    "preferred_name_ml": {
+      "en": "Uffizi Gallery",
+      "it": "Galleria degli Uffizi"
+    },
+    "short_name": "Uffizi",
+    "short_name_ml": {
+      "en": "Uffizi"
+    },
+    "definition": "art museum in Florence holding the Medici collection of Italian Renaissance painting",
+    "definition_ml": {
+      "en": "art museum in Florence holding the Medici collection of Italian Renaissance painting"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI302",
+      "MDC_P004.en": "Uffizi Gallery",
+      "MDC_P004.it": "Galleria degli Uffizi",
+      "MDC_P005.en": "Uffizi",
+      "MDC_P006.en": "art museum in Florence holding the Medici collection of Italian Renaissance painting",
+      "MDC_P010": "SPA104",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Italy",
+      "spot_type": "Museum",
+      "official_grade": "NationalGrade",
+      "established_year": "1769",
+      "exhibition_area": "13000",
+      "annual_visitors": "2000000",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Florence",
+      "latitude": "43.7683",
+      "longitude": "11.2553"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA104",
+    "superclass_type_property": "SPA104",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI502",
+    "code": "SPI502",
+    "preferred_name": "British Museum",
+    "preferred_name_ml": {
+      "en": "British Museum"
+    },
+    "definition": "world's first public national museum, established in 1753 and opened in 1759",
+    "definition_ml": {
+      "en": "world's first public national museum, established in 1753 and opened in 1759"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI502",
+      "MDC_P004.en": "British Museum",
+      "MDC_P006.en": "world's first public national museum, established in 1753 and opened in 1759",
+      "MDC_P010": "SPA104",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "UnitedKingdom",
+      "spot_type": "Museum",
+      "established_year": "1753",
+      "collection_size": "8000000",
+      "annual_visitors": "6440120",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "city": "London",
+      "latitude": "51.5194",
+      "longitude": "-0.1269"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA104",
+    "superclass_type_property": "SPA104",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI602",
+    "code": "SPI602",
+    "preferred_name": "Louvre",
+    "preferred_name_ml": {
+      "en": "Louvre",
+      "fr": "Musée du Louvre"
+    },
+    "definition": "the world's largest art museum, opened on 10 August 1793 in the former royal palace on the Right Bank of the Seine",
+    "definition_ml": {
+      "en": "the world's largest art museum, opened on 10 August 1793 in the former royal palace on the Right Bank of the Seine"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI602",
+      "MDC_P004.en": "Louvre",
+      "MDC_P004.fr": "Musée du Louvre",
+      "MDC_P006.en": "the world's largest art museum, opened on 10 August 1793 in the former royal palace on the Right Bank of the Seine",
+      "MDC_P010": "SPA104",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "France",
+      "spot_type": "Museum",
+      "established_year": "1793",
+      "exhibition_area": "72735",
+      "annual_visitors": "9000000",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Paris",
+      "latitude": "48.8611",
+      "longitude": "2.3358"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA104",
+    "superclass_type_property": "SPA104",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI703",
+    "code": "SPI703",
+    "preferred_name": "Metropolitan Museum of Art",
+    "preferred_name_ml": {
+      "en": "Metropolitan Museum of Art"
+    },
+    "short_name": "TheMet",
+    "short_name_ml": {
+      "en": "TheMet"
+    },
+    "definition": "the largest art museum in the Americas, founded in 1870 on Manhattan's Museum Mile",
+    "definition_ml": {
+      "en": "the largest art museum in the Americas, founded in 1870 on Manhattan's Museum Mile"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI703",
+      "MDC_P004.en": "Metropolitan Museum of Art",
+      "MDC_P005.en": "TheMet",
+      "MDC_P006.en": "the largest art museum in the Americas, founded in 1870 on Manhattan's Museum Mile",
+      "MDC_P010": "SPA104",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "UnitedStates",
+      "spot_type": "Museum",
+      "established_year": "1870",
+      "collection_size": "2000000",
+      "annual_visitors": "5727258",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "NewYork",
+      "latitude": "40.7794",
+      "longitude": "-73.9631"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA104",
+    "superclass_type_property": "SPA104",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA105",
+    "code": "SPA105",
+    "preferred_name": "Hot Spring",
+    "preferred_name_ml": {
+      "en": "Hot Spring",
+      "zh-TW": "溫泉",
+      "ja": "温泉",
+      "ko": "온천"
+    },
+    "definition": "natural spring of geothermally heated water",
+    "definition_ml": {
+      "en": "natural spring of geothermally heated water"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA105",
+      "MDC_P004.en": "Hot Spring",
+      "MDC_P004.zh-TW": "溫泉",
+      "MDC_P004.ja": "温泉",
+      "MDC_P004.ko": "온천",
+      "MDC_P006.en": "natural spring of geothermally heated water",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB106,SPB107,SPB208,SPB209}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB106",
+      "SPB107",
+      "SPB208",
+      "SPB209"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI003",
+    "code": "SPI003",
+    "preferred_name": "Beitou Hot Spring",
+    "preferred_name_ml": {
+      "en": "Beitou Hot Spring",
+      "zh-TW": "北投溫泉"
+    },
+    "short_name": "Beitou",
+    "short_name_ml": {
+      "en": "Beitou"
+    },
+    "definition": "hot spring district in Beitou District, Taipei — named after the Ketagalan word Kipatauw — known for its geothermal valley and sulfur-free alkaline springs",
+    "definition_ml": {
+      "en": "hot spring district in Beitou District, Taipei — named after the Ketagalan word Kipatauw — known for its geothermal valley and sulfur-free alkaline springs"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI003",
+      "MDC_P004.en": "Beitou Hot Spring",
+      "MDC_P004.zh-TW": "北投溫泉",
+      "MDC_P005.en": "Beitou",
+      "MDC_P006.en": "hot spring district in Beitou District, Taipei — named after the Ketagalan word Kipatauw — known for its geothermal valley and sulfur-free alkaline springs",
+      "MDC_P010": "SPA105",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Taiwan",
+      "spot_type": "HotSpring",
+      "official_grade": "LocalGrade",
+      "water_temperature": "90",
+      "mineral_type": "Sodium_bicarbonate",
+      "established_year": "1913",
+      "admission": "Paid",
+      "opening_period": "YearRound"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA105",
+    "superclass_type_property": "SPA105",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI103",
+    "code": "SPI103",
+    "preferred_name": "Dogo Onsen",
+    "preferred_name_ml": {
+      "en": "Dogo Onsen",
+      "ja": "道後温泉"
+    },
+    "short_name": "DogoOnsen",
+    "short_name_ml": {
+      "en": "DogoOnsen"
+    },
+    "definition": "hot spring in Matsuyama, Ehime, among the oldest onsen in Japan, famed for its wooden public bathhouse with the 1899 Yushinden imperial bath",
+    "definition_ml": {
+      "en": "hot spring in Matsuyama, Ehime, among the oldest onsen in Japan, famed for its wooden public bathhouse with the 1899 Yushinden imperial bath"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI103",
+      "MDC_P004.en": "Dogo Onsen",
+      "MDC_P004.ja": "道後温泉",
+      "MDC_P005.en": "DogoOnsen",
+      "MDC_P006.en": "hot spring in Matsuyama, Ehime, among the oldest onsen in Japan, famed for its wooden public bathhouse with the 1899 Yushinden imperial bath",
+      "MDC_P010": "SPA105",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Japan",
+      "spot_type": "HotSpring",
+      "official_grade": "NationalGrade",
+      "established_year": "1894",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "latitude": "33.851944",
+      "longitude": "132.786389"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA105",
+    "superclass_type_property": "SPA105",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA106",
+    "code": "SPA106",
+    "preferred_name": "Night Market",
+    "preferred_name_ml": {
+      "en": "Night Market",
+      "zh-TW": "夜市",
+      "ko": "야시장"
+    },
+    "definition": "street market operating primarily in the evening",
+    "definition_ml": {
+      "en": "street market operating primarily in the evening"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA106",
+      "MDC_P004.en": "Night Market",
+      "MDC_P004.zh-TW": "夜市",
+      "MDC_P004.ko": "야시장",
+      "MDC_P006.en": "street market operating primarily in the evening",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB108,SPB210}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB108",
+      "SPB210"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI004",
+    "code": "SPI004",
+    "preferred_name": "Shilin Night Market",
+    "preferred_name_ml": {
+      "en": "Shilin Night Market",
+      "zh-TW": "士林夜市"
+    },
+    "short_name": "ShilinNM",
+    "short_name_ml": {
+      "en": "ShilinNM"
+    },
+    "definition": "largest night market in Taipei",
+    "definition_ml": {
+      "en": "largest night market in Taipei"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI004",
+      "MDC_P004.en": "Shilin Night Market",
+      "MDC_P004.zh-TW": "士林夜市",
+      "MDC_P005.en": "ShilinNM",
+      "MDC_P006.en": "largest night market in Taipei",
+      "MDC_P010": "SPA106",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Taiwan",
+      "spot_type": "NightMarket",
+      "official_grade": "LocalGrade",
+      "stall_count": "539",
+      "established_year": "1909",
+      "opening_period": "YearRound",
+      "admission": "Free",
+      "city": "Taipei",
+      "latitude": "25.0866",
+      "longitude": "121.5254"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA106",
+    "superclass_type_property": "SPA106",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI202",
+    "code": "SPI202",
+    "preferred_name": "Myeongdong Night Market",
+    "preferred_name_ml": {
+      "en": "Myeongdong Night Market",
+      "ko": "명동"
+    },
+    "short_name": "Myeongdong",
+    "short_name_ml": {
+      "en": "Myeongdong"
+    },
+    "definition": "one of Seoul's principal shopping and tourism districts, ranked among the world's most expensive shopping streets",
+    "definition_ml": {
+      "en": "one of Seoul's principal shopping and tourism districts, ranked among the world's most expensive shopping streets"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI202",
+      "MDC_P004.en": "Myeongdong Night Market",
+      "MDC_P004.ko": "명동",
+      "MDC_P005.en": "Myeongdong",
+      "MDC_P006.en": "one of Seoul's principal shopping and tourism districts, ranked among the world's most expensive shopping streets",
+      "MDC_P010": "SPA106",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Korea",
+      "spot_type": "NightMarket",
+      "official_grade": "LocalGrade",
+      "stall_count": "200",
+      "opening_period": "YearRound",
+      "admission": "Free",
+      "city": "Seoul",
+      "latitude": "37.5637",
+      "longitude": "126.984"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA106",
+    "superclass_type_property": "SPA106",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA107",
+    "code": "SPA107",
+    "preferred_name": "Mountain",
+    "preferred_name_ml": {
+      "en": "Mountain",
+      "zh-TW": "山岳",
+      "ja": "山",
+      "ko": "산"
+    },
+    "definition": "elevated landform rising prominently above its surroundings",
+    "definition_ml": {
+      "en": "elevated landform rising prominently above its surroundings"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA107",
+      "MDC_P004.en": "Mountain",
+      "MDC_P004.zh-TW": "山岳",
+      "MDC_P004.ja": "山",
+      "MDC_P004.ko": "산",
+      "MDC_P006.en": "elevated landform rising prominently above its surroundings",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB109,SPB211,SPB212}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB109",
+      "SPB211",
+      "SPB212"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI102",
+    "code": "SPI102",
+    "preferred_name": "Mount Fuji",
+    "preferred_name_ml": {
+      "en": "Mount Fuji",
+      "ja": "富士山"
+    },
+    "short_name": "Fujisan",
+    "short_name_ml": {
+      "en": "Fujisan"
+    },
+    "definition": "highest mountain in Japan, an active stratovolcano last erupted 1707 to 1708, and an object of pilgrimage",
+    "definition_ml": {
+      "en": "highest mountain in Japan, an active stratovolcano last erupted 1707 to 1708, and an object of pilgrimage"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI102",
+      "MDC_P004.en": "Mount Fuji",
+      "MDC_P004.ja": "富士山",
+      "MDC_P005.en": "Fujisan",
+      "MDC_P006.en": "highest mountain in Japan, an active stratovolcano last erupted 1707 to 1708, and an object of pilgrimage",
+      "MDC_P010": "SPA107",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Japan",
+      "spot_type": "Mountain",
+      "official_grade": "WorldHeritage",
+      "elevation": "3776.24",
+      "prominence": "3776",
+      "inscription_year": "2013",
+      "listing_criteria": "Cultural",
+      "first_ascent_year": "663",
+      "climbing_routes": "4",
+      "annual_visitors": "300000",
+      "opening_period": "Seasonal",
+      "admission": "Free",
+      "latitude": "35.360833",
+      "longitude": "138.7275"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA107",
+    "superclass_type_property": "SPA107",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI204",
+    "code": "SPI204",
+    "preferred_name": "Seongsan Ilchulbong",
+    "preferred_name_ml": {
+      "en": "Seongsan Ilchulbong",
+      "ko": "성산일출봉"
+    },
+    "definition": "volcanic tuff cone on Jeju Island formed about five thousand years ago, rising from the sea",
+    "definition_ml": {
+      "en": "volcanic tuff cone on Jeju Island formed about five thousand years ago, rising from the sea"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI204",
+      "MDC_P004.en": "Seongsan Ilchulbong",
+      "MDC_P004.ko": "성산일출봉",
+      "MDC_P006.en": "volcanic tuff cone on Jeju Island formed about five thousand years ago, rising from the sea",
+      "MDC_P010": "SPA107",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Korea",
+      "spot_type": "Mountain",
+      "official_grade": "WorldHeritage",
+      "inscription_year": "2007",
+      "listing_criteria": "Natural",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "latitude": "33.4585",
+      "longitude": "126.942"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA107",
+    "superclass_type_property": "SPA107",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI401",
+    "code": "SPI401",
+    "preferred_name": "Victoria Peak",
+    "preferred_name_ml": {
+      "en": "Victoria Peak",
+      "zh-HK": "太平山"
+    },
+    "short_name": "ThePeak",
+    "short_name_ml": {
+      "en": "ThePeak"
+    },
+    "definition": "552 m hill, the tallest on Hong Kong Island, overlooking Victoria Harbour",
+    "definition_ml": {
+      "en": "552 m hill, the tallest on Hong Kong Island, overlooking Victoria Harbour"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI401",
+      "MDC_P004.en": "Victoria Peak",
+      "MDC_P004.zh-HK": "太平山",
+      "MDC_P005.en": "ThePeak",
+      "MDC_P006.en": "552 m hill, the tallest on Hong Kong Island, overlooking Victoria Harbour",
+      "MDC_P010": "SPA107",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "HongKong",
+      "spot_type": "Mountain",
+      "elevation": "552",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "HongKong",
+      "latitude": "22.275556",
+      "longitude": "114.143889"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA107",
+    "superclass_type_property": "SPA107",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA108",
+    "code": "SPA108",
+    "preferred_name": "Lake",
+    "preferred_name_ml": {
+      "en": "Lake",
+      "zh-TW": "湖泊",
+      "ja": "湖"
+    },
+    "definition": "inland body of standing water",
+    "definition_ml": {
+      "en": "inland body of standing water"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA108",
+      "MDC_P004.en": "Lake",
+      "MDC_P004.zh-TW": "湖泊",
+      "MDC_P004.ja": "湖",
+      "MDC_P006.en": "inland body of standing water",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB110,SPB213,SPB214}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB110",
+      "SPB213",
+      "SPB214"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA109",
+    "code": "SPA109",
+    "preferred_name": "Archaeological Site",
+    "preferred_name_ml": {
+      "en": "Archaeological Site",
+      "zh-TW": "考古遺址",
+      "it": "Sito Archeologico"
+    },
+    "definition": "place with physical evidence of past human activity studied by archaeology",
+    "definition_ml": {
+      "en": "place with physical evidence of past human activity studied by archaeology"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA109",
+      "MDC_P004.en": "Archaeological Site",
+      "MDC_P004.zh-TW": "考古遺址",
+      "MDC_P004.it": "Sito Archeologico",
+      "MDC_P006.en": "place with physical evidence of past human activity studied by archaeology",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB111,SPB215}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB111",
+      "SPB215"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI301",
+    "code": "SPI301",
+    "preferred_name": "Colosseum",
+    "preferred_name_ml": {
+      "en": "Colosseum",
+      "it": "Colosseo"
+    },
+    "short_name": "Colosseum",
+    "short_name_ml": {
+      "en": "Colosseum"
+    },
+    "definition": "Roman amphitheatre begun under Vespasian in 72 and completed in AD 80 under Titus, the largest ancient amphitheatre ever built",
+    "definition_ml": {
+      "en": "Roman amphitheatre begun under Vespasian in 72 and completed in AD 80 under Titus, the largest ancient amphitheatre ever built"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI301",
+      "MDC_P004.en": "Colosseum",
+      "MDC_P004.it": "Colosseo",
+      "MDC_P005.en": "Colosseum",
+      "MDC_P006.en": "Roman amphitheatre begun under Vespasian in 72 and completed in AD 80 under Titus, the largest ancient amphitheatre ever built",
+      "MDC_P010": "SPA109",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "Italy",
+      "spot_type": "ArchaeologicalSite",
+      "official_grade": "WorldHeritage",
+      "established_year": "80",
+      "excavation_status": "Completed",
+      "inscription_year": "1980",
+      "height": "48",
+      "listing_criteria": "Cultural",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Rome",
+      "latitude": "41.8903",
+      "longitude": "12.4922"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA109",
+    "superclass_type_property": "SPA109",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA110",
+    "code": "SPA110",
+    "preferred_name": "Landmark",
+    "preferred_name_ml": {
+      "en": "Landmark",
+      "zh-TW": "地標"
+    },
+    "definition": "structure or monument of recognized cultural, historical, or symbolic significance",
+    "definition_ml": {
+      "en": "structure or monument of recognized cultural, historical, or symbolic significance"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA110",
+      "MDC_P004.en": "Landmark",
+      "MDC_P004.zh-TW": "地標",
+      "MDC_P006.en": "structure or monument of recognized cultural, historical, or symbolic significance",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB305}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB305"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI601",
+    "code": "SPI601",
+    "preferred_name": "Eiffel Tower",
+    "preferred_name_ml": {
+      "en": "Eiffel Tower",
+      "fr": "Tour Eiffel"
+    },
+    "definition": "330 m wrought-iron lattice tower in Paris, built for the 1889 World's Fair",
+    "definition_ml": {
+      "en": "330 m wrought-iron lattice tower in Paris, built for the 1889 World's Fair"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI601",
+      "MDC_P004.en": "Eiffel Tower",
+      "MDC_P004.fr": "Tour Eiffel",
+      "MDC_P006.en": "330 m wrought-iron lattice tower in Paris, built for the 1889 World's Fair",
+      "MDC_P010": "SPA110",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "France",
+      "spot_type": "Landmark",
+      "official_grade": "WorldHeritage",
+      "established_year": "1889",
+      "height": "330",
+      "architectural_style": "wrought-iron lattice",
+      "inscription_year": "1991",
+      "listing_criteria": "Cultural",
+      "annual_visitors": "5890000",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Paris",
+      "latitude": "48.858222",
+      "longitude": "2.2945"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA110",
+    "superclass_type_property": "SPA110",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI603",
+    "code": "SPI603",
+    "preferred_name": "Arc de Triomphe",
+    "preferred_name_ml": {
+      "en": "Arc de Triomphe",
+      "fr": "Arc de triomphe de l'Étoile"
+    },
+    "definition": "49.54 m triumphal arch in Paris, commissioned by Napoleon after Austerlitz and completed in 1836",
+    "definition_ml": {
+      "en": "49.54 m triumphal arch in Paris, commissioned by Napoleon after Austerlitz and completed in 1836"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI603",
+      "MDC_P004.en": "Arc de Triomphe",
+      "MDC_P004.fr": "Arc de triomphe de l'Étoile",
+      "MDC_P006.en": "49.54 m triumphal arch in Paris, commissioned by Napoleon after Austerlitz and completed in 1836",
+      "MDC_P010": "SPA110",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "France",
+      "spot_type": "Landmark",
+      "established_year": "1836",
+      "height": "49.54",
+      "architectural_style": "Neoclassical",
+      "admission": "Paid",
+      "opening_period": "YearRound",
+      "city": "Paris",
+      "latitude": "48.873778",
+      "longitude": "2.295028"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA110",
+    "superclass_type_property": "SPA110",
+    "type": "class"
+  },
+  {
+    "irdi": "SPI701",
+    "code": "SPI701",
+    "preferred_name": "Statue of Liberty",
+    "preferred_name_ml": {
+      "en": "Statue of Liberty"
+    },
+    "definition": "colossal neoclassical sculpture on Liberty Island in New York Harbor, dedicated on 28 October 1886",
+    "definition_ml": {
+      "en": "colossal neoclassical sculpture on Liberty Island in New York Harbor, dedicated on 28 October 1886"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPI701",
+      "MDC_P004.en": "Statue of Liberty",
+      "MDC_P006.en": "colossal neoclassical sculpture on Liberty Island in New York Harbor, dedicated on 28 October 1886",
+      "MDC_P010": "SPA110",
+      "MDC_P011": "ITEM_CLASS",
+      "country": "UnitedStates",
+      "spot_type": "Landmark",
+      "official_grade": "WorldHeritage",
+      "established_year": "1886",
+      "height": "93",
+      "architectural_style": "Neoclassical",
+      "inscription_year": "1984",
+      "listing_criteria": "Cultural",
+      "admission": "Free",
+      "opening_period": "YearRound",
+      "city": "NewYork",
+      "latitude": "40.689167",
+      "longitude": "-74.044444"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA110",
+    "superclass_type_property": "SPA110",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA111",
+    "code": "SPA111",
+    "preferred_name": "Cathedral",
+    "preferred_name_ml": {
+      "en": "Cathedral",
+      "zh-TW": "大教堂",
+      "ja": "大聖堂",
+      "ko": "성당",
+      "fr": "Cathédrale",
+      "es": "Catedral"
+    },
+    "definition": "principal church of a diocese, or a large historic church building of note",
+    "definition_ml": {
+      "en": "principal church of a diocese, or a large historic church building of note"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA111",
+      "MDC_P004.en": "Cathedral",
+      "MDC_P004.zh-TW": "大教堂",
+      "MDC_P004.ja": "大聖堂",
+      "MDC_P004.ko": "성당",
+      "MDC_P004.fr": "Cathédrale",
+      "MDC_P004.es": "Catedral",
+      "MDC_P006.en": "principal church of a diocese, or a large historic church building of note",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB305}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB305"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA112",
+    "code": "SPA112",
+    "preferred_name": "Mosque",
+    "preferred_name_ml": {
+      "en": "Mosque",
+      "zh-TW": "清真寺",
+      "ja": "モスク",
+      "ko": "모스크",
+      "ms": "Masjid"
+    },
+    "definition": "place of worship for followers of Islam",
+    "definition_ml": {
+      "en": "place of worship for followers of Islam"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA112",
+      "MDC_P004.en": "Mosque",
+      "MDC_P004.zh-TW": "清真寺",
+      "MDC_P004.ja": "モスク",
+      "MDC_P004.ko": "모스크",
+      "MDC_P004.ms": "Masjid",
+      "MDC_P006.en": "place of worship for followers of Islam",
+      "MDC_P010": "SPA100",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB305}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB305"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA100",
+    "superclass_type_property": "SPA100",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA120",
+    "code": "SPA120",
+    "preferred_name": "Religious Tradition",
+    "preferred_name_ml": {
+      "en": "Religious Tradition",
+      "zh-TW": "宗教傳統"
+    },
+    "definition": "categorical class whose subclasses enumerate the religious traditions of a place of worship",
+    "definition_ml": {
+      "en": "categorical class whose subclasses enumerate the religious traditions of a place of worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA120",
+      "MDC_P004.en": "Religious Tradition",
+      "MDC_P004.zh-TW": "宗教傳統",
+      "MDC_P006.en": "categorical class whose subclasses enumerate the religious traditions of a place of worship",
+      "MDC_P010": "SPA001",
+      "MDC_P011": "CATEGORICAL_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "CATEGORICAL_CLASS",
+    "superclass": "SPA001",
+    "superclass_type_property": "SPA001",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA121",
+    "code": "SPA121",
+    "preferred_name": "Buddhist",
+    "preferred_name_ml": {
+      "en": "Buddhist",
+      "zh-TW": "佛寺",
+      "ja": "仏寺",
+      "ko": "불교 사원"
+    },
+    "definition": "Buddhist tradition of worship",
+    "definition_ml": {
+      "en": "Buddhist tradition of worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA121",
+      "MDC_P004.en": "Buddhist",
+      "MDC_P004.zh-TW": "佛寺",
+      "MDC_P004.ja": "仏寺",
+      "MDC_P004.ko": "불교 사원",
+      "MDC_P006.en": "Buddhist tradition of worship",
+      "MDC_P010": "SPA120",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA120",
+    "superclass_type_property": "SPA120",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA122",
+    "code": "SPA122",
+    "preferred_name": "Taoist",
+    "preferred_name_ml": {
+      "en": "Taoist",
+      "zh-TW": "道觀"
+    },
+    "definition": "Taoist tradition of worship",
+    "definition_ml": {
+      "en": "Taoist tradition of worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA122",
+      "MDC_P004.en": "Taoist",
+      "MDC_P004.zh-TW": "道觀",
+      "MDC_P006.en": "Taoist tradition of worship",
+      "MDC_P010": "SPA120",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA120",
+    "superclass_type_property": "SPA120",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA123",
+    "code": "SPA123",
+    "preferred_name": "Folk Shrine",
+    "preferred_name_ml": {
+      "en": "Folk Shrine",
+      "zh-TW": "民間信仰廟宇"
+    },
+    "definition": "local folk-religion tradition of worship",
+    "definition_ml": {
+      "en": "local folk-religion tradition of worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA123",
+      "MDC_P004.en": "Folk Shrine",
+      "MDC_P004.zh-TW": "民間信仰廟宇",
+      "MDC_P006.en": "local folk-religion tradition of worship",
+      "MDC_P010": "SPA120",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA120",
+    "superclass_type_property": "SPA120",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA124",
+    "code": "SPA124",
+    "preferred_name": "Shinto",
+    "preferred_name_ml": {
+      "en": "Shinto",
+      "ja": "神道"
+    },
+    "definition": "indigenous Japanese tradition of worship at shrines",
+    "definition_ml": {
+      "en": "indigenous Japanese tradition of worship at shrines"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA124",
+      "MDC_P004.en": "Shinto",
+      "MDC_P004.ja": "神道",
+      "MDC_P006.en": "indigenous Japanese tradition of worship at shrines",
+      "MDC_P010": "SPA120",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA120",
+    "superclass_type_property": "SPA120",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA130",
+    "code": "SPA130",
+    "preferred_name": "Official Grade",
+    "preferred_name_ml": {
+      "en": "Official Grade",
+      "zh-TW": "官方等級"
+    },
+    "definition": "categorical class whose subclasses enumerate the official listing or priority levels of a scenic spot",
+    "definition_ml": {
+      "en": "categorical class whose subclasses enumerate the official listing or priority levels of a scenic spot"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA130",
+      "MDC_P004.en": "Official Grade",
+      "MDC_P004.zh-TW": "官方等級",
+      "MDC_P006.en": "categorical class whose subclasses enumerate the official listing or priority levels of a scenic spot",
+      "MDC_P010": "SPA001",
+      "MDC_P011": "CATEGORICAL_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "CATEGORICAL_CLASS",
+    "superclass": "SPA001",
+    "superclass_type_property": "SPA001",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA131",
+    "code": "SPA131",
+    "preferred_name": "World Heritage",
+    "preferred_name_ml": {
+      "en": "World Heritage",
+      "zh-TW": "世界遺產",
+      "ja": "世界遺産",
+      "ko": "세계유산",
+      "it": "Patrimonio Mondiale"
+    },
+    "definition": "site inscribed on the UNESCO World Heritage List",
+    "definition_ml": {
+      "en": "site inscribed on the UNESCO World Heritage List"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA131",
+      "MDC_P004.en": "World Heritage",
+      "MDC_P004.zh-TW": "世界遺產",
+      "MDC_P004.ja": "世界遺産",
+      "MDC_P004.ko": "세계유산",
+      "MDC_P004.it": "Patrimonio Mondiale",
+      "MDC_P006.en": "site inscribed on the UNESCO World Heritage List",
+      "MDC_P010": "SPA130",
+      "MDC_P011": "ITEM_CLASS",
+      "MDC_P014": "{SPB131}"
+    },
+    "is_case_of": [],
+    "applicable_properties": [
+      "SPB131"
+    ],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA130",
+    "superclass_type_property": "SPA130",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA132",
+    "code": "SPA132",
+    "preferred_name": "National Grade",
+    "preferred_name_ml": {
+      "en": "National Grade",
+      "zh-TW": "國家級",
+      "ja": "国指定"
+    },
+    "definition": "designation of national significance",
+    "definition_ml": {
+      "en": "designation of national significance"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA132",
+      "MDC_P004.en": "National Grade",
+      "MDC_P004.zh-TW": "國家級",
+      "MDC_P004.ja": "国指定",
+      "MDC_P006.en": "designation of national significance",
+      "MDC_P010": "SPA130",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA130",
+    "superclass_type_property": "SPA130",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA133",
+    "code": "SPA133",
+    "preferred_name": "Provincial Grade",
+    "preferred_name_ml": {
+      "en": "Provincial Grade",
+      "zh-TW": "省市級"
+    },
+    "definition": "designation of provincial or municipal significance",
+    "definition_ml": {
+      "en": "designation of provincial or municipal significance"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA133",
+      "MDC_P004.en": "Provincial Grade",
+      "MDC_P004.zh-TW": "省市級",
+      "MDC_P006.en": "designation of provincial or municipal significance",
+      "MDC_P010": "SPA130",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA130",
+    "superclass_type_property": "SPA130",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA134",
+    "code": "SPA134",
+    "preferred_name": "Local Grade",
+    "preferred_name_ml": {
+      "en": "Local Grade",
+      "zh-TW": "地方級"
+    },
+    "definition": "designation of local significance",
+    "definition_ml": {
+      "en": "designation of local significance"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA134",
+      "MDC_P004.en": "Local Grade",
+      "MDC_P004.zh-TW": "地方級",
+      "MDC_P006.en": "designation of local significance",
+      "MDC_P010": "SPA130",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA130",
+    "superclass_type_property": "SPA130",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA140",
+    "code": "SPA140",
+    "preferred_name": "City",
+    "preferred_name_ml": {
+      "en": "City",
+      "zh-TW": "城市"
+    },
+    "definition": "categorical class whose members enumerate the cities a scenic spot can be located in",
+    "definition_ml": {
+      "en": "categorical class whose members enumerate the cities a scenic spot can be located in"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA140",
+      "MDC_P004.en": "City",
+      "MDC_P004.zh-TW": "城市",
+      "MDC_P006.en": "categorical class whose members enumerate the cities a scenic spot can be located in",
+      "MDC_P010": "SPA001",
+      "MDC_P011": "CATEGORICAL_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "CATEGORICAL_CLASS",
+    "superclass": "SPA001",
+    "superclass_type_property": "SPA001",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA163",
+    "code": "SPA163",
+    "preferred_name": "Taipei",
+    "preferred_name_ml": {
+      "en": "Taipei",
+      "zh-TW": "臺北"
+    },
+    "definition": "city of Taipei",
+    "definition_ml": {
+      "en": "city of Taipei"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA163",
+      "MDC_P004.en": "Taipei",
+      "MDC_P004.zh-TW": "臺北",
+      "MDC_P006.en": "city of Taipei",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA164",
+    "code": "SPA164",
+    "preferred_name": "Tokyo",
+    "preferred_name_ml": {
+      "en": "Tokyo",
+      "zh-TW": "東京"
+    },
+    "definition": "city of Tokyo",
+    "definition_ml": {
+      "en": "city of Tokyo"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA164",
+      "MDC_P004.en": "Tokyo",
+      "MDC_P004.zh-TW": "東京",
+      "MDC_P006.en": "city of Tokyo",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA165",
+    "code": "SPA165",
+    "preferred_name": "Kyoto",
+    "preferred_name_ml": {
+      "en": "Kyoto",
+      "zh-TW": "京都"
+    },
+    "definition": "city of Kyoto",
+    "definition_ml": {
+      "en": "city of Kyoto"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA165",
+      "MDC_P004.en": "Kyoto",
+      "MDC_P004.zh-TW": "京都",
+      "MDC_P006.en": "city of Kyoto",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA166",
+    "code": "SPA166",
+    "preferred_name": "Seoul",
+    "preferred_name_ml": {
+      "en": "Seoul",
+      "zh-TW": "首爾"
+    },
+    "definition": "city of Seoul",
+    "definition_ml": {
+      "en": "city of Seoul"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA166",
+      "MDC_P004.en": "Seoul",
+      "MDC_P004.zh-TW": "首爾",
+      "MDC_P006.en": "city of Seoul",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA167",
+    "code": "SPA167",
+    "preferred_name": "Rome",
+    "preferred_name_ml": {
+      "en": "Rome",
+      "zh-TW": "羅馬"
+    },
+    "definition": "city of Rome",
+    "definition_ml": {
+      "en": "city of Rome"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA167",
+      "MDC_P004.en": "Rome",
+      "MDC_P004.zh-TW": "羅馬",
+      "MDC_P006.en": "city of Rome",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA168",
+    "code": "SPA168",
+    "preferred_name": "Florence",
+    "preferred_name_ml": {
+      "en": "Florence",
+      "zh-TW": "佛羅倫斯"
+    },
+    "definition": "city of Florence",
+    "definition_ml": {
+      "en": "city of Florence"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA168",
+      "MDC_P004.en": "Florence",
+      "MDC_P004.zh-TW": "佛羅倫斯",
+      "MDC_P006.en": "city of Florence",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA169",
+    "code": "SPA169",
+    "preferred_name": "London",
+    "preferred_name_ml": {
+      "en": "London",
+      "zh-TW": "倫敦"
+    },
+    "definition": "city of London",
+    "definition_ml": {
+      "en": "city of London"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA169",
+      "MDC_P004.en": "London",
+      "MDC_P004.zh-TW": "倫敦",
+      "MDC_P006.en": "city of London",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA170",
+    "code": "SPA170",
+    "preferred_name": "Paris",
+    "preferred_name_ml": {
+      "en": "Paris",
+      "zh-TW": "巴黎"
+    },
+    "definition": "city of Paris",
+    "definition_ml": {
+      "en": "city of Paris"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA170",
+      "MDC_P004.en": "Paris",
+      "MDC_P004.zh-TW": "巴黎",
+      "MDC_P006.en": "city of Paris",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA171",
+    "code": "SPA171",
+    "preferred_name": "New York City",
+    "preferred_name_ml": {
+      "en": "New York City",
+      "zh-TW": "紐約"
+    },
+    "definition": "city of New York City",
+    "definition_ml": {
+      "en": "city of New York City"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA171",
+      "MDC_P004.en": "New York City",
+      "MDC_P004.zh-TW": "紐約",
+      "MDC_P006.en": "city of New York City",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA172",
+    "code": "SPA172",
+    "preferred_name": "Beijing",
+    "preferred_name_ml": {
+      "en": "Beijing",
+      "zh-TW": "北京"
+    },
+    "definition": "city of Beijing",
+    "definition_ml": {
+      "en": "city of Beijing"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA172",
+      "MDC_P004.en": "Beijing",
+      "MDC_P004.zh-TW": "北京",
+      "MDC_P006.en": "city of Beijing",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA173",
+    "code": "SPA173",
+    "preferred_name": "Berlin",
+    "preferred_name_ml": {
+      "en": "Berlin",
+      "zh-TW": "柏林"
+    },
+    "definition": "city of Berlin",
+    "definition_ml": {
+      "en": "city of Berlin"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA173",
+      "MDC_P004.en": "Berlin",
+      "MDC_P004.zh-TW": "柏林",
+      "MDC_P006.en": "city of Berlin",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA174",
+    "code": "SPA174",
+    "preferred_name": "Munich",
+    "preferred_name_ml": {
+      "en": "Munich",
+      "zh-TW": "慕尼黑"
+    },
+    "definition": "city of Munich",
+    "definition_ml": {
+      "en": "city of Munich"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA174",
+      "MDC_P004.en": "Munich",
+      "MDC_P004.zh-TW": "慕尼黑",
+      "MDC_P006.en": "city of Munich",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA175",
+    "code": "SPA175",
+    "preferred_name": "Madrid",
+    "preferred_name_ml": {
+      "en": "Madrid",
+      "zh-TW": "馬德里"
+    },
+    "definition": "city of Madrid",
+    "definition_ml": {
+      "en": "city of Madrid"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA175",
+      "MDC_P004.en": "Madrid",
+      "MDC_P004.zh-TW": "馬德里",
+      "MDC_P006.en": "city of Madrid",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA176",
+    "code": "SPA176",
+    "preferred_name": "Barcelona",
+    "preferred_name_ml": {
+      "en": "Barcelona",
+      "zh-TW": "巴塞隆納"
+    },
+    "definition": "city of Barcelona",
+    "definition_ml": {
+      "en": "city of Barcelona"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA176",
+      "MDC_P004.en": "Barcelona",
+      "MDC_P004.zh-TW": "巴塞隆納",
+      "MDC_P006.en": "city of Barcelona",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA177",
+    "code": "SPA177",
+    "preferred_name": "Bangkok",
+    "preferred_name_ml": {
+      "en": "Bangkok",
+      "zh-TW": "曼谷"
+    },
+    "definition": "city of Bangkok",
+    "definition_ml": {
+      "en": "city of Bangkok"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA177",
+      "MDC_P004.en": "Bangkok",
+      "MDC_P004.zh-TW": "曼谷",
+      "MDC_P006.en": "city of Bangkok",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA178",
+    "code": "SPA178",
+    "preferred_name": "Hanoi",
+    "preferred_name_ml": {
+      "en": "Hanoi",
+      "zh-TW": "河內"
+    },
+    "definition": "city of Hanoi",
+    "definition_ml": {
+      "en": "city of Hanoi"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA178",
+      "MDC_P004.en": "Hanoi",
+      "MDC_P004.zh-TW": "河內",
+      "MDC_P006.en": "city of Hanoi",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA179",
+    "code": "SPA179",
+    "preferred_name": "Kuala Lumpur",
+    "preferred_name_ml": {
+      "en": "Kuala Lumpur",
+      "zh-TW": "吉隆坡"
+    },
+    "definition": "city of Kuala Lumpur",
+    "definition_ml": {
+      "en": "city of Kuala Lumpur"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA179",
+      "MDC_P004.en": "Kuala Lumpur",
+      "MDC_P004.zh-TW": "吉隆坡",
+      "MDC_P006.en": "city of Kuala Lumpur",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA180",
+    "code": "SPA180",
+    "preferred_name": "Sydney",
+    "preferred_name_ml": {
+      "en": "Sydney",
+      "zh-TW": "雪梨"
+    },
+    "definition": "city of Sydney",
+    "definition_ml": {
+      "en": "city of Sydney"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA180",
+      "MDC_P004.en": "Sydney",
+      "MDC_P004.zh-TW": "雪梨",
+      "MDC_P006.en": "city of Sydney",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA181",
+    "code": "SPA181",
+    "preferred_name": "Toronto",
+    "preferred_name_ml": {
+      "en": "Toronto",
+      "zh-TW": "多倫多"
+    },
+    "definition": "city of Toronto",
+    "definition_ml": {
+      "en": "city of Toronto"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA181",
+      "MDC_P004.en": "Toronto",
+      "MDC_P004.zh-TW": "多倫多",
+      "MDC_P006.en": "city of Toronto",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA182",
+    "code": "SPA182",
+    "preferred_name": "Delhi",
+    "preferred_name_ml": {
+      "en": "Delhi",
+      "zh-TW": "德里"
+    },
+    "definition": "city of Delhi",
+    "definition_ml": {
+      "en": "city of Delhi"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA182",
+      "MDC_P004.en": "Delhi",
+      "MDC_P004.zh-TW": "德里",
+      "MDC_P006.en": "city of Delhi",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA183",
+    "code": "SPA183",
+    "preferred_name": "Manila",
+    "preferred_name_ml": {
+      "en": "Manila",
+      "zh-TW": "馬尼拉"
+    },
+    "definition": "city of Manila",
+    "definition_ml": {
+      "en": "city of Manila"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA183",
+      "MDC_P004.en": "Manila",
+      "MDC_P004.zh-TW": "馬尼拉",
+      "MDC_P006.en": "city of Manila",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA184",
+    "code": "SPA184",
+    "preferred_name": "Jakarta",
+    "preferred_name_ml": {
+      "en": "Jakarta",
+      "zh-TW": "雅加達"
+    },
+    "definition": "city of Jakarta",
+    "definition_ml": {
+      "en": "city of Jakarta"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA184",
+      "MDC_P004.en": "Jakarta",
+      "MDC_P004.zh-TW": "雅加達",
+      "MDC_P006.en": "city of Jakarta",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA185",
+    "code": "SPA185",
+    "preferred_name": "Mexico City",
+    "preferred_name_ml": {
+      "en": "Mexico City",
+      "zh-TW": "墨西哥城"
+    },
+    "definition": "city of Mexico City",
+    "definition_ml": {
+      "en": "city of Mexico City"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA185",
+      "MDC_P004.en": "Mexico City",
+      "MDC_P004.zh-TW": "墨西哥城",
+      "MDC_P006.en": "city of Mexico City",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA186",
+    "code": "SPA186",
+    "preferred_name": "Cairo",
+    "preferred_name_ml": {
+      "en": "Cairo",
+      "zh-TW": "開羅"
+    },
+    "definition": "city of Cairo",
+    "definition_ml": {
+      "en": "city of Cairo"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA186",
+      "MDC_P004.en": "Cairo",
+      "MDC_P004.zh-TW": "開羅",
+      "MDC_P006.en": "city of Cairo",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA187",
+    "code": "SPA187",
+    "preferred_name": "Istanbul",
+    "preferred_name_ml": {
+      "en": "Istanbul",
+      "zh-TW": "伊斯坦堡"
+    },
+    "definition": "city of Istanbul",
+    "definition_ml": {
+      "en": "city of Istanbul"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA187",
+      "MDC_P004.en": "Istanbul",
+      "MDC_P004.zh-TW": "伊斯坦堡",
+      "MDC_P006.en": "city of Istanbul",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA188",
+    "code": "SPA188",
+    "preferred_name": "Athens",
+    "preferred_name_ml": {
+      "en": "Athens",
+      "zh-TW": "雅典"
+    },
+    "definition": "city of Athens",
+    "definition_ml": {
+      "en": "city of Athens"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA188",
+      "MDC_P004.en": "Athens",
+      "MDC_P004.zh-TW": "雅典",
+      "MDC_P006.en": "city of Athens",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA189",
+    "code": "SPA189",
+    "preferred_name": "Amsterdam",
+    "preferred_name_ml": {
+      "en": "Amsterdam",
+      "zh-TW": "阿姆斯特丹"
+    },
+    "definition": "city of Amsterdam",
+    "definition_ml": {
+      "en": "city of Amsterdam"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA189",
+      "MDC_P004.en": "Amsterdam",
+      "MDC_P004.zh-TW": "阿姆斯特丹",
+      "MDC_P006.en": "city of Amsterdam",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA190",
+    "code": "SPA190",
+    "preferred_name": "Lisbon",
+    "preferred_name_ml": {
+      "en": "Lisbon",
+      "zh-TW": "里斯本"
+    },
+    "definition": "city of Lisbon",
+    "definition_ml": {
+      "en": "city of Lisbon"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA190",
+      "MDC_P004.en": "Lisbon",
+      "MDC_P004.zh-TW": "里斯本",
+      "MDC_P006.en": "city of Lisbon",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA191",
+    "code": "SPA191",
+    "preferred_name": "Warsaw",
+    "preferred_name_ml": {
+      "en": "Warsaw",
+      "zh-TW": "華沙"
+    },
+    "definition": "city of Warsaw",
+    "definition_ml": {
+      "en": "city of Warsaw"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA191",
+      "MDC_P004.en": "Warsaw",
+      "MDC_P004.zh-TW": "華沙",
+      "MDC_P006.en": "city of Warsaw",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA192",
+    "code": "SPA192",
+    "preferred_name": "Prague",
+    "preferred_name_ml": {
+      "en": "Prague",
+      "zh-TW": "布拉格"
+    },
+    "definition": "city of Prague",
+    "definition_ml": {
+      "en": "city of Prague"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA192",
+      "MDC_P004.en": "Prague",
+      "MDC_P004.zh-TW": "布拉格",
+      "MDC_P006.en": "city of Prague",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPA193",
+    "code": "SPA193",
+    "preferred_name": "Budapest",
+    "preferred_name_ml": {
+      "en": "Budapest",
+      "zh-TW": "布達佩斯"
+    },
+    "definition": "city of Budapest",
+    "definition_ml": {
+      "en": "city of Budapest"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_5": "SPA193",
+      "MDC_P004.en": "Budapest",
+      "MDC_P004.zh-TW": "布達佩斯",
+      "MDC_P006.en": "city of Budapest",
+      "MDC_P010": "SPA140",
+      "MDC_P011": "ITEM_CLASS"
+    },
+    "is_case_of": [],
+    "applicable_properties": [],
+    "imported_properties": [],
+    "sub_class_selection": [],
+    "applicable_documents": [],
+    "imported_documents": [],
+    "class_type": "ITEM_CLASS",
+    "superclass": "SPA140",
+    "superclass_type_property": "SPA140",
+    "type": "class"
+  },
+  {
+    "irdi": "SPB001",
+    "code": "SPB001",
+    "preferred_name": "country",
+    "preferred_name_ml": {
+      "en": "country",
+      "zh-TW": "所在國家"
+    },
+    "definition": "sovereign state in which the scenic spot is located",
+    "definition_ml": {
+      "en": "sovereign state in which the scenic spot is located"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB001",
+      "MDC_P004.en": "country",
+      "MDC_P004.zh-TW": "所在國家",
+      "MDC_P006.en": "sovereign state in which the scenic spot is located",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "CLASS_REFERENCE(Country)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "CLASS_REFERENCE(Country)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB002",
+    "code": "SPB002",
+    "preferred_name": "scenic spot type",
+    "preferred_name_ml": {
+      "en": "scenic spot type",
+      "zh-TW": "景點類型"
+    },
+    "definition": "kind of scenic spot, selected from the scenic spot type classification",
+    "definition_ml": {
+      "en": "kind of scenic spot, selected from the scenic spot type classification"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB002",
+      "MDC_P004.en": "scenic spot type",
+      "MDC_P004.zh-TW": "景點類型",
+      "MDC_P006.en": "kind of scenic spot, selected from the scenic spot type classification",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "CLASS_REFERENCE(ScenicSpotType)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "CLASS_REFERENCE(ScenicSpotType)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB003",
+    "code": "SPB003",
+    "preferred_name": "religious tradition",
+    "preferred_name_ml": {
+      "en": "religious tradition",
+      "zh-TW": "宗教傳統"
+    },
+    "definition": "religious tradition observed at the place of worship",
+    "definition_ml": {
+      "en": "religious tradition observed at the place of worship"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB003",
+      "MDC_P004.en": "religious tradition",
+      "MDC_P004.zh-TW": "宗教傳統",
+      "MDC_P006.en": "religious tradition observed at the place of worship",
+      "MDC_P020": "CONDITION_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "CLASS_REFERENCE(ReligiousTradition)",
+      "MDC_P028": "spot_type == Temple"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "CLASS_REFERENCE(ReligiousTradition)",
+    "data_element_type": "CONDITION_DET",
+    "property_data_element_type": "CONDITION_DET",
+    "condition_raw": "spot_type == Temple",
+    "condition": "spot_type == Temple",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB004",
+    "code": "SPB004",
+    "preferred_name": "official grade",
+    "preferred_name_ml": {
+      "en": "official grade",
+      "zh-TW": "官方等級"
+    },
+    "definition": "official listing or priority level of the scenic spot",
+    "definition_ml": {
+      "en": "official listing or priority level of the scenic spot"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB004",
+      "MDC_P004.en": "official grade",
+      "MDC_P004.zh-TW": "官方等級",
+      "MDC_P006.en": "official listing or priority level of the scenic spot",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "CLASS_REFERENCE(OfficialGrade)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "CLASS_REFERENCE(OfficialGrade)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB005",
+    "code": "SPB005",
+    "preferred_name": "elevation",
+    "preferred_name_ml": {
+      "en": "elevation",
+      "zh-TW": "海拔"
+    },
+    "definition": "elevation above sea level of the spot's principal feature",
+    "definition_ml": {
+      "en": "elevation above sea level of the spot's principal feature"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB005",
+      "MDC_P004.en": "elevation",
+      "MDC_P004.zh-TW": "海拔",
+      "MDC_P006.en": "elevation above sea level of the spot's principal feature",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "metre"
+    },
+    "definition_class": "SPA001",
+    "unit": "0112/2///62720#UAA726",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "metre"
+  },
+  {
+    "irdi": "SPB006",
+    "code": "SPB006",
+    "preferred_name": "area",
+    "preferred_name_ml": {
+      "en": "area",
+      "zh-TW": "面積"
+    },
+    "definition": "extent of the scenic spot",
+    "definition_ml": {
+      "en": "extent of the scenic spot"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB006",
+      "MDC_P004.en": "area",
+      "MDC_P004.zh-TW": "面積",
+      "MDC_P006.en": "extent of the scenic spot",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "square_kilometre"
+    },
+    "definition_class": "SPA001",
+    "unit": "0112/2///62720#UAA639",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "square kilometre"
+  },
+  {
+    "irdi": "SPB007",
+    "code": "SPB007",
+    "preferred_name": "established year",
+    "preferred_name_ml": {
+      "en": "established year",
+      "zh-TW": "建立年份"
+    },
+    "definition": "calendar year in which the spot was established, constructed, or first recorded",
+    "definition_ml": {
+      "en": "calendar year in which the spot was established, constructed, or first recorded"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB007",
+      "MDC_P004.en": "established year",
+      "MDC_P004.zh-TW": "建立年份",
+      "MDC_P006.en": "calendar year in which the spot was established, constructed, or first recorded",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB008",
+    "code": "SPB008",
+    "preferred_name": "admission",
+    "preferred_name_ml": {
+      "en": "admission",
+      "zh-TW": "門票"
+    },
+    "definition": "whether entry requires payment",
+    "definition_ml": {
+      "en": "whether entry requires payment"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB008",
+      "MDC_P004.en": "admission",
+      "MDC_P004.zh-TW": "門票",
+      "MDC_P006.en": "whether entry requires payment",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "ENUM_STRING_TYPE(admission_enum)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "ENUM_STRING_TYPE(admission_enum)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "value_list": "SPE001"
+  },
+  {
+    "irdi": "SPB009",
+    "code": "SPB009",
+    "preferred_name": "opening period",
+    "preferred_name_ml": {
+      "en": "opening period",
+      "zh-TW": "開放期間"
+    },
+    "definition": "operating period of the spot",
+    "definition_ml": {
+      "en": "operating period of the spot"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB009",
+      "MDC_P004.en": "opening period",
+      "MDC_P004.zh-TW": "開放期間",
+      "MDC_P006.en": "operating period of the spot",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "ENUM_STRING_TYPE(period_enum)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "ENUM_STRING_TYPE(period_enum)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "value_list": "SPE002"
+  },
+  {
+    "irdi": "SPB010",
+    "code": "SPB010",
+    "preferred_name": "annual visitors",
+    "preferred_name_ml": {
+      "en": "annual visitors",
+      "zh-TW": "年度遊客"
+    },
+    "definition": "approximate number of visitors per year",
+    "definition_ml": {
+      "en": "approximate number of visitors per year"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB010",
+      "MDC_P004.en": "annual visitors",
+      "MDC_P004.zh-TW": "年度遊客",
+      "MDC_P006.en": "approximate number of visitors per year",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB011",
+    "code": "SPB011",
+    "preferred_name": "listing criteria",
+    "preferred_name_ml": {
+      "en": "listing criteria",
+      "zh-TW": "遺產類別"
+    },
+    "definition": "cultural, natural, or mixed character of a World Heritage listing",
+    "definition_ml": {
+      "en": "cultural, natural, or mixed character of a World Heritage listing"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB011",
+      "MDC_P004.en": "listing criteria",
+      "MDC_P004.zh-TW": "遺產類別",
+      "MDC_P006.en": "cultural, natural, or mixed character of a World Heritage listing",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "ENUM_STRING_TYPE(heritage_criteria_enum)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "ENUM_STRING_TYPE(heritage_criteria_enum)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "value_list": "SPE005"
+  },
+  {
+    "irdi": "SPB101",
+    "code": "SPB101",
+    "preferred_name": "trail count",
+    "preferred_name_ml": {
+      "en": "trail count",
+      "zh-TW": "步道數量"
+    },
+    "definition": "number of maintained hiking trails in the national park",
+    "definition_ml": {
+      "en": "number of maintained hiking trails in the national park"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB101",
+      "MDC_P004.en": "trail count",
+      "MDC_P004.zh-TW": "步道數量",
+      "MDC_P006.en": "number of maintained hiking trails in the national park",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA101",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA101",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB102",
+    "code": "SPB102",
+    "preferred_name": "founding dynasty",
+    "preferred_name_ml": {
+      "en": "founding dynasty",
+      "zh-TW": "創建朝代"
+    },
+    "definition": "dynasty or period during which the temple was founded",
+    "definition_ml": {
+      "en": "dynasty or period during which the temple was founded"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB102",
+      "MDC_P004.en": "founding dynasty",
+      "MDC_P004.zh-TW": "創建朝代",
+      "MDC_P006.en": "dynasty or period during which the temple was founded",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA102",
+      "MDC_P022": "STRING_TYPE"
+    },
+    "definition_class": "SPA102",
+    "alternative_units": [],
+    "data_type": "STRING_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB103",
+    "code": "SPB103",
+    "preferred_name": "principal deity",
+    "preferred_name_ml": {
+      "en": "principal deity",
+      "zh-TW": "主祀神明"
+    },
+    "definition": "principal deity venerated at the temple",
+    "definition_ml": {
+      "en": "principal deity venerated at the temple"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB103",
+      "MDC_P004.en": "principal deity",
+      "MDC_P004.zh-TW": "主祀神明",
+      "MDC_P006.en": "principal deity venerated at the temple",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA102",
+      "MDC_P022": "STRING_TYPE"
+    },
+    "definition_class": "SPA102",
+    "alternative_units": [],
+    "data_type": "STRING_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB104",
+    "code": "SPB104",
+    "preferred_name": "royal dynasty",
+    "preferred_name_ml": {
+      "en": "royal dynasty",
+      "zh-TW": "皇室朝代"
+    },
+    "definition": "dynasty for which the palace served as a royal residence",
+    "definition_ml": {
+      "en": "dynasty for which the palace served as a royal residence"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB104",
+      "MDC_P004.en": "royal dynasty",
+      "MDC_P004.zh-TW": "皇室朝代",
+      "MDC_P006.en": "dynasty for which the palace served as a royal residence",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA103",
+      "MDC_P022": "STRING_TYPE"
+    },
+    "definition_class": "SPA103",
+    "alternative_units": [],
+    "data_type": "STRING_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB105",
+    "code": "SPB105",
+    "preferred_name": "collection size",
+    "preferred_name_ml": {
+      "en": "collection size",
+      "zh-TW": "館藏數量"
+    },
+    "definition": "number of catalogued objects held by the museum",
+    "definition_ml": {
+      "en": "number of catalogued objects held by the museum"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB105",
+      "MDC_P004.en": "collection size",
+      "MDC_P004.zh-TW": "館藏數量",
+      "MDC_P006.en": "number of catalogued objects held by the museum",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA104",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA104",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB106",
+    "code": "SPB106",
+    "preferred_name": "water temperature",
+    "preferred_name_ml": {
+      "en": "water temperature",
+      "zh-TW": "泉水溫度"
+    },
+    "definition": "temperature of the spring water at emergence",
+    "definition_ml": {
+      "en": "temperature of the spring water at emergence"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB106",
+      "MDC_P004.en": "water temperature",
+      "MDC_P004.zh-TW": "泉水溫度",
+      "MDC_P006.en": "temperature of the spring water at emergence",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA105",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "degree_celsius"
+    },
+    "definition_class": "SPA105",
+    "unit": "0112/2///62720#UAA033",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "degree celsius"
+  },
+  {
+    "irdi": "SPB107",
+    "code": "SPB107",
+    "preferred_name": "mineral type",
+    "preferred_name_ml": {
+      "en": "mineral type",
+      "zh-TW": "泉質"
+    },
+    "definition": "dominant dissolved mineral character of the spring",
+    "definition_ml": {
+      "en": "dominant dissolved mineral character of the spring"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB107",
+      "MDC_P004.en": "mineral type",
+      "MDC_P004.zh-TW": "泉質",
+      "MDC_P006.en": "dominant dissolved mineral character of the spring",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA105",
+      "MDC_P022": "ENUM_STRING_TYPE(mineral_enum)"
+    },
+    "definition_class": "SPA105",
+    "alternative_units": [],
+    "data_type": "ENUM_STRING_TYPE(mineral_enum)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "value_list": "SPE003"
+  },
+  {
+    "irdi": "SPB108",
+    "code": "SPB108",
+    "preferred_name": "stall count",
+    "preferred_name_ml": {
+      "en": "stall count",
+      "zh-TW": "攤位數量"
+    },
+    "definition": "approximate number of vending stalls at the market",
+    "definition_ml": {
+      "en": "approximate number of vending stalls at the market"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB108",
+      "MDC_P004.en": "stall count",
+      "MDC_P004.zh-TW": "攤位數量",
+      "MDC_P006.en": "approximate number of vending stalls at the market",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA106",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA106",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB109",
+    "code": "SPB109",
+    "preferred_name": "topographic prominence",
+    "preferred_name_ml": {
+      "en": "topographic prominence",
+      "zh-TW": "地形突出度"
+    },
+    "definition": "height of the mountain's summit relative to its surroundings",
+    "definition_ml": {
+      "en": "height of the mountain's summit relative to its surroundings"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB109",
+      "MDC_P004.en": "topographic prominence",
+      "MDC_P004.zh-TW": "地形突出度",
+      "MDC_P006.en": "height of the mountain's summit relative to its surroundings",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA107",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "metre"
+    },
+    "definition_class": "SPA107",
+    "unit": "0112/2///62720#UAA726",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "metre"
+  },
+  {
+    "irdi": "SPB110",
+    "code": "SPB110",
+    "preferred_name": "maximum depth",
+    "preferred_name_ml": {
+      "en": "maximum depth",
+      "zh-TW": "最大深度"
+    },
+    "definition": "greatest depth of the lake",
+    "definition_ml": {
+      "en": "greatest depth of the lake"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB110",
+      "MDC_P004.en": "maximum depth",
+      "MDC_P004.zh-TW": "最大深度",
+      "MDC_P006.en": "greatest depth of the lake",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA108",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "metre"
+    },
+    "definition_class": "SPA108",
+    "unit": "0112/2///62720#UAA726",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "metre"
+  },
+  {
+    "irdi": "SPB111",
+    "code": "SPB111",
+    "preferred_name": "excavation status",
+    "preferred_name_ml": {
+      "en": "excavation status",
+      "zh-TW": "挖掘狀態"
+    },
+    "definition": "state of archaeological investigation",
+    "definition_ml": {
+      "en": "state of archaeological investigation"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB111",
+      "MDC_P004.en": "excavation status",
+      "MDC_P004.zh-TW": "挖掘狀態",
+      "MDC_P006.en": "state of archaeological investigation",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA109",
+      "MDC_P022": "ENUM_STRING_TYPE(excavation_enum)"
+    },
+    "definition_class": "SPA109",
+    "alternative_units": [],
+    "data_type": "ENUM_STRING_TYPE(excavation_enum)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "value_list": "SPE004"
+  },
+  {
+    "irdi": "SPB131",
+    "code": "SPB131",
+    "preferred_name": "inscription year",
+    "preferred_name_ml": {
+      "en": "inscription year",
+      "zh-TW": "列入年份"
+    },
+    "definition": "calendar year in which the site was inscribed on the World Heritage List",
+    "definition_ml": {
+      "en": "calendar year in which the site was inscribed on the World Heritage List"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB131",
+      "MDC_P004.en": "inscription year",
+      "MDC_P004.zh-TW": "列入年份",
+      "MDC_P006.en": "calendar year in which the site was inscribed on the World Heritage List",
+      "MDC_P020": "CONDITION_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P028": "official_grade == WorldHeritage"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "CONDITION_DET",
+    "property_data_element_type": "CONDITION_DET",
+    "condition_raw": "official_grade == WorldHeritage",
+    "condition": "official_grade == WorldHeritage",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB201",
+    "code": "SPB201",
+    "preferred_name": "trail length",
+    "preferred_name_ml": {
+      "en": "trail length",
+      "zh-TW": "步道總長"
+    },
+    "definition": "total length of maintained hiking trails",
+    "definition_ml": {
+      "en": "total length of maintained hiking trails"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB201",
+      "MDC_P004.en": "trail length",
+      "MDC_P004.zh-TW": "步道總長",
+      "MDC_P006.en": "total length of maintained hiking trails",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA101",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "kilometre"
+    },
+    "definition_class": "SPA101",
+    "unit": "0112/2///62720#UAA637",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "kilometre"
+  },
+  {
+    "irdi": "SPB202",
+    "code": "SPB202",
+    "preferred_name": "wildlife species",
+    "preferred_name_ml": {
+      "en": "wildlife species",
+      "zh-TW": "野生物種數"
+    },
+    "definition": "number of documented wildlife species in the protected area",
+    "definition_ml": {
+      "en": "number of documented wildlife species in the protected area"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB202",
+      "MDC_P004.en": "wildlife species",
+      "MDC_P004.zh-TW": "野生物種數",
+      "MDC_P006.en": "number of documented wildlife species in the protected area",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA101",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA101",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB203",
+    "code": "SPB203",
+    "preferred_name": "treasure count",
+    "preferred_name_ml": {
+      "en": "treasure count",
+      "zh-TW": "指定寶物數"
+    },
+    "definition": "number of holdings designated as national treasures or important cultural properties",
+    "definition_ml": {
+      "en": "number of holdings designated as national treasures or important cultural properties"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB203",
+      "MDC_P004.en": "treasure count",
+      "MDC_P004.zh-TW": "指定寶物數",
+      "MDC_P006.en": "number of holdings designated as national treasures or important cultural properties",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA102",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA102",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB204",
+    "code": "SPB204",
+    "preferred_name": "floor area",
+    "preferred_name_ml": {
+      "en": "floor area",
+      "zh-TW": "樓地板面積"
+    },
+    "definition": "total floor area of the palace buildings",
+    "definition_ml": {
+      "en": "total floor area of the palace buildings"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB204",
+      "MDC_P004.en": "floor area",
+      "MDC_P004.zh-TW": "樓地板面積",
+      "MDC_P006.en": "total floor area of the palace buildings",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA103",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "square_metre"
+    },
+    "definition_class": "SPA103",
+    "unit": "0112/2///62720#UAA744",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "square metre"
+  },
+  {
+    "irdi": "SPB205",
+    "code": "SPB205",
+    "preferred_name": "room count",
+    "preferred_name_ml": {
+      "en": "room count",
+      "zh-TW": "房間數"
+    },
+    "definition": "number of rooms in the palace",
+    "definition_ml": {
+      "en": "number of rooms in the palace"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB205",
+      "MDC_P004.en": "room count",
+      "MDC_P004.zh-TW": "房間數",
+      "MDC_P006.en": "number of rooms in the palace",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA103",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA103",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB206",
+    "code": "SPB206",
+    "preferred_name": "exhibition area",
+    "preferred_name_ml": {
+      "en": "exhibition area",
+      "zh-TW": "展覽面積"
+    },
+    "definition": "gallery floor area open to the public",
+    "definition_ml": {
+      "en": "gallery floor area open to the public"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB206",
+      "MDC_P004.en": "exhibition area",
+      "MDC_P004.zh-TW": "展覽面積",
+      "MDC_P006.en": "gallery floor area open to the public",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA104",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "square_metre"
+    },
+    "definition_class": "SPA104",
+    "unit": "0112/2///62720#UAA744",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "square metre"
+  },
+  {
+    "irdi": "SPB207",
+    "code": "SPB207",
+    "preferred_name": "special exhibition count",
+    "preferred_name_ml": {
+      "en": "special exhibition count",
+      "zh-TW": "特展數量"
+    },
+    "definition": "number of special exhibitions held per year",
+    "definition_ml": {
+      "en": "number of special exhibitions held per year"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB207",
+      "MDC_P004.en": "special exhibition count",
+      "MDC_P004.zh-TW": "特展數量",
+      "MDC_P006.en": "number of special exhibitions held per year",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA104",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA104",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB208",
+    "code": "SPB208",
+    "preferred_name": "flow rate",
+    "preferred_name_ml": {
+      "en": "flow rate",
+      "zh-TW": "湧泉量"
+    },
+    "definition": "rate of flow of the spring at emergence",
+    "definition_ml": {
+      "en": "rate of flow of the spring at emergence"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB208",
+      "MDC_P004.en": "flow rate",
+      "MDC_P004.zh-TW": "湧泉量",
+      "MDC_P006.en": "rate of flow of the spring at emergence",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA105",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "litre_per_second"
+    },
+    "definition_class": "SPA105",
+    "unit": "0112/2///62720#UAA664",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "litre per second"
+  },
+  {
+    "irdi": "SPB209",
+    "code": "SPB209",
+    "preferred_name": "source depth",
+    "preferred_name_ml": {
+      "en": "source depth",
+      "zh-TW": "泉源深度"
+    },
+    "definition": "depth below surface of the geothermal source",
+    "definition_ml": {
+      "en": "depth below surface of the geothermal source"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB209",
+      "MDC_P004.en": "source depth",
+      "MDC_P004.zh-TW": "泉源深度",
+      "MDC_P006.en": "depth below surface of the geothermal source",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA105",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "metre"
+    },
+    "definition_class": "SPA105",
+    "unit": "0112/2///62720#UAA726",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "metre"
+  },
+  {
+    "irdi": "SPB210",
+    "code": "SPB210",
+    "preferred_name": "opening days per week",
+    "preferred_name_ml": {
+      "en": "opening days per week",
+      "zh-TW": "每週營業天數"
+    },
+    "definition": "number of evenings per week the market operates",
+    "definition_ml": {
+      "en": "number of evenings per week the market operates"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB210",
+      "MDC_P004.en": "opening days per week",
+      "MDC_P004.zh-TW": "每週營業天數",
+      "MDC_P006.en": "number of evenings per week the market operates",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA106",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA106",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB211",
+    "code": "SPB211",
+    "preferred_name": "first ascent year",
+    "preferred_name_ml": {
+      "en": "first ascent year",
+      "zh-TW": "首登年份"
+    },
+    "definition": "year of the first recorded ascent",
+    "definition_ml": {
+      "en": "year of the first recorded ascent"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB211",
+      "MDC_P004.en": "first ascent year",
+      "MDC_P004.zh-TW": "首登年份",
+      "MDC_P006.en": "year of the first recorded ascent",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA107",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA107",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB212",
+    "code": "SPB212",
+    "preferred_name": "climbing routes",
+    "preferred_name_ml": {
+      "en": "climbing routes",
+      "zh-TW": "攀登路線數"
+    },
+    "definition": "number of established climbing routes",
+    "definition_ml": {
+      "en": "number of established climbing routes"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB212",
+      "MDC_P004.en": "climbing routes",
+      "MDC_P004.zh-TW": "攀登路線數",
+      "MDC_P006.en": "number of established climbing routes",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA107",
+      "MDC_P022": "INT_TYPE"
+    },
+    "definition_class": "SPA107",
+    "alternative_units": [],
+    "data_type": "INT_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB213",
+    "code": "SPB213",
+    "preferred_name": "surface area",
+    "preferred_name_ml": {
+      "en": "surface area",
+      "zh-TW": "湖面面積"
+    },
+    "definition": "area of the lake surface",
+    "definition_ml": {
+      "en": "area of the lake surface"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB213",
+      "MDC_P004.en": "surface area",
+      "MDC_P004.zh-TW": "湖面面積",
+      "MDC_P006.en": "area of the lake surface",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA108",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "square_kilometre"
+    },
+    "definition_class": "SPA108",
+    "unit": "0112/2///62720#UAA639",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "square kilometre"
+  },
+  {
+    "irdi": "SPB214",
+    "code": "SPB214",
+    "preferred_name": "mean depth",
+    "preferred_name_ml": {
+      "en": "mean depth",
+      "zh-TW": "平均深度"
+    },
+    "definition": "average depth of the lake",
+    "definition_ml": {
+      "en": "average depth of the lake"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB214",
+      "MDC_P004.en": "mean depth",
+      "MDC_P004.zh-TW": "平均深度",
+      "MDC_P006.en": "average depth of the lake",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA108",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "metre"
+    },
+    "definition_class": "SPA108",
+    "unit": "0112/2///62720#UAA726",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "metre"
+  },
+  {
+    "irdi": "SPB215",
+    "code": "SPB215",
+    "preferred_name": "discovery year",
+    "preferred_name_ml": {
+      "en": "discovery year",
+      "zh-TW": "發現年份"
+    },
+    "definition": "year the site was discovered or first excavated",
+    "definition_ml": {
+      "en": "year the site was discovered or first excavated"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB215",
+      "MDC_P004.en": "discovery year",
+      "MDC_P004.zh-TW": "發現年份",
+      "MDC_P006.en": "year the site was discovered or first excavated",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA109",
+      "MDC_P022": "REAL_TYPE"
+    },
+    "definition_class": "SPA109",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB216",
+    "code": "SPB216",
+    "preferred_name": "latitude",
+    "preferred_name_ml": {
+      "en": "latitude",
+      "zh-TW": "緯度"
+    },
+    "definition": "north-south position of the spot's principal feature in decimal degrees (WGS 84)",
+    "definition_ml": {
+      "en": "north-south position of the spot's principal feature in decimal degrees (WGS 84)"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB216",
+      "MDC_P004.en": "latitude",
+      "MDC_P004.zh-TW": "緯度",
+      "MDC_P006.en": "north-south position of the spot's principal feature in decimal degrees (WGS 84)",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "degree"
+    },
+    "definition_class": "SPA001",
+    "unit": "0112/2///62720#UAA024",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "degree"
+  },
+  {
+    "irdi": "SPB217",
+    "code": "SPB217",
+    "preferred_name": "longitude",
+    "preferred_name_ml": {
+      "en": "longitude",
+      "zh-TW": "經度"
+    },
+    "definition": "east-west position of the spot's principal feature in decimal degrees (WGS 84)",
+    "definition_ml": {
+      "en": "east-west position of the spot's principal feature in decimal degrees (WGS 84)"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB217",
+      "MDC_P004.en": "longitude",
+      "MDC_P004.zh-TW": "經度",
+      "MDC_P006.en": "east-west position of the spot's principal feature in decimal degrees (WGS 84)",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "REAL_TYPE",
+      "MDC_P041": "degree"
+    },
+    "definition_class": "SPA001",
+    "unit": "0112/2///62720#UAA024",
+    "alternative_units": [],
+    "data_type": "REAL_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property",
+    "unit_text": "degree"
+  },
+  {
+    "irdi": "SPB218",
+    "code": "SPB218",
+    "preferred_name": "city",
+    "preferred_name_ml": {
+      "en": "city",
+      "zh-TW": "城市"
+    },
+    "definition": "city in which the spot is located, between the country and the spot itself",
+    "definition_ml": {
+      "en": "city in which the spot is located, between the country and the spot itself"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB218",
+      "MDC_P004.en": "city",
+      "MDC_P004.zh-TW": "城市",
+      "MDC_P006.en": "city in which the spot is located, between the country and the spot itself",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "CLASS_REFERENCE(City)"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "CLASS_REFERENCE(City)",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB219",
+    "code": "SPB219",
+    "preferred_name": "visitor data year",
+    "preferred_name_ml": {
+      "en": "visitor data year",
+      "zh-TW": "遊客統計年份"
+    },
+    "definition": "reference year of the annual_visitors figure, when the source states it",
+    "definition_ml": {
+      "en": "reference year of the annual_visitors figure, when the source states it"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB219",
+      "MDC_P004.en": "visitor data year",
+      "MDC_P004.zh-TW": "遊客統計年份",
+      "MDC_P006.en": "reference year of the annual_visitors figure, when the source states it",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA001",
+      "MDC_P022": "INTEGER_TYPE"
+    },
+    "definition_class": "SPA001",
+    "alternative_units": [],
+    "data_type": "INTEGER_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPB305",
+    "code": "SPB305",
+    "preferred_name": "architectural style",
+    "preferred_name_ml": {
+      "en": "architectural style",
+      "zh-TW": "建築風格"
+    },
+    "definition": "architectural style of the landmark",
+    "definition_ml": {
+      "en": "architectural style of the landmark"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_6": "SPB305",
+      "MDC_P004.en": "architectural style",
+      "MDC_P004.zh-TW": "建築風格",
+      "MDC_P006.en": "architectural style of the landmark",
+      "MDC_P020": "NON_DEPENDENT_P_DET",
+      "MDC_P021": "SPA110",
+      "MDC_P022": "STRING_TYPE"
+    },
+    "definition_class": "SPA110",
+    "alternative_units": [],
+    "data_type": "STRING_TYPE",
+    "data_element_type": "NON_DEPENDENT_P_DET",
+    "property_data_element_type": "NON_DEPENDENT_P_DET",
+    "type": "property"
+  },
+  {
+    "irdi": "SPE001",
+    "code": "SPE001",
+    "preferred_name": "admission categories",
+    "preferred_name_ml": {
+      "en": "admission categories"
+    },
+    "definition": "enumeration of whether entry to the spot requires payment",
+    "definition_ml": {
+      "en": "enumeration of whether entry to the spot requires payment"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_12": "SPE001",
+      "MDC_P004.en": "admission categories",
+      "MDC_P006.en": "enumeration of whether entry to the spot requires payment",
+      "MDC_P044": "{Free,Paid}"
+    },
+    "term_irdis": [],
+    "code_list": [
+      "Free",
+      "Paid"
+    ],
+    "type": "value_list"
+  },
+  {
+    "irdi": "SPE002",
+    "code": "SPE002",
+    "preferred_name": "opening period categories",
+    "preferred_name_ml": {
+      "en": "opening period categories"
+    },
+    "definition": "enumeration of whether the spot operates year-round or seasonally",
+    "definition_ml": {
+      "en": "enumeration of whether the spot operates year-round or seasonally"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_12": "SPE002",
+      "MDC_P004.en": "opening period categories",
+      "MDC_P006.en": "enumeration of whether the spot operates year-round or seasonally",
+      "MDC_P044": "{YearRound,Seasonal}"
+    },
+    "term_irdis": [],
+    "code_list": [
+      "YearRound",
+      "Seasonal"
+    ],
+    "type": "value_list"
+  },
+  {
+    "irdi": "SPE003",
+    "code": "SPE003",
+    "preferred_name": "mineral type categories",
+    "preferred_name_ml": {
+      "en": "mineral type categories"
+    },
+    "definition": "enumeration of the dominant dissolved mineral character of a hot spring",
+    "definition_ml": {
+      "en": "enumeration of the dominant dissolved mineral character of a hot spring"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_12": "SPE003",
+      "MDC_P004.en": "mineral type categories",
+      "MDC_P006.en": "enumeration of the dominant dissolved mineral character of a hot spring",
+      "MDC_P044": "{Sodium_bicarbonate,Sulfate,Carbonate,Iron}"
+    },
+    "term_irdis": [],
+    "code_list": [
+      "Sodium_bicarbonate",
+      "Sulfate",
+      "Carbonate",
+      "Iron"
+    ],
+    "type": "value_list"
+  },
+  {
+    "irdi": "SPE004",
+    "code": "SPE004",
+    "preferred_name": "excavation status categories",
+    "preferred_name_ml": {
+      "en": "excavation status categories"
+    },
+    "definition": "enumeration of the state of archaeological investigation of a site",
+    "definition_ml": {
+      "en": "enumeration of the state of archaeological investigation of a site"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_12": "SPE004",
+      "MDC_P004.en": "excavation status categories",
+      "MDC_P006.en": "enumeration of the state of archaeological investigation of a site",
+      "MDC_P044": "{Ongoing,Completed}"
+    },
+    "term_irdis": [],
+    "code_list": [
+      "Ongoing",
+      "Completed"
+    ],
+    "type": "value_list"
+  },
+  {
+    "irdi": "SPE005",
+    "code": "SPE005",
+    "preferred_name": "heritage listing criteria categories",
+    "preferred_name_ml": {
+      "en": "heritage listing criteria categories"
+    },
+    "definition": "enumeration of the World Heritage listing characters",
+    "definition_ml": {
+      "en": "enumeration of the World Heritage listing characters"
+    },
+    "synonyms": [],
+    "raw_properties": {
+      "MDC_P001_12": "SPE005",
+      "MDC_P004.en": "heritage listing criteria categories",
+      "MDC_P006.en": "enumeration of the World Heritage listing characters",
+      "MDC_P044": "{Cultural,Natural,Mixed}"
+    },
+    "term_irdis": [],
+    "code_list": [
+      "Cultural",
+      "Natural",
+      "Mixed"
+    ],
+    "type": "value_list"
+  }
+]

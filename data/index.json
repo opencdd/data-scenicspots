@@ -1,0 +1,41 @@
+{
+  "dictionaries": [
+    {
+      "slug": "scenicspots",
+      "parcelId": "SCENICSPOTS",
+      "title": "ScenicSpots 旅遊景點 (demonstration)",
+      "sourceLanguage": "en",
+      "translationLanguages": [
+        "zh-TW",
+        "zh-HK",
+        "zh-CN",
+        "ja",
+        "ko",
+        "fr",
+        "it",
+        "de",
+        "es",
+        "th",
+        "vi",
+        "pt",
+        "ar",
+        "tr",
+        "el",
+        "nl",
+        "pl",
+        "cs",
+        "hu"
+      ],
+      "counts": {
+        "class": 116,
+        "property": 43,
+        "value_list": 5,
+        "value_term": 0,
+        "unit": 0,
+        "relation": 0,
+        "view_control": 0
+      },
+      "metaClassIrdis": []
+    }
+  ]
+}

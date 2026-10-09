@@ -1,0 +1,2078 @@
+# =============================================================================
+# ScenicSpots 旅遊景點 — CDD worked example
+#
+# Demonstrates the full power-type modelling capability of CDD across a
+# multi-country, natively multilingual domain:
+#
+#   * Classes + plain instances + EXTENDED instances (instances used as
+#     classes — the capability UML cannot express)
+#   * Three classification dimensions as powertypes:
+#       ScenicSpotType (kind), ReligiousTradition (conditional),
+#       OfficialGrade (priority / listing level)
+#   * Each extended instance carries its own applicable_properties
+#     (e.g. HotSpring ⇒ water_temperature) — an "instance" that owns
+#     class-level facts
+#   * Configured subclasses via sub_class_selection (Temple × Buddhist ⇒
+#     BuddhistTemple) — instance-of-instance used as a class
+#   * Registered individuals (real scenic spots) as leaf entities with
+#     concrete property values
+#   * CONDITION_DET conditional property (tradition applies only to
+#     temples)
+#   * Native multilingualism: every entity carries its native-language
+#     name plus English; four source languages across the dictionary
+#     (zh-Hant, ja, ko, it)
+#
+# Countries: Taiwan, Japan, Korea, Italy.
+# All content authored by OpenCDD; spot facts are public knowledge.
+# Individual property values are sourced from the English Wikipedia and
+# DBpedia (Wikipedia, CC BY-SA), retrieved 2026-10-07; facts only, no
+# text. Language tags are region-coded: zh-TW, zh-HK, zh-CN, ja, ko,
+# fr, it, en. Registry codes: SPI0xx TW, SPI1xx JP, SPI2xx KR, SPI3xx
+# IT, SPI4xx HK, SPI5xx UK, SPI6xx FR, SPI7xx US, SPI8xx CN, SPI9xx SG.
+#
+# Code allocation (OpenCDD house convention):
+#   <stem><T><NNN> — stem is unique per dictionary, T is the entity type:
+#   A class · B property · E value list · T value term · I individual · U unit
+#   SP = scenicspots: SPA classes (incl. powertype members and configured
+#   subclasses), SPB properties, SPE enumerations, SPI registered spots.
+#   Blocks: 0xx country · 1xx spot types · 12x religious tradition ·
+#   13x official grade · 15x configured subclasses.
+# =============================================================================
+
+import "https://cdd.opencdd.org/dictionaries/rec20-units.cddal"
+
+# -----------------------------------------------------------------------------
+# Aliases (re-declare built-ins for reader clarity)
+# -----------------------------------------------------------------------------
+
+alias code:                        MDC_P001_5
+alias preferred_name:              MDC_P004
+alias short_name:                  MDC_P005
+alias definition:                  MDC_P006
+alias note:                        MDC_P008
+alias remark:                      MDC_P009
+alias superclass:                  MDC_P010
+alias class_type:                  MDC_P011
+alias is_case_of:                  MDC_P013
+alias applicable_properties:       MDC_P014
+alias property_data_element_type:  MDC_P020
+alias definition_class:            MDC_P021
+alias data_type:                   MDC_P022
+alias unit:                        MDC_P041
+alias condition:                   MDC_P028
+alias sub_class_selection:         MDC_P016
+alias enumerated_values:           MDC_P044
+
+# -----------------------------------------------------------------------------
+# Meta-class schema
+# -----------------------------------------------------------------------------
+
+meta-class MDC_C002 {
+  code
+  preferred_name
+  short_name
+  definition
+  note
+  remark
+  synonym
+  superclass
+  class_type
+  is_case_of
+  applicable_properties
+  sub_class_selection
+  imported_properties
+}
+
+meta-class MDC_C003 {
+  code
+  preferred_name
+  short_name
+  definition
+  note
+  remark
+  property_data_element_type
+  definition_class
+  data_type
+  unit
+  condition
+}
+
+meta-class MDC_C005 {
+  code
+  preferred_name
+  definition
+  note
+  remark
+  enumerated_values
+}
+
+# =============================================================================
+# Core categorical class: ScenicSpot
+# =============================================================================
+
+instance ScenicSpot < MDC_C002 {
+  code: SPA001
+  preferred_name.en: "Scenic Spot"
+  preferred_name.zh-TW: "旅遊景點"
+  preferred_name.ja: "観光名所"
+  preferred_name.ko: "관광지"
+  preferred_name.it: "Attrazione Turistica"
+  definition.en: "a place of interest that tourists visit, typically for its inherent or exhibited natural or cultural value"
+  superclass: UNIVERSE
+  class_type: ITEM_CLASS
+  applicable_properties: { country, spot_type, city, official_grade, elevation, area, latitude, longitude, established_year, admission, opening_period, annual_visitors, visitor_data_year, listing_criteria }
+}
+
+instance annual_visitors < MDC_C003 {
+  code: SPB010
+  preferred_name.en: "annual visitors"
+  preferred_name.zh-TW: "年度遊客"
+  definition.en: "approximate number of visitors per year"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+}
+
+instance listing_criteria < MDC_C003 {
+  code: SPB011
+  preferred_name.en: "listing criteria"
+  preferred_name.zh-TW: "遺產類別"
+  definition.en: "cultural, natural, or mixed character of a World Heritage listing"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: ENUM_STRING_TYPE(heritage_criteria_enum)
+}
+
+# =============================================================================
+# Country — plain instances (data individuals, not extended instances)
+# =============================================================================
+
+instance Country < MDC_C002 {
+  code: SPA010
+  preferred_name.en: "Country"
+  preferred_name.zh-TW: "國家"
+  definition.en: "sovereign state in which a scenic spot is located"
+  superclass: ScenicSpot
+  class_type: CATEGORICAL_CLASS
+}
+
+instance Taiwan < MDC_C002 {
+  code: SPA011
+  preferred_name.en: "Taiwan"
+  preferred_name.zh-TW: "臺灣"
+  definition.en: "island state in East Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Japan < MDC_C002 {
+  code: SPA012
+  preferred_name.en: "Japan"
+  preferred_name.ja: "日本"
+  definition.en: "island nation in East Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Korea < MDC_C002 {
+  code: SPA013
+  preferred_name.en: "Korea"
+  preferred_name.ko: "대한민국"
+  definition.en: "republic on the Korean Peninsula in East Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Italy < MDC_C002 {
+  code: SPA014
+  preferred_name.en: "Italy"
+  preferred_name.it: "Italia"
+  definition.en: "republic in Southern Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance HongKong < MDC_C002 {
+  code: SPA015
+  preferred_name.en: "Hong Kong"
+  preferred_name.zh-HK: "香港"
+  definition.en: "special administrative region of China"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance UnitedKingdom < MDC_C002 {
+  code: SPA016
+  preferred_name.en: "United Kingdom"
+  definition.en: "country in Northwestern Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance France < MDC_C002 {
+  code: SPA017
+  preferred_name.en: "France"
+  definition.en: "republic in Western Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance UnitedStates < MDC_C002 {
+  code: SPA018
+  preferred_name.en: "United States"
+  definition.en: "federal republic in North America"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance China < MDC_C002 {
+  code: SPA019
+  preferred_name.en: "China"
+  preferred_name.zh-CN: "中國"
+  definition.en: "country in East Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Singapore < MDC_C002 {
+  code: SPA020
+  preferred_name.en: "Singapore"
+  preferred_name.zh-CN: "新加坡"
+  definition.en: "island city-state in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Mexico < MDC_C002 {
+  code: SPA031
+  preferred_name.en: "Mexico"
+  preferred_name.zh-TW: "墨西哥"
+  definition.en: "country in North America"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Brazil < MDC_C002 {
+  code: SPA032
+  preferred_name.en: "Brazil"
+  preferred_name.zh-TW: "巴西"
+  definition.en: "country in South America"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Egypt < MDC_C002 {
+  code: SPA033
+  preferred_name.en: "Egypt"
+  preferred_name.zh-TW: "埃及"
+  definition.en: "country in North Africa"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Turkey < MDC_C002 {
+  code: SPA034
+  preferred_name.en: "Turkey"
+  preferred_name.zh-TW: "土耳其"
+  definition.en: "transcontinental country bridging Europe and Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Greece < MDC_C002 {
+  code: SPA035
+  preferred_name.en: "Greece"
+  preferred_name.zh-TW: "希臘"
+  definition.en: "country in Southeast Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Netherlands < MDC_C002 {
+  code: SPA036
+  preferred_name.en: "Netherlands"
+  preferred_name.zh-TW: "荷蘭"
+  definition.en: "country in Western Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Portugal < MDC_C002 {
+  code: SPA037
+  preferred_name.en: "Portugal"
+  preferred_name.zh-TW: "葡萄牙"
+  definition.en: "country in Southwestern Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Poland < MDC_C002 {
+  code: SPA038
+  preferred_name.en: "Poland"
+  preferred_name.zh-TW: "波蘭"
+  definition.en: "country in Central Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Czechia < MDC_C002 {
+  code: SPA039
+  preferred_name.en: "Czechia"
+  preferred_name.zh-TW: "捷克"
+  definition.en: "country in Central Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Hungary < MDC_C002 {
+  code: SPA040
+  preferred_name.en: "Hungary"
+  preferred_name.zh-TW: "匈牙利"
+  definition.en: "country in Central Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Germany < MDC_C002 {
+  code: SPA021
+  preferred_name.en: "Germany"
+  preferred_name.zh-TW: "德國"
+  preferred_name.de: "Deutschland"
+  definition.en: "country in Central Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Spain < MDC_C002 {
+  code: SPA022
+  preferred_name.en: "Spain"
+  preferred_name.zh-TW: "西班牙"
+  preferred_name.es: "España"
+  definition.en: "country in Southwestern Europe"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Thailand < MDC_C002 {
+  code: SPA023
+  preferred_name.en: "Thailand"
+  preferred_name.zh-TW: "泰國"
+  definition.en: "country in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Vietnam < MDC_C002 {
+  code: SPA024
+  preferred_name.en: "Vietnam"
+  preferred_name.zh-TW: "越南"
+  definition.en: "country in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Malaysia < MDC_C002 {
+  code: SPA025
+  preferred_name.en: "Malaysia"
+  preferred_name.zh-TW: "馬來西亞"
+  definition.en: "country in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Australia < MDC_C002 {
+  code: SPA026
+  preferred_name.en: "Australia"
+  preferred_name.zh-TW: "澳洲"
+  definition.en: "country and continent in Oceania"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Canada < MDC_C002 {
+  code: SPA027
+  preferred_name.en: "Canada"
+  preferred_name.zh-TW: "加拿大"
+  definition.en: "country in North America"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance India < MDC_C002 {
+  code: SPA028
+  preferred_name.en: "India"
+  preferred_name.zh-TW: "印度"
+  definition.en: "country in South Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Philippines < MDC_C002 {
+  code: SPA029
+  preferred_name.en: "Philippines"
+  preferred_name.zh-TW: "菲律賓"
+  definition.en: "archipelagic country in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+
+instance Indonesia < MDC_C002 {
+  code: SPA030
+  preferred_name.en: "Indonesia"
+  preferred_name.zh-TW: "印尼"
+  definition.en: "archipelagic country in Southeast Asia"
+  superclass: Country
+  class_type: ITEM_CLASS
+}
+instance MexicoCity < MDC_C002 {
+  code: SPA185
+  preferred_name.en: "Mexico City"
+  preferred_name.zh-TW: "墨西哥城"
+  definition.en: "city of Mexico City"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Cairo < MDC_C002 {
+  code: SPA186
+  preferred_name.en: "Cairo"
+  preferred_name.zh-TW: "開羅"
+  definition.en: "city of Cairo"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Istanbul < MDC_C002 {
+  code: SPA187
+  preferred_name.en: "Istanbul"
+  preferred_name.zh-TW: "伊斯坦堡"
+  definition.en: "city of Istanbul"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Athens < MDC_C002 {
+  code: SPA188
+  preferred_name.en: "Athens"
+  preferred_name.zh-TW: "雅典"
+  definition.en: "city of Athens"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Amsterdam < MDC_C002 {
+  code: SPA189
+  preferred_name.en: "Amsterdam"
+  preferred_name.zh-TW: "阿姆斯特丹"
+  definition.en: "city of Amsterdam"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Lisbon < MDC_C002 {
+  code: SPA190
+  preferred_name.en: "Lisbon"
+  preferred_name.zh-TW: "里斯本"
+  definition.en: "city of Lisbon"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Warsaw < MDC_C002 {
+  code: SPA191
+  preferred_name.en: "Warsaw"
+  preferred_name.zh-TW: "華沙"
+  definition.en: "city of Warsaw"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Prague < MDC_C002 {
+  code: SPA192
+  preferred_name.en: "Prague"
+  preferred_name.zh-TW: "布拉格"
+  definition.en: "city of Prague"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Budapest < MDC_C002 {
+  code: SPA193
+  preferred_name.en: "Budapest"
+  preferred_name.zh-TW: "布達佩斯"
+  definition.en: "city of Budapest"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+
+# =============================================================================
+# Powertype 1 — ScenicSpotType
+#
+# Each member is an EXTENDED INSTANCE: it is selectable as the value of the
+# spot_type CLASS_REFERENCE property AND is a class in its own right that
+# carries its own applicable_properties and can be subclassed.
+#
+#   ScenicSpotType (CATEGORICAL_CLASS)
+#   ├── NationalPark       ⇒ trail_count
+#   ├── Temple             ⇒ founding_dynasty, deity  (+ tradition dimension)
+#   ├── Palace             ⇒ royal_dynasty
+#   ├── Museum             ⇒ collection_size
+#   ├── HotSpring          ⇒ water_temperature, mineral_type
+#   ├── NightMarket        ⇒ stall_count
+#   ├── Mountain           ⇒ prominence
+#   ├── Lake               ⇒ max_depth
+#   └── ArchaeologicalSite ⇒ excavation_status
+# =============================================================================
+
+instance ScenicSpotType < MDC_C002 {
+  code: SPA100
+  preferred_name.en: "Scenic Spot Type"
+  preferred_name.zh-TW: "景點類型"
+  definition.en: "categorical class whose subclasses enumerate the kinds of scenic spots"
+  superclass: ScenicSpot
+  class_type: CATEGORICAL_CLASS
+}
+
+instance NationalPark < MDC_C002 {
+  code: SPA101
+  preferred_name.en: "National Park"
+  preferred_name.zh-TW: "國家公園"
+  preferred_name.ja: "国立公園"
+  preferred_name.ko: "국립공원"
+  definition.en: "protected area designated for conservation and public enjoyment by national law"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { trail_count, trail_length, wildlife_species }
+}
+
+instance Temple < MDC_C002 {
+  code: SPA102
+  preferred_name.en: "Temple"
+  preferred_name.zh-TW: "寺廟"
+  preferred_name.ja: "寺"
+  preferred_name.ko: "사원"
+  definition.en: "building dedicated to religious worship"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { founding_dynasty, deity, treasure_count }
+}
+
+instance Palace < MDC_C002 {
+  code: SPA103
+  preferred_name.en: "Palace"
+  preferred_name.zh-TW: "宮殿"
+  preferred_name.ko: "궁궐"
+  definition.en: "grand residence of a sovereign or aristocratic family"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { royal_dynasty, floor_area, room_count }
+}
+
+instance Museum < MDC_C002 {
+  code: SPA104
+  preferred_name.en: "Museum"
+  preferred_name.zh-TW: "博物館"
+  preferred_name.ja: "博物館"
+  preferred_name.ko: "박물관"
+  preferred_name.it: "Museo"
+  definition.en: "institution that cares for and displays a collection of artifacts"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { collection_size, exhibition_area, special_exhibition_count }
+}
+
+instance HotSpring < MDC_C002 {
+  code: SPA105
+  preferred_name.en: "Hot Spring"
+  preferred_name.zh-TW: "溫泉"
+  preferred_name.ja: "温泉"
+  preferred_name.ko: "온천"
+  definition.en: "natural spring of geothermally heated water"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { water_temperature, mineral_type, flow_rate, source_depth }
+}
+
+instance NightMarket < MDC_C002 {
+  code: SPA106
+  preferred_name.en: "Night Market"
+  preferred_name.zh-TW: "夜市"
+  preferred_name.ko: "야시장"
+  definition.en: "street market operating primarily in the evening"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { stall_count, opening_days_per_week }
+}
+
+instance Mountain < MDC_C002 {
+  code: SPA107
+  preferred_name.en: "Mountain"
+  preferred_name.zh-TW: "山岳"
+  preferred_name.ja: "山"
+  preferred_name.ko: "산"
+  definition.en: "elevated landform rising prominently above its surroundings"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { prominence, first_ascent_year, climbing_routes }
+}
+
+instance Lake < MDC_C002 {
+  code: SPA108
+  preferred_name.en: "Lake"
+  preferred_name.zh-TW: "湖泊"
+  preferred_name.ja: "湖"
+  definition.en: "inland body of standing water"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { max_depth, surface_area, mean_depth }
+}
+
+instance ArchaeologicalSite < MDC_C002 {
+  code: SPA109
+  preferred_name.en: "Archaeological Site"
+  preferred_name.zh-TW: "考古遺址"
+  preferred_name.it: "Sito Archeologico"
+  definition.en: "place with physical evidence of past human activity studied by archaeology"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { excavation_status, discovery_year }
+}
+
+instance Landmark < MDC_C002 {
+  code: SPA110
+  preferred_name.en: "Landmark"
+  preferred_name.zh-TW: "地標"
+  definition.en: "structure or monument of recognized cultural, historical, or symbolic significance"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { architectural_style }
+}
+
+instance Cathedral < MDC_C002 {
+  code: SPA111
+  preferred_name.en: "Cathedral"
+  preferred_name.zh-TW: "大教堂"
+  preferred_name.ja: "大聖堂"
+  preferred_name.ko: "성당"
+  preferred_name.fr: "Cathédrale"
+  preferred_name.es: "Catedral"
+  definition.en: "principal church of a diocese, or a large historic church building of note"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { architectural_style }
+}
+
+instance Mosque < MDC_C002 {
+  code: SPA112
+  preferred_name.en: "Mosque"
+  preferred_name.zh-TW: "清真寺"
+  preferred_name.ja: "モスク"
+  preferred_name.ko: "모스크"
+  preferred_name.ms: "Masjid"
+  definition.en: "place of worship for followers of Islam"
+  superclass: ScenicSpotType
+  class_type: ITEM_CLASS
+  applicable_properties: { architectural_style }
+}
+
+# =============================================================================
+# Powertype 2 — ReligiousTradition (conditional dimension)
+#
+# Applies only when spot_type == Temple; see the CONDITION_DET property
+# `tradition` below. Combined with Temple via sub_class_selection this
+# produces instance-of-instance classes (BuddhistTemple).
+# =============================================================================
+
+instance ReligiousTradition < MDC_C002 {
+  code: SPA120
+  preferred_name.en: "Religious Tradition"
+  preferred_name.zh-TW: "宗教傳統"
+  definition.en: "categorical class whose subclasses enumerate the religious traditions of a place of worship"
+  superclass: ScenicSpot
+  class_type: CATEGORICAL_CLASS
+}
+
+instance Buddhist < MDC_C002 {
+  code: SPA121
+  preferred_name.en: "Buddhist"
+  preferred_name.zh-TW: "佛寺"
+  preferred_name.ja: "仏寺"
+  preferred_name.ko: "불교 사원"
+  definition.en: "Buddhist tradition of worship"
+  superclass: ReligiousTradition
+  class_type: ITEM_CLASS
+}
+
+instance Taoist < MDC_C002 {
+  code: SPA122
+  preferred_name.en: "Taoist"
+  preferred_name.zh-TW: "道觀"
+  definition.en: "Taoist tradition of worship"
+  superclass: ReligiousTradition
+  class_type: ITEM_CLASS
+}
+
+instance FolkShrine < MDC_C002 {
+  code: SPA123
+  preferred_name.en: "Folk Shrine"
+  preferred_name.zh-TW: "民間信仰廟宇"
+  definition.en: "local folk-religion tradition of worship"
+  superclass: ReligiousTradition
+  class_type: ITEM_CLASS
+}
+
+instance Shinto < MDC_C002 {
+  code: SPA124
+  preferred_name.en: "Shinto"
+  preferred_name.ja: "神道"
+  definition.en: "indigenous Japanese tradition of worship at shrines"
+  superclass: ReligiousTradition
+  class_type: ITEM_CLASS
+}
+
+# =============================================================================
+# Powertype 3 — OfficialGrade (priority / listing level)
+#
+# The user-facing "priority" of a spot: world heritage listing, national
+# designation, and so on. WorldHeritage is itself an extended instance
+# carrying inscription_year.
+# =============================================================================
+
+instance OfficialGrade < MDC_C002 {
+  code: SPA130
+  preferred_name.en: "Official Grade"
+  preferred_name.zh-TW: "官方等級"
+  definition.en: "categorical class whose subclasses enumerate the official listing or priority levels of a scenic spot"
+  superclass: ScenicSpot
+  class_type: CATEGORICAL_CLASS
+}
+
+instance WorldHeritage < MDC_C002 {
+  code: SPA131
+  preferred_name.en: "World Heritage"
+  preferred_name.zh-TW: "世界遺產"
+  preferred_name.ja: "世界遺産"
+  preferred_name.ko: "세계유산"
+  preferred_name.it: "Patrimonio Mondiale"
+  definition.en: "site inscribed on the UNESCO World Heritage List"
+  superclass: OfficialGrade
+  class_type: ITEM_CLASS
+  applicable_properties: { inscription_year }
+}
+
+instance NationalGrade < MDC_C002 {
+  code: SPA132
+  preferred_name.en: "National Grade"
+  preferred_name.zh-TW: "國家級"
+  preferred_name.ja: "国指定"
+  definition.en: "designation of national significance"
+  superclass: OfficialGrade
+  class_type: ITEM_CLASS
+}
+
+instance ProvincialGrade < MDC_C002 {
+  code: SPA133
+  preferred_name.en: "Provincial Grade"
+  preferred_name.zh-TW: "省市級"
+  definition.en: "designation of provincial or municipal significance"
+  superclass: OfficialGrade
+  class_type: ITEM_CLASS
+}
+
+instance LocalGrade < MDC_C002 {
+  code: SPA134
+  preferred_name.en: "Local Grade"
+  preferred_name.zh-TW: "地方級"
+  definition.en: "designation of local significance"
+  superclass: OfficialGrade
+  class_type: ITEM_CLASS
+}
+
+# =============================================================================
+# Powertype 4 — City (geographic granularity between country and spot)
+#
+# CATEGORICAL_CLASS whose members are the cities carrying spot-level
+# harvest categories; the city CLASS_REFERENCE property on ScenicSpot
+# is sourced from the city-level harvest category an entry came from.
+# =============================================================================
+
+instance City < MDC_C002 {
+  code: SPA140
+  preferred_name.en: "City"
+  preferred_name.zh-TW: "城市"
+  definition.en: "categorical class whose members enumerate the cities a scenic spot can be located in"
+  superclass: ScenicSpot
+  class_type: CATEGORICAL_CLASS
+}
+
+instance Taipei < MDC_C002 {
+  code: SPA163
+  preferred_name.en: "Taipei"
+  preferred_name.zh-TW: "臺北"
+  definition.en: "city of Taipei"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Tokyo < MDC_C002 {
+  code: SPA164
+  preferred_name.en: "Tokyo"
+  preferred_name.zh-TW: "東京"
+  definition.en: "city of Tokyo"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Kyoto < MDC_C002 {
+  code: SPA165
+  preferred_name.en: "Kyoto"
+  preferred_name.zh-TW: "京都"
+  definition.en: "city of Kyoto"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Seoul < MDC_C002 {
+  code: SPA166
+  preferred_name.en: "Seoul"
+  preferred_name.zh-TW: "首爾"
+  definition.en: "city of Seoul"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Rome < MDC_C002 {
+  code: SPA167
+  preferred_name.en: "Rome"
+  preferred_name.zh-TW: "羅馬"
+  definition.en: "city of Rome"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Florence < MDC_C002 {
+  code: SPA168
+  preferred_name.en: "Florence"
+  preferred_name.zh-TW: "佛羅倫斯"
+  definition.en: "city of Florence"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance London < MDC_C002 {
+  code: SPA169
+  preferred_name.en: "London"
+  preferred_name.zh-TW: "倫敦"
+  definition.en: "city of London"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Paris < MDC_C002 {
+  code: SPA170
+  preferred_name.en: "Paris"
+  preferred_name.zh-TW: "巴黎"
+  definition.en: "city of Paris"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance NewYork < MDC_C002 {
+  code: SPA171
+  preferred_name.en: "New York City"
+  preferred_name.zh-TW: "紐約"
+  definition.en: "city of New York City"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Beijing < MDC_C002 {
+  code: SPA172
+  preferred_name.en: "Beijing"
+  preferred_name.zh-TW: "北京"
+  definition.en: "city of Beijing"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Berlin < MDC_C002 {
+  code: SPA173
+  preferred_name.en: "Berlin"
+  preferred_name.zh-TW: "柏林"
+  definition.en: "city of Berlin"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Munich < MDC_C002 {
+  code: SPA174
+  preferred_name.en: "Munich"
+  preferred_name.zh-TW: "慕尼黑"
+  definition.en: "city of Munich"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Madrid < MDC_C002 {
+  code: SPA175
+  preferred_name.en: "Madrid"
+  preferred_name.zh-TW: "馬德里"
+  definition.en: "city of Madrid"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Barcelona < MDC_C002 {
+  code: SPA176
+  preferred_name.en: "Barcelona"
+  preferred_name.zh-TW: "巴塞隆納"
+  definition.en: "city of Barcelona"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Bangkok < MDC_C002 {
+  code: SPA177
+  preferred_name.en: "Bangkok"
+  preferred_name.zh-TW: "曼谷"
+  definition.en: "city of Bangkok"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Hanoi < MDC_C002 {
+  code: SPA178
+  preferred_name.en: "Hanoi"
+  preferred_name.zh-TW: "河內"
+  definition.en: "city of Hanoi"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance KualaLumpur < MDC_C002 {
+  code: SPA179
+  preferred_name.en: "Kuala Lumpur"
+  preferred_name.zh-TW: "吉隆坡"
+  definition.en: "city of Kuala Lumpur"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Sydney < MDC_C002 {
+  code: SPA180
+  preferred_name.en: "Sydney"
+  preferred_name.zh-TW: "雪梨"
+  definition.en: "city of Sydney"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Toronto < MDC_C002 {
+  code: SPA181
+  preferred_name.en: "Toronto"
+  preferred_name.zh-TW: "多倫多"
+  definition.en: "city of Toronto"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Delhi < MDC_C002 {
+  code: SPA182
+  preferred_name.en: "Delhi"
+  preferred_name.zh-TW: "德里"
+  definition.en: "city of Delhi"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Manila < MDC_C002 {
+  code: SPA183
+  preferred_name.en: "Manila"
+  preferred_name.zh-TW: "馬尼拉"
+  definition.en: "city of Manila"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+instance Jakarta < MDC_C002 {
+  code: SPA184
+  preferred_name.en: "Jakarta"
+  preferred_name.zh-TW: "雅加達"
+  definition.en: "city of Jakarta"
+  superclass: City
+  class_type: ITEM_CLASS
+}
+
+# =============================================================================
+# Enumerations
+# =============================================================================
+
+instance admission_enum < MDC_C005 {
+  code: SPE001
+  preferred_name.en: "admission categories"
+  definition.en: "enumeration of whether entry to the spot requires payment"
+  enumerated_values: { Free, Paid }
+}
+
+instance heritage_criteria_enum < MDC_C005 {
+  code: SPE005
+  preferred_name.en: "heritage listing criteria categories"
+  definition.en: "enumeration of the World Heritage listing characters"
+  enumerated_values: { Cultural, Natural, Mixed }
+}
+
+instance period_enum < MDC_C005 {
+  code: SPE002
+  preferred_name.en: "opening period categories"
+  definition.en: "enumeration of whether the spot operates year-round or seasonally"
+  enumerated_values: { YearRound, Seasonal }
+}
+
+instance mineral_enum < MDC_C005 {
+  code: SPE003
+  preferred_name.en: "mineral type categories"
+  definition.en: "enumeration of the dominant dissolved mineral character of a hot spring"
+  enumerated_values: { Sodium_bicarbonate, Sulfate, Carbonate, Iron }
+}
+
+instance excavation_enum < MDC_C005 {
+  code: SPE004
+  preferred_name.en: "excavation status categories"
+  definition.en: "enumeration of the state of archaeological investigation of a site"
+  enumerated_values: { Ongoing, Completed }
+}
+
+# =============================================================================
+# Core properties (defined on ScenicSpot)
+# =============================================================================
+
+instance country < MDC_C003 {
+  code: SPB001
+  preferred_name.en: "country"
+  preferred_name.zh-TW: "所在國家"
+  definition.en: "sovereign state in which the scenic spot is located"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: CLASS_REFERENCE(Country)
+}
+
+instance spot_type < MDC_C003 {
+  code: SPB002
+  preferred_name.en: "scenic spot type"
+  preferred_name.zh-TW: "景點類型"
+  definition.en: "kind of scenic spot, selected from the scenic spot type classification"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: CLASS_REFERENCE(ScenicSpotType)
+}
+
+instance tradition < MDC_C003 {
+  code: SPB003
+  preferred_name.en: "religious tradition"
+  preferred_name.zh-TW: "宗教傳統"
+  definition.en: "religious tradition observed at the place of worship"
+  property_data_element_type: CONDITION_DET
+  definition_class: ScenicSpot
+  data_type: CLASS_REFERENCE(ReligiousTradition)
+  condition: spot_type == Temple
+}
+
+instance official_grade < MDC_C003 {
+  code: SPB004
+  preferred_name.en: "official grade"
+  preferred_name.zh-TW: "官方等級"
+  definition.en: "official listing or priority level of the scenic spot"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: CLASS_REFERENCE(OfficialGrade)
+}
+
+instance elevation < MDC_C003 {
+  code: SPB005
+  preferred_name.en: "elevation"
+  preferred_name.zh-TW: "海拔"
+  definition.en: "elevation above sea level of the spot's principal feature"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+  unit: metre
+}
+
+instance latitude < MDC_C003 {
+  code: SPB216
+  preferred_name.en: "latitude"
+  preferred_name.zh-TW: "緯度"
+  definition.en: "north-south position of the spot's principal feature in decimal degrees (WGS 84)"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+  unit: degree
+}
+
+instance longitude < MDC_C003 {
+  code: SPB217
+  preferred_name.en: "longitude"
+  preferred_name.zh-TW: "經度"
+  definition.en: "east-west position of the spot's principal feature in decimal degrees (WGS 84)"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+  unit: degree
+}
+
+instance city < MDC_C003 {
+  code: SPB218
+  preferred_name.en: "city"
+  preferred_name.zh-TW: "城市"
+  definition.en: "city in which the spot is located, between the country and the spot itself"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: CLASS_REFERENCE(City)
+}
+
+instance visitor_data_year < MDC_C003 {
+  code: SPB219
+  preferred_name.en: "visitor data year"
+  preferred_name.zh-TW: "遊客統計年份"
+  definition.en: "reference year of the annual_visitors figure, when the source states it"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: INTEGER_TYPE
+}
+
+instance area < MDC_C003 {
+  code: SPB006
+  preferred_name.en: "area"
+  preferred_name.zh-TW: "面積"
+  definition.en: "extent of the scenic spot"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+  unit: square_kilometre
+}
+
+instance established_year < MDC_C003 {
+  code: SPB007
+  preferred_name.en: "established year"
+  preferred_name.zh-TW: "建立年份"
+  definition.en: "calendar year in which the spot was established, constructed, or first recorded"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+}
+
+instance admission < MDC_C003 {
+  code: SPB008
+  preferred_name.en: "admission"
+  preferred_name.zh-TW: "門票"
+  definition.en: "whether entry requires payment"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: ENUM_STRING_TYPE(admission_enum)
+}
+
+instance opening_period < MDC_C003 {
+  code: SPB009
+  preferred_name.en: "opening period"
+  preferred_name.zh-TW: "開放期間"
+  definition.en: "operating period of the spot"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ScenicSpot
+  data_type: ENUM_STRING_TYPE(period_enum)
+}
+
+# =============================================================================
+# Type-specific properties — defined ON the extended instances
+#
+# These properties exist only because their definition_class is an
+# instance of a CATEGORICAL_CLASS: an instance that owns class-level
+# facts. This is the capability UML cannot express.
+# =============================================================================
+
+instance trail_count < MDC_C003 {
+  code: SPB101
+  preferred_name.en: "trail count"
+  preferred_name.zh-TW: "步道數量"
+  definition.en: "number of maintained hiking trails in the national park"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: NationalPark
+  data_type: REAL_TYPE
+}
+
+instance founding_dynasty < MDC_C003 {
+  code: SPB102
+  preferred_name.en: "founding dynasty"
+  preferred_name.zh-TW: "創建朝代"
+  definition.en: "dynasty or period during which the temple was founded"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Temple
+  data_type: STRING_TYPE
+}
+
+instance deity < MDC_C003 {
+  code: SPB103
+  preferred_name.en: "principal deity"
+  preferred_name.zh-TW: "主祀神明"
+  definition.en: "principal deity venerated at the temple"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Temple
+  data_type: STRING_TYPE
+}
+
+instance royal_dynasty < MDC_C003 {
+  code: SPB104
+  preferred_name.en: "royal dynasty"
+  preferred_name.zh-TW: "皇室朝代"
+  definition.en: "dynasty for which the palace served as a royal residence"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Palace
+  data_type: STRING_TYPE
+}
+
+instance collection_size < MDC_C003 {
+  code: SPB105
+  preferred_name.en: "collection size"
+  preferred_name.zh-TW: "館藏數量"
+  definition.en: "number of catalogued objects held by the museum"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Museum
+  data_type: REAL_TYPE
+}
+
+instance water_temperature < MDC_C003 {
+  code: SPB106
+  preferred_name.en: "water temperature"
+  preferred_name.zh-TW: "泉水溫度"
+  definition.en: "temperature of the spring water at emergence"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: HotSpring
+  data_type: REAL_TYPE
+  unit: degree_celsius
+}
+
+instance mineral_type < MDC_C003 {
+  code: SPB107
+  preferred_name.en: "mineral type"
+  preferred_name.zh-TW: "泉質"
+  definition.en: "dominant dissolved mineral character of the spring"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: HotSpring
+  data_type: ENUM_STRING_TYPE(mineral_enum)
+}
+
+instance stall_count < MDC_C003 {
+  code: SPB108
+  preferred_name.en: "stall count"
+  preferred_name.zh-TW: "攤位數量"
+  definition.en: "approximate number of vending stalls at the market"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: NightMarket
+  data_type: REAL_TYPE
+}
+
+instance prominence < MDC_C003 {
+  code: SPB109
+  preferred_name.en: "topographic prominence"
+  preferred_name.zh-TW: "地形突出度"
+  definition.en: "height of the mountain's summit relative to its surroundings"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Mountain
+  data_type: REAL_TYPE
+  unit: metre
+}
+
+instance max_depth < MDC_C003 {
+  code: SPB110
+  preferred_name.en: "maximum depth"
+  preferred_name.zh-TW: "最大深度"
+  definition.en: "greatest depth of the lake"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Lake
+  data_type: REAL_TYPE
+  unit: metre
+}
+
+instance excavation_status < MDC_C003 {
+  code: SPB111
+  preferred_name.en: "excavation status"
+  preferred_name.zh-TW: "挖掘狀態"
+  definition.en: "state of archaeological investigation"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ArchaeologicalSite
+  data_type: ENUM_STRING_TYPE(excavation_enum)
+}
+
+instance trail_length < MDC_C003 {
+  code: SPB201
+  preferred_name.en: "trail length"
+  preferred_name.zh-TW: "步道總長"
+  definition.en: "total length of maintained hiking trails"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: NationalPark
+  data_type: REAL_TYPE
+  unit: kilometre
+}
+
+instance wildlife_species < MDC_C003 {
+  code: SPB202
+  preferred_name.en: "wildlife species"
+  preferred_name.zh-TW: "野生物種數"
+  definition.en: "number of documented wildlife species in the protected area"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: NationalPark
+  data_type: INT_TYPE
+}
+
+instance treasure_count < MDC_C003 {
+  code: SPB203
+  preferred_name.en: "treasure count"
+  preferred_name.zh-TW: "指定寶物數"
+  definition.en: "number of holdings designated as national treasures or important cultural properties"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Temple
+  data_type: INT_TYPE
+}
+
+instance floor_area < MDC_C003 {
+  code: SPB204
+  preferred_name.en: "floor area"
+  preferred_name.zh-TW: "樓地板面積"
+  definition.en: "total floor area of the palace buildings"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Palace
+  data_type: REAL_TYPE
+  unit: square_metre
+}
+
+instance room_count < MDC_C003 {
+  code: SPB205
+  preferred_name.en: "room count"
+  preferred_name.zh-TW: "房間數"
+  definition.en: "number of rooms in the palace"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Palace
+  data_type: INT_TYPE
+}
+
+instance exhibition_area < MDC_C003 {
+  code: SPB206
+  preferred_name.en: "exhibition area"
+  preferred_name.zh-TW: "展覽面積"
+  definition.en: "gallery floor area open to the public"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Museum
+  data_type: REAL_TYPE
+  unit: square_metre
+}
+
+instance special_exhibition_count < MDC_C003 {
+  code: SPB207
+  preferred_name.en: "special exhibition count"
+  preferred_name.zh-TW: "特展數量"
+  definition.en: "number of special exhibitions held per year"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Museum
+  data_type: INT_TYPE
+}
+
+instance flow_rate < MDC_C003 {
+  code: SPB208
+  preferred_name.en: "flow rate"
+  preferred_name.zh-TW: "湧泉量"
+  definition.en: "rate of flow of the spring at emergence"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: HotSpring
+  data_type: REAL_TYPE
+  unit: litre_per_second
+}
+
+instance source_depth < MDC_C003 {
+  code: SPB209
+  preferred_name.en: "source depth"
+  preferred_name.zh-TW: "泉源深度"
+  definition.en: "depth below surface of the geothermal source"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: HotSpring
+  data_type: REAL_TYPE
+  unit: metre
+}
+
+instance opening_days_per_week < MDC_C003 {
+  code: SPB210
+  preferred_name.en: "opening days per week"
+  preferred_name.zh-TW: "每週營業天數"
+  definition.en: "number of evenings per week the market operates"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: NightMarket
+  data_type: INT_TYPE
+}
+
+instance first_ascent_year < MDC_C003 {
+  code: SPB211
+  preferred_name.en: "first ascent year"
+  preferred_name.zh-TW: "首登年份"
+  definition.en: "year of the first recorded ascent"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Mountain
+  data_type: REAL_TYPE
+}
+
+instance climbing_routes < MDC_C003 {
+  code: SPB212
+  preferred_name.en: "climbing routes"
+  preferred_name.zh-TW: "攀登路線數"
+  definition.en: "number of established climbing routes"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Mountain
+  data_type: INT_TYPE
+}
+
+instance surface_area < MDC_C003 {
+  code: SPB213
+  preferred_name.en: "surface area"
+  preferred_name.zh-TW: "湖面面積"
+  definition.en: "area of the lake surface"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Lake
+  data_type: REAL_TYPE
+  unit: square_kilometre
+}
+
+instance mean_depth < MDC_C003 {
+  code: SPB214
+  preferred_name.en: "mean depth"
+  preferred_name.zh-TW: "平均深度"
+  definition.en: "average depth of the lake"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Lake
+  data_type: REAL_TYPE
+  unit: metre
+}
+
+instance architectural_style < MDC_C003 {
+  code: SPB305
+  preferred_name.en: "architectural style"
+  preferred_name.zh-TW: "建築風格"
+  definition.en: "architectural style of the landmark"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: Landmark
+  data_type: STRING_TYPE
+}
+
+instance discovery_year < MDC_C003 {
+  code: SPB215
+  preferred_name.en: "discovery year"
+  preferred_name.zh-TW: "發現年份"
+  definition.en: "year the site was discovered or first excavated"
+  property_data_element_type: NON_DEPENDENT_P_DET
+  definition_class: ArchaeologicalSite
+  data_type: REAL_TYPE
+}
+# =============================================================================
+# Grade-conditional property
+#
+# inscription_year applies only to spots whose official_grade selects the
+# WorldHeritage extended instance — the same CONDITION_DET pattern
+# OceanRunner uses for operating modes.
+# =============================================================================
+
+instance inscription_year < MDC_C003 {
+  code: SPB131
+  preferred_name.en: "inscription year"
+  preferred_name.zh-TW: "列入年份"
+  definition.en: "calendar year in which the site was inscribed on the World Heritage List"
+  property_data_element_type: CONDITION_DET
+  definition_class: ScenicSpot
+  data_type: REAL_TYPE
+  condition: official_grade == WorldHeritage
+}
+
+# =============================================================================
+# Configured subclasses — instance-of-instance used as a class
+#
+# BuddhistTemple is the Temple extended instance specialized by the
+# ReligiousTradition selection. It inherits ScenicSpot's properties,
+# Temple's type-specific properties, and resolves the conditional
+# `tradition` property.
+# =============================================================================
+
+instance BuddhistTemple < MDC_C002 {
+  code: SPA150
+  preferred_name.en: "Buddhist Temple"
+  preferred_name.zh-TW: "佛寺"
+  preferred_name.ja: "仏寺"
+  definition.en: "temple of the Buddhist tradition"
+  superclass: Temple
+  class_type: ITEM_CLASS
+  sub_class_selection: { Buddhist }
+}
+
+instance TaoistTemple < MDC_C002 {
+  code: SPA151
+  preferred_name.en: "Taoist Temple"
+  preferred_name.zh-TW: "道觀"
+  definition.en: "temple of the Taoist tradition"
+  superclass: Temple
+  class_type: ITEM_CLASS
+  sub_class_selection: { Taoist }
+}
+
+instance FolkTemple < MDC_C002 {
+  code: SPA152
+  preferred_name.en: "Folk Temple"
+  preferred_name.zh-TW: "民間信仰廟宇"
+  definition.en: "temple of the folk-religion tradition"
+  superclass: Temple
+  class_type: ITEM_CLASS
+  sub_class_selection: { FolkShrine }
+}
+
+
+# =============================================================================
+# Flagship registry — Wikipedia-sourced entries for the wider roster
+#
+# Hand-curated companions to the original twelve, facts pulled from each
+# spot's Wikipedia article (2026-10-07). Same country code blocks.
+# =============================================================================
+
+instance VictoriaPeak < MDC_C002 {
+  code: SPI401
+  preferred_name.en: "Victoria Peak"
+  preferred_name.zh-HK: "太平山"
+  short_name.en: "ThePeak"
+  definition.en: "552 m hill, the tallest on Hong Kong Island, overlooking Victoria Harbour"
+  superclass: Mountain
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Mountain
+  elevation: 552
+  admission: Paid
+  opening_period: YearRound
+  city: HongKong
+  latitude: 22.275556
+  longitude: 114.143889
+}
+
+instance WongTaiSinTemple < MDC_C002 {
+  code: SPI402
+  preferred_name.en: "Wong Tai Sin Temple"
+  preferred_name.zh-HK: "黃大仙祠"
+  definition.en: "folk temple in Kowloon, Hong Kong, built in 1921 and renowned for fortune-telling"
+  superclass: FolkTemple
+  class_type: ITEM_CLASS
+  country: HongKong
+  spot_type: Temple
+  tradition: FolkShrine
+  established_year: 1921
+  admission: Free
+  opening_period: YearRound
+  city: HongKong
+  latitude: 22.342572
+  longitude: 114.193649
+}
+
+instance Kiyomizudera < MDC_C002 {
+  code: SPI104
+  preferred_name.en: "Kiyomizu-dera"
+  preferred_name.ja: "清水寺"
+  definition.en: "Buddhist temple in eastern Kyoto founded in 778, part of the Historic Monuments of Ancient Kyoto"
+  superclass: BuddhistTemple
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Temple
+  tradition: Buddhist
+  official_grade: WorldHeritage
+  established_year: 778
+  founding_dynasty: "Heian period"
+  inscription_year: 1994
+  listing_criteria: Cultural
+  admission: Paid
+  opening_period: YearRound
+  city: Kyoto
+  latitude: 34.995
+  longitude: 135.785
+}
+
+instance FushimiInariTaisha < MDC_C002 {
+  code: SPI105
+  preferred_name.en: "Fushimi Inari-taisha"
+  preferred_name.ja: "伏見稲荷大社"
+  definition.en: "head Shinto shrine of Inari in Kyoto, founded in 711 by the Hata clan, famed for its thousands of torii gates"
+  superclass: Temple
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Temple
+  tradition: Shinto
+  established_year: 711
+  elevation: 233
+  admission: Free
+  opening_period: YearRound
+  city: Kyoto
+  latitude: 34.967222
+  longitude: 135.772778
+}
+
+instance Bulguksa < MDC_C002 {
+  code: SPI203
+  preferred_name.en: "Bulguksa"
+  preferred_name.ko: "불국사"
+  definition.en: "Buddhist temple on the slopes of Tohamsan near Gyeongju, completed in 774 by the Silla court"
+  superclass: BuddhistTemple
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Temple
+  tradition: Buddhist
+  official_grade: WorldHeritage
+  established_year: 774
+  founding_dynasty: "Silla"
+  inscription_year: 1995
+  listing_criteria: Cultural
+  treasure_count: 7
+  admission: Paid
+  opening_period: YearRound
+  latitude: 35.79
+  longitude: 129.332222
+}
+
+instance SeongsanIlchulbong < MDC_C002 {
+  code: SPI204
+  preferred_name.en: "Seongsan Ilchulbong"
+  preferred_name.ko: "성산일출봉"
+  definition.en: "volcanic tuff cone on Jeju Island formed about five thousand years ago, rising from the sea"
+  superclass: Mountain
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Mountain
+  official_grade: WorldHeritage
+  inscription_year: 2007
+  listing_criteria: Natural
+  admission: Paid
+  opening_period: YearRound
+  latitude: 33.4585
+  longitude: 126.942
+}
+
+instance TowerOfLondon < MDC_C002 {
+  code: SPI501
+  preferred_name.en: "Tower of London"
+  definition.en: "historic castle on the north bank of the Thames, founded toward the end of 1066 as part of the Norman Conquest"
+  superclass: Palace
+  class_type: ITEM_CLASS
+  country: UnitedKingdom
+  spot_type: Palace
+  royal_dynasty: "Norman"
+  official_grade: WorldHeritage
+  established_year: 1066
+  inscription_year: 1988
+  listing_criteria: Cultural
+  annual_visitors: 2817852
+  admission: Paid
+  opening_period: YearRound
+  city: London
+  latitude: 51.508056
+  longitude: -0.076111
+}
+
+instance BritishMuseum < MDC_C002 {
+  code: SPI502
+  preferred_name.en: "British Museum"
+  definition.en: "world's first public national museum, established in 1753 and opened in 1759"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: UnitedKingdom
+  spot_type: Museum
+  established_year: 1753
+  collection_size: 8000000
+  annual_visitors: 6440120
+  admission: Free
+  opening_period: YearRound
+  city: London
+  latitude: 51.5194
+  longitude: -0.1269
+}
+
+instance EiffelTower < MDC_C002 {
+  code: SPI601
+  preferred_name.en: "Eiffel Tower"
+  preferred_name.fr: "Tour Eiffel"
+  definition.en: "330 m wrought-iron lattice tower in Paris, built for the 1889 World's Fair"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Landmark
+  official_grade: WorldHeritage
+  established_year: 1889
+  height: 330
+  architectural_style: "wrought-iron lattice"
+  inscription_year: 1991
+  listing_criteria: Cultural
+  annual_visitors: 5890000
+  admission: Paid
+  opening_period: YearRound
+  city: Paris
+  latitude: 48.858222
+  longitude: 2.2945
+}
+
+instance Louvre < MDC_C002 {
+  code: SPI602
+  preferred_name.en: "Louvre"
+  preferred_name.fr: "Musée du Louvre"
+  definition.en: "the world's largest art museum, opened on 10 August 1793 in the former royal palace on the Right Bank of the Seine"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Museum
+  established_year: 1793
+  exhibition_area: 72735
+  annual_visitors: 9000000
+  admission: Paid
+  opening_period: YearRound
+  city: Paris
+  latitude: 48.8611
+  longitude: 2.3358
+}
+
+instance ArcDeTriomphe < MDC_C002 {
+  code: SPI603
+  preferred_name.en: "Arc de Triomphe"
+  preferred_name.fr: "Arc de triomphe de l'Étoile"
+  definition.en: "49.54 m triumphal arch in Paris, commissioned by Napoleon after Austerlitz and completed in 1836"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: France
+  spot_type: Landmark
+  established_year: 1836
+  height: 49.54
+  architectural_style: "Neoclassical"
+  admission: Paid
+  opening_period: YearRound
+  city: Paris
+  latitude: 48.873778
+  longitude: 2.295028
+}
+
+instance StatueOfLiberty < MDC_C002 {
+  code: SPI701
+  preferred_name.en: "Statue of Liberty"
+  definition.en: "colossal neoclassical sculpture on Liberty Island in New York Harbor, dedicated on 28 October 1886"
+  superclass: Landmark
+  class_type: ITEM_CLASS
+  country: UnitedStates
+  spot_type: Landmark
+  official_grade: WorldHeritage
+  established_year: 1886
+  height: 93
+  architectural_style: "Neoclassical"
+  inscription_year: 1984
+  listing_criteria: Cultural
+  admission: Free
+  opening_period: YearRound
+  city: NewYork
+  latitude: 40.689167
+  longitude: -74.044444
+}
+
+instance GrandCanyon < MDC_C002 {
+  code: SPI702
+  preferred_name.en: "Grand Canyon"
+  definition.en: "446 km long, up to 1,857 m deep canyon carved by the Colorado River in Arizona"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: UnitedStates
+  spot_type: NationalPark
+  official_grade: WorldHeritage
+  established_year: 1919
+  inscription_year: 1979
+  listing_criteria: Natural
+  admission: Paid
+  opening_period: YearRound
+  latitude: 36.3
+  longitude: -112.75
+}
+
+instance MetropolitanMuseumOfArt < MDC_C002 {
+  code: SPI703
+  preferred_name.en: "Metropolitan Museum of Art"
+  short_name.en: "TheMet"
+  definition.en: "the largest art museum in the Americas, founded in 1870 on Manhattan's Museum Mile"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: UnitedStates
+  spot_type: Museum
+  established_year: 1870
+  collection_size: 2000000
+  annual_visitors: 5727258
+  admission: Paid
+  opening_period: YearRound
+  city: NewYork
+  latitude: 40.7794
+  longitude: -73.9631
+}
+
+# =============================================================================
+# Registered individuals — real scenic spots (leaf entities)
+#
+# Each is a concrete place with native-language name, English name, and
+# concrete property values, classified through the full power-type chain:
+# ScenicSpot ← ScenicSpotType instance ← configured subclass.
+# =============================================================================
+
+# --- Taiwan ---------------------------------------------------------------
+
+instance LongshanTemple < MDC_C002 {
+  code: SPI001
+  preferred_name.en: "Longshan Temple"
+  preferred_name.zh-TW: "艋舺龍山寺"
+  short_name.en: "LongshanTemple"
+  definition.en: "Taiwanese folk temple in Wanhua District, Taipei, built in 1738 by settlers from Fujian during Qing rule in honour of Guanyin, with halls to folk deities such as Mazu and Guan Yu"
+  superclass: FolkTemple
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Temple
+  tradition: FolkShrine
+  official_grade: NationalGrade
+  established_year: 1738
+  founding_dynasty: "Qing dynasty"
+  deity: "Guanyin (觀音)"
+  admission: Free
+  opening_period: YearRound
+  city: Taipei
+  latitude: 25.037222
+  longitude: 121.499444
+}
+
+instance TarokoNationalPark < MDC_C002 {
+  code: SPI002
+  preferred_name.en: "Taroko National Park"
+  preferred_name.zh-TW: "太魯閣國家公園"
+  short_name.en: "TarokoNP"
+  definition.en: "national park spanning Taichung, Nantou, and Hualien counties, named for the Taroko Gorge — one of only three river gorges in the world cut entirely through pure marble"
+  superclass: NationalPark
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: NationalPark
+  official_grade: NationalGrade
+  elevation: 3742
+  area: 920
+  established_year: 1986
+  trail_count: 34
+  admission: Free
+  opening_period: YearRound
+  latitude: 24.166667
+  longitude: 121.333333
+}
+
+instance BeitouHotSpring < MDC_C002 {
+  code: SPI003
+  preferred_name.en: "Beitou Hot Spring"
+  preferred_name.zh-TW: "北投溫泉"
+  short_name.en: "Beitou"
+  definition.en: "hot spring district in Beitou District, Taipei — named after the Ketagalan word Kipatauw — known for its geothermal valley and sulfur-free alkaline springs"
+  superclass: HotSpring
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: HotSpring
+  official_grade: LocalGrade
+  water_temperature: 90
+  mineral_type: Sodium_bicarbonate
+  established_year: 1913
+  admission: Paid
+  opening_period: YearRound
+}
+
+instance ShilinNightMarket < MDC_C002 {
+  code: SPI004
+  preferred_name.en: "Shilin Night Market"
+  preferred_name.zh-TW: "士林夜市"
+  short_name.en: "ShilinNM"
+  definition.en: "largest night market in Taipei"
+  superclass: NightMarket
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: NightMarket
+  official_grade: LocalGrade
+  stall_count: 539
+  established_year: 1909
+  opening_period: YearRound
+  admission: Free
+  city: Taipei
+  latitude: 25.0866
+  longitude: 121.5254
+}
+
+instance NationalPalaceMuseum < MDC_C002 {
+  code: SPI005
+  preferred_name.en: "National Palace Museum"
+  preferred_name.zh-TW: "國立故宮博物院"
+  short_name.en: "NPM"
+  definition.en: "national museum founded in Beijing in 1925 and re-established in Shilin, Taipei, in 1965, holding nearly 700,000 Chinese imperial artifacts spanning 8,000 years"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Taiwan
+  spot_type: Museum
+  official_grade: NationalGrade
+  collection_size: 700000
+  established_year: 1925
+  admission: Paid
+  opening_period: YearRound
+  city: Taipei
+  latitude: 25.1022
+  longitude: 121.5486
+}
+
+# --- Japan ----------------------------------------------------------------
+
+instance Kinkakuji < MDC_C002 {
+  code: SPI101
+  preferred_name.en: "Kinkaku-ji"
+  preferred_name.ja: "金閣寺"
+  short_name.en: "Kinkakuji"
+  definition.en: "Zen Buddhist temple in Kyoto, officially Rokuon-ji, whose Golden Pavilion is coated in gold leaf; the current pavilion was rebuilt in 1955 after an arson attack"
+  superclass: BuddhistTemple
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Temple
+  tradition: Buddhist
+  official_grade: WorldHeritage
+  established_year: 1397
+  founding_dynasty: "Muromachi period"
+  inscription_year: 1994
+  listing_criteria: Cultural
+  admission: Paid
+  opening_period: YearRound
+  city: Kyoto
+  latitude: 35.0395
+  longitude: 135.7285
+}
+
+instance Fujisan < MDC_C002 {
+  code: SPI102
+  preferred_name.en: "Mount Fuji"
+  preferred_name.ja: "富士山"
+  short_name.en: "Fujisan"
+  definition.en: "highest mountain in Japan, an active stratovolcano last erupted 1707 to 1708, and an object of pilgrimage"
+  superclass: Mountain
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: Mountain
+  official_grade: WorldHeritage
+  elevation: 3776.24
+  prominence: 3776
+  inscription_year: 2013
+  listing_criteria: Cultural
+  first_ascent_year: 663
+  climbing_routes: 4
+  annual_visitors: 300000
+  opening_period: Seasonal
+  admission: Free
+  latitude: 35.360833
+  longitude: 138.7275
+}
+
+instance DogoOnsen < MDC_C002 {
+  code: SPI103
+  preferred_name.en: "Dogo Onsen"
+  preferred_name.ja: "道後温泉"
+  short_name.en: "DogoOnsen"
+  definition.en: "hot spring in Matsuyama, Ehime, among the oldest onsen in Japan, famed for its wooden public bathhouse with the 1899 Yushinden imperial bath"
+  superclass: HotSpring
+  class_type: ITEM_CLASS
+  country: Japan
+  spot_type: HotSpring
+  official_grade: NationalGrade
+  established_year: 1894
+  admission: Paid
+  opening_period: YearRound
+  latitude: 33.851944
+  longitude: 132.786389
+}
+
+# --- Korea ----------------------------------------------------------------
+
+instance Gyeongbokgung < MDC_C002 {
+  code: SPI201
+  preferred_name.en: "Gyeongbokgung"
+  preferred_name.ko: "경복궁"
+  short_name.en: "Gyeongbokgung"
+  definition.en: "first royal palace of the Joseon dynasty in Seoul, established in 1395 and long the most visited palace in the city"
+  superclass: Palace
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: Palace
+  official_grade: NationalGrade
+  established_year: 1395
+  royal_dynasty: "Joseon dynasty"
+  room_count: 755
+  admission: Paid
+  opening_period: YearRound
+  city: Seoul
+  latitude: 37.579884
+  longitude: 126.9768
+}
+
+instance MyeongdongNightMarket < MDC_C002 {
+  code: SPI202
+  preferred_name.en: "Myeongdong Night Market"
+  preferred_name.ko: "명동"
+  short_name.en: "Myeongdong"
+  definition.en: "one of Seoul's principal shopping and tourism districts, ranked among the world's most expensive shopping streets"
+  superclass: NightMarket
+  class_type: ITEM_CLASS
+  country: Korea
+  spot_type: NightMarket
+  official_grade: LocalGrade
+  stall_count: 200
+  opening_period: YearRound
+  admission: Free
+  city: Seoul
+  latitude: 37.5637
+  longitude: 126.984
+}
+
+# --- Italy ----------------------------------------------------------------
+
+instance Colosseo < MDC_C002 {
+  code: SPI301
+  preferred_name.en: "Colosseum"
+  preferred_name.it: "Colosseo"
+  short_name.en: "Colosseum"
+  definition.en: "Roman amphitheatre begun under Vespasian in 72 and completed in AD 80 under Titus, the largest ancient amphitheatre ever built"
+  superclass: ArchaeologicalSite
+  class_type: ITEM_CLASS
+  country: Italy
+  spot_type: ArchaeologicalSite
+  official_grade: WorldHeritage
+  established_year: 80
+  excavation_status: Completed
+  inscription_year: 1980
+  height: 48
+  listing_criteria: Cultural
+  admission: Paid
+  opening_period: YearRound
+  city: Rome
+  latitude: 41.8903
+  longitude: 12.4922
+}
+
+instance UffiziGallery < MDC_C002 {
+  code: SPI302
+  preferred_name.en: "Uffizi Gallery"
+  preferred_name.it: "Galleria degli Uffizi"
+  short_name.en: "Uffizi"
+  definition.en: "art museum in Florence holding the Medici collection of Italian Renaissance painting"
+  superclass: Museum
+  class_type: ITEM_CLASS
+  country: Italy
+  spot_type: Museum
+  official_grade: NationalGrade
+  established_year: 1769
+  exhibition_area: 13000
+  annual_visitors: 2000000
+  admission: Paid
+  opening_period: YearRound
+  city: Florence
+  latitude: 43.7683
+  longitude: 11.2553
+}

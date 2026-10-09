@@ -1,0 +1,30 @@
+name: Release data
+
+# The browser rebuilds nightly and on data releases from data-private;
+# this dispatch gives the same immediate rebuild for this repository
+# once OPENCDD_CI_PAT_TOKEN is configured as a repository secret.
+# Without the secret the step is skipped and the nightly rebuild
+# picks the data up.
+on:
+  push:
+    branches: [main]
+    paths: ["data/**"]
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify the browser
+        env:
+          TOKEN: ${{ secrets.OPENCDD_CI_PAT_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "OPENCDD_CI_PAT_TOKEN not set — the nightly browser rebuild will pick this up."
+            exit 0
+          fi
+          curl -sf -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/opencdd/opencdd.github.io/dispatches \
+            -d '{"event_type": "cdd-data-released"}'
