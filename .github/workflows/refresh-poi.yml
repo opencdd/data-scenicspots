@@ -1,0 +1,49 @@
+# Quarterly refresh of the verified POI registry. Runs the full
+# pipeline (DBpedia harvest → Wikipedia verification → Wikidata
+# enrichment → splice) on this repo's own fixtures and opens a PR with
+# the regenerated dictionary data. opencdd-ruby is checked out
+# read-only as the implementation (Gemfile path dependency); it is a
+# library, never a data target.
+name: Refresh POI registry
+
+on:
+  schedule:
+    - cron: "0 6 1 1,4,7,10 *" # 06:00 UTC on Jan 1, Apr 1, Jul 1, Oct 1
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: opencdd/opencdd-ruby
+          path: opencdd-ruby
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: data-private
+          bundler-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the verified harvest
+        working-directory: data-private
+        run: |
+          python3 harvest/dbpedia_poi.py
+          bundle exec rake browser:demo
+      - name: Open data PR
+        working-directory: data-private
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "openCDD pipeline"
+          git config user.email "pipeline@opencdd.invalid"
+          git diff --exit-code -- data/ reference-docs/examples/ && echo "no changes" && exit 0
+          BR=poi-refresh/$(date +%Y-%m-%d)
+          git checkout -b "$BR"
+          git add data/scenicspots data/index.json reference-docs/examples/scenicspots.cddal
+          git commit -m "Quarterly POI registry refresh (generated)"
+          git push origin "$BR"
+          printf 'Automated quarterly refresh of the verified POI registry: DBpedia harvest, per-entry Wikipedia verification, Wikidata enrichment, spliced into the scenicspots fixture (data owned by this repo).\n' > /tmp/body.md
+          gh pr create --title "Quarterly POI registry refresh $(date +%Y-%m-%d)" --body-file /tmp/body.md
