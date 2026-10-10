@@ -27,7 +27,14 @@
     "nl",
     "pl",
     "cs",
-    "hu"
+    "hu",
+    "sv",
+    "no",
+    "da",
+    "fi",
+    "ga",
+    "is",
+    "hr"
   ],
   "countries": {
     "Taiwan": {
@@ -349,6 +356,101 @@
         "Museums_in_Budapest",
         "National_parks_of_Hungary"
       ]
+    },
+    "Switzerland": {
+      "block": "30",
+      "class": "Switzerland",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Zurich",
+        "Museums_in_Geneva",
+        "Tourist_attractions_in_Switzerland",
+        "National_parks_of_Switzerland"
+      ]
+    },
+    "Austria": {
+      "block": "31",
+      "class": "Austria",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Vienna",
+        "Palaces_in_Vienna",
+        "Landmarks_in_Austria"
+      ]
+    },
+    "Belgium": {
+      "block": "32",
+      "class": "Belgium",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Brussels",
+        "Landmarks_in_Belgium",
+        "Cathedrals_in_Belgium"
+      ]
+    },
+    "Sweden": {
+      "block": "33",
+      "class": "Sweden",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Stockholm",
+        "Landmarks_in_Sweden",
+        "Royal_Palaces_in_Sweden"
+      ]
+    },
+    "Norway": {
+      "block": "34",
+      "class": "Norway",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Oslo",
+        "National_parks_of_Norway"
+      ]
+    },
+    "Denmark": {
+      "block": "35",
+      "class": "Denmark",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Copenhagen",
+        "Landmarks_in_Copenhagen"
+      ]
+    },
+    "Finland": {
+      "block": "36",
+      "class": "Finland",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Landmarks_in_Finland",
+        "Museums_in_Finland"
+      ]
+    },
+    "Ireland": {
+      "block": "37",
+      "class": "Ireland",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Ireland",
+        "Landmarks_in_Ireland"
+      ]
+    },
+    "Iceland": {
+      "block": "38",
+      "class": "Iceland",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Waterfalls_of_Iceland",
+        "Museums_in_Iceland"
+      ]
+    },
+    "Croatia": {
+      "block": "39",
+      "class": "Croatia",
+      "zh_tag": "zh-TW",
+      "categories": [
+        "Museums_in_Zagreb",
+        "National_parks_of_Croatia"
+      ]
     }
   },
   "curated_skip": [
@@ -469,7 +571,16 @@
     "Museums_in_Warsaw": "Warsaw",
     "Museums_in_Prague": "Prague",
     "Museums_in_Budapest": "Budapest",
-    "Museums_in_Mumbai": "Mumbai"
+    "Museums_in_Mumbai": "Mumbai",
+    "Museums_in_Zurich": "Zurich",
+    "Museums_in_Geneva": "Geneva",
+    "Museums_in_Vienna": "Vienna",
+    "Palaces_in_Vienna": "Vienna",
+    "Museums_in_Brussels": "Brussels",
+    "Museums_in_Stockholm": "Stockholm",
+    "Museums_in_Oslo": "Oslo",
+    "Museums_in_Copenhagen": "Copenhagen",
+    "Museums_in_Zagreb": "Zagreb"
   },
   "code_stem": "SPI"
 }
