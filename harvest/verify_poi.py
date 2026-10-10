@@ -92,6 +92,16 @@ COUNTRY_ALIASES = {
     "Poland": [r"Poland", r"Polish", r"Warsaw", r"Krak[oó]w", r"Gda[nń]sk"],
     "Czechia": [r"Czech", r"Prague", r"Bohemia", r"Moravia"],
     "Hungary": [r"Hungary", r"Hungarian", r"Budapest", r"Danube"],
+    "Switzerland": [r"Switzerland", r"Swiss", r"Zurich", r"Geneva", r"Lucerne"],
+    "Austria": [r"Austria", r"Austrian", r"Vienna", r"Salzburg"],
+    "Belgium": [r"Belgium", r"Belgian", r"Brussels", r"Bruges", r"Antwerp", r"Flanders"],
+    "Sweden": [r"Sweden", r"Swedish", r"Stockholm", r"Gothenburg"],
+    "Norway": [r"Norway", r"Norwegian", r"Oslo", r"Bergen", r"Fjord"],
+    "Denmark": [r"Denmark", r"Danish", r"Copenhagen"],
+    "Finland": [r"Finland", r"Finnish", r"Helsinki", r"Suomi"],
+    "Ireland": [r"Ireland", r"Irish", r"Dublin"],
+    "Iceland": [r"Iceland", r"Icelandic", r"Reykjavik"],
+    "Croatia": [r"Croatia", r"Croatian", r"Zagreb", r"Dubrovnik", r"Split\b", r"Dalmatia"],
 }
 
 TYPE_CONFIRM = {
